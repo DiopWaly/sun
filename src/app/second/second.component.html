@@ -1,0 +1,407 @@
+<div class="body">
+
+  <app-menu></app-menu>
+    <div *ngIf="tmp < 12" >
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="declaration">
+          <h1 class="">Je fais ma déclaration</h1>
+          <hr align="center">
+          <span>En quelques secondes</span>
+        </div>
+        <div class="col-md-1 img">
+          <img [src]="pathImg+'stopwatch.svg'" alt="">
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-md-1"></div>
+       <div class="col-md-10">
+          <div class="progress" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [style.width]="progress+'%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-value" [style]="'left:'+ettiquette+'em;'">{{progress}}%</div>
+            </div>
+          </div>
+       </div>
+       <!-- <div class="col-md-1"></div> -->
+      </div>
+      <div class="row">
+          <div class="col-md-2" id="prec">
+              <div *ngIf="tmp == 0" class="left">
+                <img src="../../assets/images/images/2/arrow_back_white_24dp.svg" alt="">
+              </div>
+
+              <div *ngIf="tmp > 0"  class="left2" (click)="decremente()">
+                <img src="../../assets/images/images/arrow_back_white_24dp.svg" alt="">
+              </div>
+          </div>
+          <div class="col-md-8">
+            <!-- <app-etre-salama></app-etre-salama> -->
+            <!-- <app-sinistr-declaration7></app-sinistr-declaration7> -->
+            <div *ngIf="tmp == 0" class="body0">
+              <div class="assurer">
+                <h1>êtes-vous assuré de Salama ?</h1>
+              </div>
+              <div class="row" style="margin-bottom: 11.7em;">
+                <div class="btnoui">
+                  <span>OUI</span>
+                </div>
+                <div class="btnnon">
+                  <span>NON</span>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 1"  class="body1">
+              <div class="sinistre1">
+                <h1>Déclaration de sinistre</h1>
+                <div class="passe">
+                  <span>Que se passe t‘il ?</span>
+                </div>
+              </div>
+
+              <div class="row" id="declaration">
+                <div [ngClass]="typeSinistre == 'collision' ? 'col-md-4 collision selected' : 'col-md-4 collision' " (click)="sinitre(0)">
+                  <img src="../../assets/images/images/3/collision-web.svg" alt="">
+                  <p>Collision</p>
+                </div>
+                <div [ngClass]="typeSinistre == 'vol' ? 'col-md-4 vol selected' : 'col-md-4 vol' " (click)="sinitre(1)">
+                  <img src="../../assets/images/images/3/vol-web.svg" alt="">
+                  <p>Vol</p>
+                </div>
+                <div [ngClass]="typeSinistre == 'dommage' ? 'col-md-4 dommage selected' : 'col-md-4 dommage' " (click)="sinitre(2)">
+                  <img src="../../assets/images/images/3/domage-mineurs-web.svg" alt="">
+                  <p>Dommage mineure</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div [ngClass]="typeSinistre == 'inondation' ? 'col-md-4 inondation selected' : 'col-md-4 inondation' " (click)="sinitre(3)">
+                  <img src="../../assets/images/images/3/inondation-web.svg" alt="">
+                  <p>Inondation</p>
+                </div>
+                <div [ngClass]="typeSinistre == 'collisionAnimal' ? 'col-md-4 collisionAnimal selected' : 'col-md-4 collisionAnimal' " (click)="sinitre(4)">
+                  <img src="../../assets/images/images/3/animal-collision-web.svg" alt="">
+                  <p>Collision avec un. Animal</p>
+                </div>
+                <div [ngClass]="typeSinistre == 'autre' ? 'col-md-4 autre selected' : 'col-md-4 autre' " (click)="sinitre(5)">
+                  <img src="../../assets/images/images/3/autres-web.svg" alt="">
+                  <p>Autres</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div *ngIf="tmp == 2"  class="body2">
+              <div class="sinistre2">
+                <h1>Déclaration de sinistre</h1>
+                <div class="quand">
+                  <span>Quand est-ce que ça s’est déroulé ?</span>
+                </div>
+              </div>
+              <div class="saisiDate">
+                <span>Saisir la date selon le format JJ/MM/AA</span>
+              </div>
+              <div class="date">
+                <label>
+                  <!-- <input type="text" class="input jj"> -->
+                  <select class="input jj">
+                    <option>JJ</option>
+                    <option [value]="i" *ngFor="let i of jours">{{i}}</option>
+                  </select>
+                </label>
+                <label>
+                  <!-- <input type="text" class="input mm"> -->
+                  <select class="input mm">
+                    <option>MM</option>
+                    <option [value]="i" *ngFor="let i of mois">{{i}}</option>
+                  </select>
+                </label>
+                <label>
+                  <!-- <input type="text" class="input yy"> -->
+                  <select class="input yy">
+                    <option value="volvo">AA</option>
+                    <option [value]="i" *ngFor="let i of annees">{{i}}</option>
+                  </select>
+                </label>
+                <!-- <img src="../../assets/images/images/4/JJ-web.svg" alt=""> -->
+                <!-- <img src="../../assets/images/images/4/MM-web.svg" alt=""> -->
+                <!-- <img src="../../assets/images/images/4/AA-web.svg" alt=""> -->
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 3"  class="body3">
+              <div class="sinistre3">
+                <h1>Déclaration de sinistre</h1>
+                <div class="ou">
+                  <span>Ou est-ce que ça s’est passé ?</span>
+                </div>
+              </div>
+              <div class="map">
+                <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" alt="chargement du maps">
+                  <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true">
+                  </agm-marker>
+                </agm-map>
+              </div>
+              <div class="lieu">
+                <!-- <img src="../../assets/images/images/6/textarea-form-web.svg" alt=""> -->
+                <div class="position">
+                  <img src="../../assets/images/images/6/google-map-web.svg" alt="">
+                  <span>{{address}}</span>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 4"  class="body4">
+              <div class="sinistre4">
+                <h1>Déclaration de sinistre</h1>
+                <div class="passe">
+                  <span>Ou est-ce que ça s’est passé ?</span>
+                </div>
+              </div>
+              <div class="lieu4">
+                <img src="../../assets/images/images/6/google-map-web.svg" alt="">
+                <span>DAKAR (SÉNÉGAL)</span>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 5"  class="body5">
+              <div class="sinistre5">
+                <h1>Déclaration de sinistre</h1>
+                <div class="passe">
+                  <span>Décrivez en quelques lignes les circonstances ou s’est déroulé l’ accident</span>
+                </div>
+              </div>
+              <div class="form-group description">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Petite description…."></textarea>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 6"  class="body6">
+              <div class="sinistre">
+                <h1>Déclaration de sinistre</h1>
+                <div class="passe">
+                  <span>Télécharger photos de l’accident et documents</span>
+                </div>
+              </div>
+              <div class="upload">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="../../assets/images/images/7/upload-icon-web.svg" alt="">
+                  </div>
+                  <div class="col-md-5 up" (click) = "upload.click()">
+                    <p>Upload</p>
+                  </div>
+                </div>
+                <form [formGroup]="form">
+                  <input type="file" accept=".pdf, .jpg, .jpeg, .png" formControlName="file"
+                    hidden #upload multiple (change)="onFileChange($event)" />
+                  <!-- <button type="submit" class="btn btn-primary">OK</button> -->
+                </form>
+              </div>
+              <div *ngIf="errorFile" class="row">
+                <div class="col error-file">
+                  <span>Veuillez choisir des fichiers au format PDF ou des images</span>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 7"  class="body7">
+              <div class="sinistre7">
+                <h1>Déclaration de sinistre</h1>
+                <div class="passe">
+                  <span>Télécharger photos de l’accident et documents</span>
+                </div>
+              </div>
+              <div class="files">
+                <div class="pdf" *ngFor="let file of myFiles;let i=index">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img [src]="fileType[file['type']]" alt="">
+                    </div>
+                    <div class="col-md-7 filName">
+                      <p>{{file['name']}}</p>
+                    </div>
+                    <div class="col-md-2 sup">
+                      <img src="../../assets/images/images/8/supprimer-btn.svg" alt="" (click) = "deleteFile(i)">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 8"  class="body8">
+              <div class="sinistre8">
+                <h1>Informations sur le véhicule</h1>
+                <div class="quand">
+                  <span>Immatriculation, model, marque & année</span>
+                </div>
+              </div>
+              <div class="matriculeSN">
+                <div class="row">
+                  <div class="col-md-2 pr-0">
+                    <div class="sn ml-0">
+                        <div class="row">
+                          <div class="blanc"></div>
+                          <div class="blanc1"></div>
+                        </div>
+                        <div class=""><P>SN</P></div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 pl-0 pr-0">
+                    <label>
+                      <input type="text" class="input" placeholder="Immatricultion">
+                    </label>
+                  </div>
+                  <div class="col-md-1 dk">
+                    <p>DK</p>
+                    <div class="a">
+                      <p>01</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="matricule">
+                <label>
+                  <input type="text" class="input" placeholder="Marque">
+                </label>
+              </div>
+              <div class="matricule">
+                <label>
+                  <input type="text" class="input" placeholder="Model">
+                </label>
+              </div>
+              <div class="matricule">
+                <label>
+                  <input type="text" class="input" placeholder="Année">
+                </label>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 9" class="body9">
+              <div class="assurer9">
+                <h1>Avez-vous un compte chez Salama Assurance ?</h1>
+              </div>
+              <div class="row" style="margin-bottom: 11.7em; padding-left: 0.9em;">
+                <div [ngClass]="cmpte == true ? 'btnoui91' : 'btnoui92'" (click)="compteOui()">
+                  <span>OUI</span>
+                </div>
+                <div [ngClass]="cmpte == false ? 'btnnon91' : 'btnnon92'" (click)="compteNon()">
+                  <span>NON</span>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="tmp == 10 && !cmpte"  class="body10">
+              <div class="sinistre10">
+                <h1>Créer un compte</h1>
+              </div>
+              <div class="inscrir">
+                  <form [formGroup] = "isncriptionForm">
+                      <label>
+                        <p class="label-txt">Nom d’utilisateur</p>
+                        <input type="text" formControlName="user" class="input">
+                        <img *ngIf="isncriptionForm.valid" [src]="pathImg+'10/username-valide-web.svg'" class="userIcon">
+                        <div class="line-box">
+                          <div class="line"></div>
+                        </div>
+                      </label>
+                      <label>
+                        <p class="label-txt">Mot de passe</p>
+                        <input [type]="type" formControlName="pwd" class="input">
+                        <img  class="pass"*ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="afficher('pass')">
+                        <img class="pass" *ngIf="type == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="masquer('pass')">
+
+                        <div class="line-box">
+                          <div class="line"></div>
+                        </div>
+                      </label>
+                      <label>
+                        <p class="label-txt">Confirmer mot de passe</p>
+                        <input [type]="typeconfirm" formControlName="pwdconfirm" class="input">
+                        <img class="pass" *ngIf="typeconfirm == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="afficher('confirm')">
+                        <img class="pass" *ngIf="typeconfirm == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="masquer('confirm')">
+                        <div class="line-box">
+                          <div class="line"></div>
+                        </div>
+                      </label>
+                  </form>
+              </div>
+            </div>
+
+            <div *ngIf="(tmp == 10 && cmpte) || tmp == 11"  class="body11">
+              <div class="sinistre11">
+                <h1>Connexion à votre compte</h1>
+              </div>
+              <div class="connexion">
+                <form [formGroup] = "isncriptionForm">
+                  <label>
+                    <p class="label-txt">Nom d’utilisateur</p>
+                    <input type="text" formControlName="user" class="input">
+                    <img [src]="pathImg+'10/username-valide-web.svg'" class="userIcon">
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+                  <label>
+                    <p class="label-txt">Mot de passe</p>
+                    <input [type]="type" formControlName="pwd" class="input">
+                    <img class="pass" *ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="afficher('pass')">
+                    <img class="pass" *ngIf="type == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="masquer('pass')">
+
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-2" id="suiv">
+            <div class="right mt-0" (click)="incremente()">
+              <img src="../../assets/images/images/2/arrow_forward_white_24dp.svg" alt="">
+            </div>
+          </div>
+<!--
+          <div *ngIf="tmp == 0" class="left m-0">
+            <img src="../../assets/images/images/2/Btn-gauche-web-grise.svg" alt="">
+          </div>
+
+          <div *ngIf="tmp > 0"  class="left2" (click)="decremente()">
+            <img src="../../assets/images/images/arrow_back_white_24dp.svg" alt="">
+          </div>
+
+          <div class="right mt-0" (click)="incremente()">
+            <img src="../../assets/images/images/2/Btn-droite-web.svg" alt="">
+          </div> -->
+          <!-- <div class="right mt-0">
+            <img src="../../assets/images/images/arrow_forward_white_24dp.svg" alt="">
+          </div> -->
+
+          <!-- <div class="col-md-1 left">
+            <img src="../../assets/images/images/down-arrow.svg" alt="">
+          </div>
+          <div class="col-md-8">
+            <app-etre-salama></app-etre-salama>
+          </div>
+          <div class="col-md-1 right">
+            <span>NON</span>
+          </div> -->
+      </div>
+    </div>
+    <div *ngIf="tmp == 12" class="body12">
+      <div class="suc">
+        <img src="../../assets/images/images/12/succès-web.svg" alt="">
+      </div>
+      <div class="sinistre12">
+          <h1>Votre demande a été reçu avec succès</h1>
+          <p class="p">Vous pouvez suivre l’état d’avancement de</p>
+          <p>Votre demande dans la sections MES DEMANDES</p>
+          <p class="numero">Numéro de demande <span>#2021A001</span></p>
+          <div class="accueil" routerLink="/first">
+            <span>Retour à la page d’accueil</span>
+          </div>
+      </div>
+    </div>
+  <app-footer></app-footer>
+</div>

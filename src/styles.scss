@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Rawson-Medium';
+  src: url("assets/fonts/rawson/Rawson-Medium.otf");
+  /* src: url("../fonts/GellixBlack.otf") format("embedded-opentype"), url("../fonts/GilroyBold.woff2") format("woff2"), url("../fonts/GilroyBold.woff") format("woff"), url("../fonts/GilroyBold.ttf") format("truetype"), url("../fonts/GilroyBold.svg#GilroyBold") format("svg");
+*/
+}
+
+@font-face {
+  font-family: 'Rawson-Bold';
+  src: url("assets/fonts/rawson/Rawson-Bold.otf");
+}
+@font-face {
+  font-family: 'Rawson-LightIt';
+  src: url("assets/fonts/rawson/Rawson-LightIt.otf");
+}
+@font-face {
+  font-family: 'Rawson-Light';
+  src: url("assets/fonts/rawson/Rawson-Light.otf");
+}
+@font-face {
+  font-family: 'Rawson-SemiBold';
+  src: url("assets/fonts/rawson/Rawson-SemiBold.otf");
+}
+@font-face {
+  font-family: 'Rawson-Regular';
+  src: url("assets/fonts/rawson/Rawson-Regular.otf");
+}
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url("assets/fonts/Avenir-Font/avenir_ff/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url("assets/fonts/Avenir-Font/avenir_ff/AvenirMedium.ttf");
+}

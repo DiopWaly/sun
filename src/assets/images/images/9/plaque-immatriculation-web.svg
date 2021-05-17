@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="63" viewBox="0 0 360 63">
+  <defs>
+    <filter id="Rectangle_1622" x="0" y="0" width="360" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_1179" data-name="Groupe 1179" transform="translate(-460 -458)">
+    <g transform="matrix(1, 0, 0, 1, 460, 458)" filter="url(#Rectangle_1622)">
+      <rect id="Rectangle_1622-2" data-name="Rectangle 1622" width="342" height="45" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_1625" data-name="Rectangle 1625" width="37" height="45" transform="translate(469 464)" fill="#1f6666"/>
+    <text id="SN" transform="translate(478 500)" fill="#fff" font-size="17" font-family="Rawson-SemiBold, Rawson" font-weight="600"><tspan x="0" y="0">SN</tspan></text>
+    <g id="Groupe_1158" data-name="Groupe 1158">
+      <rect id="Rectangle_1626" data-name="Rectangle 1626" width="6" height="9" transform="translate(479 469)" fill="#fff"/>
+      <rect id="Rectangle_1627" data-name="Rectangle 1627" width="6" height="9" transform="translate(491 469)" fill="#fff"/>
+      <rect id="Rectangle_1628" data-name="Rectangle 1628" width="6" height="9" transform="translate(485 469)" fill="none"/>
+    </g>
+    <g id="star" transform="translate(486.349 462.272)">
+      <g id="Groupe_1159" data-name="Groupe 1159" transform="translate(0 9.569)">
+        <path id="Tracé_4236" data-name="Tracé 4236" d="M3.3,10.783,2.1,10.7,1.651,9.569,1.2,10.7,0,10.783l.919.781-.3,1.184L1.651,12.1l1.033.653-.3-1.184Z" transform="translate(0 -9.569)" fill="#fff"/>
+      </g>
+    </g>
+    <text id="DK" transform="translate(789 482)" fill="#1f6666" font-size="12" font-family="Rawson-SemiBold, Rawson" font-weight="600"><tspan x="0" y="0">DK</tspan></text>
+    <text id="_01" data-name="01" transform="translate(793 501)" fill="#1f6666" font-size="8" font-family="Rawson-SemiBold, Rawson" font-weight="600"><tspan x="0" y="0">01</tspan></text>
+  </g>
+</svg>

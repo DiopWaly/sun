@@ -1,0 +1,52 @@
+<div class="body">
+  <app-menu></app-menu>
+  <div class="consulte-dossier">
+      <div class="titre">
+        <h1>Consultation de dossier en ligne</h1>
+      </div>
+      <div *ngIf="consult == true">
+          <div class="sous-titre">
+            <span>Renseignez le formulaire et valider</span>
+          </div>
+          <div class="row formulaire">
+            <div class="icon">
+              <!-- <img src="../../assets/images/images/13/folder.svg" alt=""> -->
+            </div>
+            <div class="num">
+              <label>
+                <p class="label-txt"></p>
+                <input type="text" class="input">
+                <!-- <div class="line-box"> -->
+                  <!-- <div class="line"></div> -->
+                <!-- </div> -->
+              </label>
+            </div>
+          </div>
+          <div class="captcha">
+            <!-- <img src="../../assets/images/images/11/captcha-web.svg" alt=""> -->
+            <form [formGroup]="aFormGroup">
+              <ngx-recaptcha2 #captchaElem
+                [siteKey]="siteKey"
+                formControlName="recaptcha">
+              </ngx-recaptcha2>
+            </form>
+          </div>
+          <div *ngIf="aFormGroup.valid" (click)="soumettre()" class="soumettre">
+            <span>Soumettre</span>
+          </div>
+          <div *ngIf="!aFormGroup.valid" class="soumettre2">
+            <span>Soumettre</span>
+          </div>
+      </div>
+      <div class="spinn" *ngIf="consult == false" >
+        <div class="sous-titre2">
+          <span>Veuillez patienter un moment</span>
+        </div>
+        <div class="spinner-border text-light" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+

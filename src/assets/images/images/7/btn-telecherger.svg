@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="45" viewBox="0 0 166 45">
+  <g id="Groupe_1172" data-name="Groupe 1172" transform="translate(-36 -126)">
+    <rect id="Rectangle_1035" data-name="Rectangle 1035" width="166" height="45" transform="translate(36 126)" fill="#1f6666"/>
+    <g id="cloud-computing-3" transform="translate(48.852 139)">
+      <g id="Groupe_605" data-name="Groupe 605" transform="translate(0 0)">
+        <g id="Groupe_604" data-name="Groupe 604">
+          <path id="Tracé_2473" data-name="Tracé 2473" d="M17.185,60.4A7.089,7.089,0,0,0,3.238,61.609a3.867,3.867,0,0,0,.644,7.682H7.105V68H3.883a2.578,2.578,0,0,1,0-5.156.644.644,0,0,0,.644-.644,5.8,5.8,0,0,1,11.491-1.128.645.645,0,0,0,.548.516A3.222,3.222,0,0,1,16.128,68H13.55v1.289h2.578A4.511,4.511,0,0,0,17.185,60.4Z" transform="translate(0 -55.032)" fill="#fff"/>
+          <path id="Tracé_2474" data-name="Tracé 2474" d="M183.613,249.2l-2.578,2.578.909.909,1.482-1.476v6.181h1.289v-6.181l1.476,1.476.909-.909-2.578-2.578A.644.644,0,0,0,183.613,249.2Z" transform="translate(-173.743 -241.198)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <text id="Télécharger" transform="translate(78 152)" fill="#fff" font-size="12" font-family="Rawson-SemiBold, Rawson" font-weight="600"><tspan x="0" y="0">TÉLÉCHARGER</tspan></text>
+  </g>
+</svg>
