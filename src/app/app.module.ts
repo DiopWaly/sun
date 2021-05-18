@@ -11,6 +11,7 @@ import { DossierComponent } from './dossier/dossier.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import {AgmCoreModule} from '@agm/core';
+import { ResultatComponent } from './resultat/resultat.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import {AgmCoreModule} from '@agm/core';
     SecondComponent,
     MenuComponent,
     FooterComponent,
-    DossierComponent
+    DossierComponent,
+    ResultatComponent
   ],
   imports: [
     BrowserModule,
