@@ -62,13 +62,18 @@
   border: 2px solid #087777;
 }
  .left{
-    width: 2.6em;
-    height: 2.6em;
+    width: 2.7em;
+    height: 2.65em;
     background: #e3e3e3 0% 0% no-repeat padding-box;
     margin: auto;
     margin-left: 8em;
+    text-align: center;
+    padding-top: 0.2em;
     img{
-      transform: perspective(500px) translate3d(-28%, 19%, 8.7em);
+      // transform: perspective(500px) translate3d(-28%, 19%, 8.7em);
+      width: 74%;
+      height: 37px;
+      margin: auto;
     }
  }
  .right:hover{
@@ -77,25 +82,28 @@
  }
 
 .right{
-  width: 2.6em;
-  height: 2.6em;
+  width: 2.8em;
+  height: 2.65em;
   background: #1f6666 0% 0% no-repeat padding-box;
-  margin-left: 2.9em;
+  margin-left: 2.84em;
+  text-align: center;
+  padding-top: 0.2em;
   // height: 42px;
   // transform: perspective(500px) translate3d(590%, 533%, 0.74em);
   img{
-    transform: perspective(500px) translate3d(-26%, 19%, 8.6em);
-    // width: 100%;
-    // height: 100%;
+    // transform: perspective(500px) translate3d(-26%, 24%, 8.7em);
+    width: 74%;
+    height: 37px;
+    margin: auto;
   }
 }
 .left2{
   text-align: center;
-  width: 2.4em;
+  width: 2.6em;
   height: 2.6em;
   background: #1f6666 0% 0% no-repeat padding-box;
   margin: auto;
-  margin-left: 8.2em;
+  margin-left: 8em;
   img{
     // color: white;
     transform: perspective(500px) translate3d(-3%, 19%, 8.6em);
@@ -116,7 +124,7 @@
 }
  #suiv{
   text-align: right;
-  padding-top: 14.4em;
+  padding-top: 14.3em;
 }
 
  //1
@@ -669,7 +677,7 @@
     margin-left: 0.1em;
   }
   p{
-    font: normal normal 600 16px/20px Rawson;
+    font: normal normal 600 16px/20px 'Rawson-SemiBold';
     letter-spacing: 0px;
     color: #CCCBCE;
     margin-top: 0.4em;
@@ -692,7 +700,7 @@
     margin-left: 0.1em;
   }
   p{
-    font: normal normal 600 16px/20px Rawson;
+    font: normal normal 600 16px/20px 'Rawson-SemiBold';
     letter-spacing: 0px;
     font-size: 16px;
     color: #CCCBCE;
@@ -714,7 +722,7 @@
   img{
   }
   p{
-      font: normal normal 600 16px/20px Rawson;
+      font: normal normal 600 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
       color: #CCCBCE;
       margin-top: 0.55em;
@@ -733,7 +741,7 @@
   img{
   }
   p{
-    font: normal normal 600 16px/20px Rawson;
+    font: normal normal 600 16px/20px 'Rawson-SemiBold';
     letter-spacing: 0px;
     color: #CCCBCE;
     margin-top: 0.2em;
@@ -752,7 +760,7 @@
   img{
   }
   p{
-    font: normal normal 600 16px/20px Rawson;
+    font: normal normal 600 16px/20px 'Rawson-SemiBold';
     color: #CCCBCE;
     margin-top: 0.65em;
   }

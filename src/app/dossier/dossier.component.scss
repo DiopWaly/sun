@@ -10,7 +10,7 @@
 .consulte-dossier{
   margin-top: 21.8%;
   margin-left: 33.3%;
-  margin-bottom: 13.34%;
+  margin-bottom: 11.34%;
 
 }
 .titre{
@@ -29,7 +29,7 @@
     span{
       font: normal normal 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #02acac;
+      color: #6f9d9d;
     }
     margin-left: 12.6%;
     margin-top: -1.4%;
@@ -39,7 +39,7 @@
   span{
     font: normal normal 17px/21px 'Rawson-LightIt';
     letter-spacing: 0px;
-    color: #02acac;
+    color: #6f9d9d;
   }
   margin-left: 14.4%;
   margin-top: -1.4%;
@@ -57,7 +57,9 @@
     height: 45px;
     background: #1F6666 0% 0% no-repeat padding-box;
     img{
-      width: 65%;
+      width: 19px;
+      height: 39px;
+      margin: auto;
       padding-top: 27%;
     }
   }
@@ -98,7 +100,7 @@
     text-align: left;
     font: normal normal 25px/30px 'Rawson-SemiBold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: #2d6f6f;
   }
 
   .line-box {
@@ -148,6 +150,12 @@
   text-align: center;
   margin-top: 3.6%;
 }
+// #recaptcha-anchor-label{
+//   span{
+//     font: normal normal 17px/21px 'Rawson-SemiBold';
+//     color: #0B0B0B;
+//   }
+// }
 
 .soumettre{
   cursor: pointer;

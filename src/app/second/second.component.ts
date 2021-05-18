@@ -10,7 +10,7 @@ import {AgmMap,MapsAPILoader } from '@agm/core';
 export class SecondComponent implements OnInit {
 
   public pathImg: string = "../../assets/images/images/";
-  public tmp: number = 3;
+  public tmp: number = 0;
   public cmpte: boolean = false;
   public type : string = "password";
   public typeconfirm: string = "password";
@@ -204,7 +204,7 @@ export class SecondComponent implements OnInit {
         if (results[0]) {
           this.zoom = 12;
           this.address = results[0].formatted_address;
-          // console.log('addresse = ',this.address);
+          console.log('addresse = ',this.address);
         } else {
           window.alert('No results found');
         }

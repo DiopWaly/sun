@@ -24,7 +24,7 @@
     span{
       font: normal normal 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: #619393;
     }
     transform: translate(-9%,-21.5%);
   }
@@ -35,12 +35,13 @@
   width: 57%;
   margin-top: 2.3em;
   margin-left: 20.6em;
+  margin-bottom: 10.5em;
 }
 
 .step {
 
   width: 100%;
-  padding: 10px;
+  padding: 13px;
 
   display: flex;
   flex-direction: row;
@@ -63,10 +64,17 @@
   width: 42px;    /* +6 for border */
   height: 42px;
   display: inline-block;
+  text-align: center;
+  img{
+    width: 33px;
+    height: 25px;
+    margin: auto;
+  }
+  padding-top: 18%;
 }
 
 .step .line {
-    top: 40px;
+  top: -26px;//40px
   left: 19px;
 /*   height: 120px; */
   height: 100%;
@@ -103,7 +111,7 @@ border-color: #1F6666;
 }
 
 
-.step:last-child .line {
+.step:first-child .line {
   border-left: 3px solid white;
   z-index: -1; /* behind the circle to completely hide */
 }
@@ -141,6 +149,7 @@ border-color: #1F6666;
     text-transform: uppercase;
   }
   padding-right: 4em;
+  padding-top: 0.5em;
 }
 
 
