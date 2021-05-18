@@ -116,7 +116,6 @@ hr{
   transform: perspective(500px) translate3d(1%, 11.5%, 1em);
 }
 .illustration-app-salama{
-  // transform: translate(50%, 0%);
   width: $width;
   height: 100%;
   margin-right: 0;
@@ -361,101 +360,45 @@ hr{
   height: 102%;
 }
 
-// #footer{
-//   width: $width;
-//   height: 183px;
-//   margin-left: 0%;
-//   margin-right: 0%;
-//   padding-left: 13.7%;
-//   padding-bottom: 0%;
-//   padding-top: 1%;
-//   background: #F5F5F5 0% 0% no-repeat padding-box;
-//   opacity: $opacity;
-// }
-// #foot{
-//   padding-top: 2.7%;
-//   padding-left: 0%;
-//   padding-right: 0%;
-//   margin-right: 3%;
-// }
-// .faq{
-//   padding-top: 4.1%;
-// }
-// .download{
-//   padding-top: 4.2%;
-//   padding-left: 1%;
-//   margin-left: 5.5%;
-// }
-// .liendepos{
-//   padding-top: 4%;
-//   margin-top: 0%;
-//   p{
-//     margin-bottom: 0%;
-//     padding-left: 11.5%;
-//     font: normal normal 18px/22px 'Rawson-Medium';
-//     letter-spacing: 0px;
-//     color: #7A774C;
-//   }
-// }
-// .imgfooter{
-//   width: 155px;
-//   height: 113px;
-//   opacity: $opacity;
-// }
+@media (min-width: 800px) and (max-width: 1300px){
+  .imgpropos{
+    margin: auto;
+  }
+  #titrepropos{
+    // padding-left: 2%;
+    margin: auto;
+    padding: 0%;
+    text-align: left;
+    hr{
+      margin-bottom: 1.7%;
+      margin-left: 7%;
+      border: 0;
+      border-top: 0.16em solid $green;
+    }
 
-// .footrImg{
-//   width: 164px;
-//   height: 50px;
-//   opacity: $opacity;
-// }
-// #footerImgG{
-//   padding-left: 14%;
-//   padding-right: 0%;
-//   margin-top: 1.5%;
-// }
-// #footerImgA{
-//   padding-left: 0%;
-//   margin-top: 1.5%;
-// }
-// .footerend{
-//   width: $width;
-//   height: 53px;
-//   margin-left: 0%;
-//   background: #006767 0% 0% no-repeat padding-box;
-//   .copyright{
-//     padding-top: 1.25%;
-//     padding-left: 9.4%;
-//   }
-//   opacity: $opacity;
-// }
-// span{
-//   text-align: left;
-//   font: normal normal 18px/22px 'Rawson-Medium';
-//   padding-left: 14%;
-//   letter-spacing: 0px;
-//   color: $white;
-//   opacity: $opacity;
-// }
-// .appel{
-//   width: 75px;
-//   padding-top: 0;
-//   margin-left: 41%;
-//   padding-right: 0%;
-//   margin-bottom: 0%;
-//   background: transparent url('../../assets/images/images/bouton-appel.svg') 0% 0% no-repeat padding-box;
-//   // box-shadow: 0px 3px 6px #00000029;
-//   opacity: $opacity;
-// }
-// .chat{
-//   width: 5%;
-//   padding-top: 0%;
-//   padding-bottom: 1%;
-//   margin-bottom: 1%;
-//   padding-left: 1%;
-//   padding-right: 0%;
-//   margin-bottom: 0%;
-//   background: transparent url('../../assets/images/images/bouton-chat.svg') 0% 0% no-repeat padding-box;
-//   // box-shadow: 0px 3px 6px #00000029;
-//   opacity: $opacity;
-// }
+  }
+  .lorempropos{
+    width: 539px;
+    height: 163px;
+    text-align: left;
+    margin: auto;
+    font-family: 'Rawson-Medium';
+    font-size: 18px;
+    color: $green;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 360px){
+  #ilustsalama{
+    text-align: center;
+    padding: 0px;
+    .ilustsalama{
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+}
+
+
 
