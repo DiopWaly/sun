@@ -1,3 +1,5 @@
+@import "assets/css/variable.scss";
+
 @font-face {
   font-family: 'Rawson-Medium';
   src: url("assets/fonts/rawson/Rawson-Medium.otf");
@@ -33,8 +35,3 @@
   font-family: 'Avenir-Medium';
   src: url("assets/fonts/Avenir-Font/avenir_ff/AvenirMedium.ttf");
 }
-
-$primary : #FFFFFF;
-$secondary : #1F6666;
-$tertiaire : #7A774C;
-$gris: #F5F5F5F5;

@@ -1,10 +1,9 @@
+@import "../../assets/css/variable.scss";
 .body{
   width: 100%;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   overflow-x: hidden;
   overflow-y: hidden;
-  opacity: 1;
-  // padding-top: 3.73%;
 }
 .yn{
   margin-bottom: 11.7em;
@@ -14,7 +13,7 @@
     text-align: center;
     font: normal normal 35px/42px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     margin-bottom: 0%;
     padding-top: 0.06%;
     opacity: 1;
@@ -25,7 +24,7 @@
   hr{
     width: 121px;
     height: 5px;
-    background: #7A774C 0% 0% no-repeat padding-box;
+    background: $tertiaire 0% 0% no-repeat padding-box;
     margin-top: 0%;
     margin-left: 0%;
     transform: translate(0.2%, 49%);
@@ -34,7 +33,7 @@
     text-align: center;
     font: normal normal 22px/26px 'Rawson-Regular';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     margin-bottom: 2%;
     padding-bottom: 0%;
     transform: translate(0.8%, -40%);
@@ -48,7 +47,6 @@
   margin-top: auto;
   margin-bottom: auto;
     img{
-      // transform: translate(-21%, 95%);
     }
 }
 .progress-bar{
@@ -64,7 +62,7 @@
   margin-left: 5%;
   height: 20px;
   border-radius: 17px;
-  background-color:#FFFFFF;
+  background-color:$primary;
   border: 2px solid #087777;
 }
 .prog{
@@ -80,7 +78,6 @@
     text-align: center;
     padding-top: 0.2em;
     img{
-      // transform: perspective(500px) translate3d(-28%, 19%, 8.7em);
       width: 74%;
       height: 37px;
       margin: auto;
@@ -94,14 +91,11 @@
 .right{
   width: 2.8em;
   height: 2.65em;
-  background: #1f6666 0% 0% no-repeat padding-box;
+  background: $secondary 0% 0% no-repeat padding-box;
   margin-left: 2.84em;
   text-align: center;
   padding-top: 0.2em;
-  // height: 42px;
-  // transform: perspective(500px) translate3d(590%, 533%, 0.74em);
   img{
-    // transform: perspective(500px) translate3d(-26%, 24%, 8.7em);
     width: 74%;
     height: 37px;
     margin: auto;
@@ -111,16 +105,12 @@
   text-align: center;
   width: 2.6em;
   height: 2.6em;
-  background: #1f6666 0% 0% no-repeat padding-box;
+  background: $secondary 0% 0% no-repeat padding-box;
   margin: auto;
   margin-left: 8em;
   img{
-    // color: white;
     transform: perspective(500px) translate3d(-3%, 19%, 8.6em);
-    // width: 100%;
-    // height: 100%;
   }
-  // transform: perspective(500px) translate3d(-47.4em, 552%, 0.6em);
   padding-left: 0%;
   padding-right: 0%;
 }
@@ -141,7 +131,6 @@
   .body0{
     margin-bottom: 19%;
     margin-top: 18.3%;
-    // margin-left: 16.6%;
   }
  .assurer{
    margin: auto;
@@ -151,19 +140,18 @@
     font-size: 31px;
     letter-spacing: 0px;
     padding-left: 0.55em;
-    color: #1F6666;
+    color: $secondary;
   }
   margin-bottom: 5%;
   margin-top: 17.5%;
-  // padding-left: 44.3%;
 }
 
 .btnoui{
   cursor: pointer;
   width: 8.05em;
   height: 3em;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #1F6666;
+  background: $primary 0% 0% no-repeat padding-box;
+  border: 1px solid $secondary;
   text-align: center;
   margin: auto;
   margin-right: 1.15em;
@@ -171,7 +159,7 @@
     font-family: 'Avenir-Medium';
     font-size: 16.7px;
     letter-spacing: 0.1px;
-    color: #1F6666;
+    color: $secondary;
   }
   margin-left: 19.45em;
   padding-top: 0.6em;
@@ -182,7 +170,7 @@
   cursor: pointer;
   width: 8.05em;
   height: 3em;
-  background: #1F6666 0% 0% no-repeat padding-box;
+  background: $secondary 0% 0% no-repeat padding-box;
   text-align: center;
   margin: auto;
   margin-left: 2.3em;
@@ -191,17 +179,15 @@
     font-family: 'Avenir-Medium';
     font-size: 16.5px;
     letter-spacing: 0.5px;
-    color: #FFFFFF;
+    color: $primary;
   }
   padding-top: 0.7em;
-  // margin-left: 7.1%;
   margin-top: 0%;
 }
 //2
 .body2{
   margin-bottom: 18.82%;
   margin-top: 17.8%;
-  // margin-left: 24.55%;
 }
 
 .sinistre2{
@@ -211,7 +197,7 @@
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -220,11 +206,10 @@
       span{
         font: normal normal 300 17px/21px 'Rawson-LightIt';
         letter-spacing: 0px;
-        color: #1F6666;
+        color: $secondary;
       }
     transform: translate(0%,-21.5%);
   }
-  // margin-left: 38.1%;
   padding-top: 0.1em;
 }
  .saisiDate{
@@ -234,12 +219,11 @@
    span{
     font: normal normal 600 21px/25px 'Rawson-SemiBold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
    }
    margin-top: 1.7em;
    padding-left: 1.05em;
-  //  margin-left: 19.2%;
  }
 .date{
   text-align: center;
@@ -271,7 +255,7 @@
     }
     .yy{
       border-bottom: 1px solid teal;
-      color: #1F6666;
+      color: $secondary;
     }
   }
 }
@@ -282,7 +266,6 @@
   margin: auto;
   margin-bottom: 27%;
   margin-top: 9.9%;
-  // margin-left: 25%;
 }
 .sinistre{
   text-align: center;
@@ -290,7 +273,7 @@
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -300,11 +283,10 @@
     span{
       font: normal normal 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     transform: translate(-9%,-21.5%);
   }
-  // margin-left: 37.5%;
   padding-top: 0.15em;
   padding-left: 0.75em;
 }
@@ -317,12 +299,9 @@
     height: 4.25em ;
     background: #087777 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    // margin: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    // margin-left: 52.2%;
-    // margin-top: 4%;
     padding-top: 1.5em;
     padding-left: 0%;
     img{
@@ -335,7 +314,7 @@
       text-align: left;
       font: normal normal 25px/30px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #FFFFFF;
+      color: $primary;
       text-transform: uppercase;
       margin-bottom: 0%;
       margin-top: 0%;
@@ -360,7 +339,6 @@
 .body3{
   margin-bottom: -8.5%;
   margin-top: 10%;
-  // margin-left: 20.5%;
 }
 .sinistre3{
   text-align: center;
@@ -369,7 +347,7 @@
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -378,11 +356,10 @@
       span{
         font: normal normal 300 17px/21px 'Rawson-LightIt';
         letter-spacing: 0px;
-        color: #1F6666;
+        color: $secondary;
       }
       transform: translate(0%,-21.5%);
   }
-  // margin-left: 41.5%;
   padding-top: 0%;
 }
 
@@ -400,41 +377,33 @@
   margin-left: -3.3em;
   margin-top: 0.2em;
   margin-bottom: 0%;
-  // margin-right: 0.5%;
 }
 
 .lieu{
-  // width: 340px;
   width: 268px;
   height: 50px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   padding-top: 0.6em;
   margin-left: auto;
   margin-right: auto;
   transform: translateY(-13em);
-  // transform: perspective(500px) translate3d(20.2em, -13em, -0.6em);
-  // width: 49.4%;
-  // img{
-  //   transform: perspective(500px) translate3d(-2.9em, 0.2em, 0.6em);
-  // }
 }
 .position{
-  // transform: perspective(500px) translate3d(5.55em, -2.6em, 1.6em);
   img{
     transform: perspective(500px) translate3d(-0.3em, -0.2em, 1.6em);
   }
   span{
     font: normal normal 13px/16px 'Rawson-SemiBold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
   }
 }
 .addresse{
   width: 340px;
   height: 50px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -442,7 +411,6 @@
 .body4{
   margin-bottom: 21%;
   margin-top: 20.3%;
-  // margin-left: 24.8%;
 }
 .sinistre4{
   text-align: center;
@@ -453,7 +421,7 @@
     text-align: center;
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -462,15 +430,13 @@
     span{
       font: normal normal 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     transform: translate(0%,-21.5%);
   }
-  // margin-left: 38.1%;
   padding-top: 0.1em;
 }
 .lieu4{
-  // margin-left: 60.6%;
   margin: auto;
   text-align: center;
   margin-top: 4.9;
@@ -483,7 +449,7 @@
   span{
     font: normal normal 600 13px/16px Rawson;
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
   }
 }
 
@@ -491,7 +457,6 @@
 .body5{
   margin-bottom: 3.8%;
   margin-top: 9.9%;
-  // margin-left: 24.8%;
 }
 .sinistre5{
   text-align: center;
@@ -501,7 +466,7 @@
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -511,11 +476,10 @@
     span{
       font: normal normal 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     transform: translate(-9%,-21.5%);
   }
-  // margin-left: 37.5%;
   padding-top: 0.15em;
 }
 .description{
@@ -529,7 +493,6 @@
     }
     ::placeholder{
       text-align: center;
-      // font: normal normal 300 18px/29px Sukhumvit Set;
       letter-spacing: 0.17px;
       color: #D3EAE9;
     }
@@ -539,7 +502,6 @@
 .body7{
   margin-bottom: 17.3%;
   margin-top: 9.8%;
-  // margin-left: 25%;
 }
 .sinistre7{
   margin: auto;
@@ -549,7 +511,7 @@
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -559,16 +521,13 @@
     span{
       font: normal normal 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     transform: translate(-9%,-21.5%);
   }
-  // margin-left: 37.5%;
   padding-top: 0.15em;
 }
 .files{
-  // margin-left: 43.5%;
-  // margin: auto;
   text-align: center;
   margin-top: 1em;
   padding-left: 1.2em;
@@ -579,7 +538,7 @@
   height: 45px;
   margin: auto;
   text-align: center;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   margin-bottom: 1em;
   padding: 0.4em;
@@ -594,7 +553,7 @@
     text-align: left;
     font: normal normal 600 12px/15px 'Rawson';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     margin-bottom: 0%;
     margin-top: 5%;
   }
@@ -614,11 +573,8 @@
 .body1{
   margin: auto;
   text-align: center;
-  // margin-bottom: 22.7%;
-  // margin-top: 9.8%;
   margin-top: 5.55em;
   margin-bottom: 5.15em;
-  // margin-left: 24.6%;
 }
 
 
@@ -629,7 +585,7 @@
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -638,12 +594,10 @@
     span{
       font: normal normal 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     transform: translate(0em,-0.3em);
   }
-  // margin-left: 38.1%;
-  // padding-top: 0.3%;
 }
 #declaration{
   margin-top: 3em;
@@ -655,7 +609,7 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin: auto;
@@ -678,7 +632,7 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin: auto;
@@ -701,7 +655,7 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin: auto;
@@ -725,7 +679,7 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin: auto;
@@ -745,7 +699,7 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin: auto;
@@ -764,7 +718,7 @@
   max-width: 217px;
   height: 67px;
   cursor: pointer;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin: auto;
@@ -796,7 +750,7 @@ h1{
   text-align: center;
   font: normal normal 31px/42px 'AvenirLTStd-Book';
   letter-spacing: 0px;
-  color: #1F6666;
+  color: $secondary;
 }
 margin-bottom: 2.7em;
 margin-top: 0em;
@@ -809,16 +763,14 @@ width: 14.2%;
 height: 3em;
 margin: auto;
 margin-right: 0em;
-background: #1F6666 0% 0% no-repeat padding-box;
-border: 1px solid #1F6666;
+background: $secondary 0% 0% no-repeat padding-box;
+border: 1px solid $secondary;
 text-align: center;
 span{
   font: normal normal 17px/23px 'Avenir-Medium';
   letter-spacing: 0px;
-  color: #ffffff;
+  color: $primary;
 }
-// margin-left: 51%;
-// margin-left: 6.4%;
 padding-top: 0.7em;
 margin-top: 0em;
 }
@@ -828,15 +780,14 @@ width: 14.2%;
 height: 3em;
 margin: auto;
 margin-right: 0em;
-background: #ffffff 0% 0% no-repeat padding-box;
-border: 1px solid #1F6666;
+background: $primary 0% 0% no-repeat padding-box;
+border: 1px solid $secondary;
 text-align: center;
 span{
   font: normal normal 17px/23px 'Avenir-Medium';
   letter-spacing: 0px;
-  color: #1F6666;
+  color: $secondary;
 }
-// margin-left: 51%;
 padding-top: 0.7em;
 margin-top: 0em;
 }
@@ -847,17 +798,15 @@ width: 14.2%;
 height: 3em;
 margin: auto;
 margin-left: 3.4em;
-background: #1F6666 0% 0% no-repeat padding-box;
+background: $secondary 0% 0% no-repeat padding-box;
 text-align: center;
-// transform: perspective(500px) translate3d(0%, -7%, -0.8em);
 span{
   text-align: center;
   font: normal normal medium 17px/23px 'Avenir-Medium';
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: $primary;
 }
 padding-top: 0.7em;
-// margin-left: 6.4%;
 margin-top: 0em;
 }
 .btnnon92{
@@ -866,18 +815,16 @@ width: 14.2%;
 height: 3em;
 margin: auto;
 margin-left: 3.3em;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #1F6666;
+background: $primary 0% 0% no-repeat padding-box;
+border: 1px solid $secondary;
 text-align: center;
-// transform: perspective(500px) translate3d(0%, -7%, -0.8em);
 span{
   text-align: center;
   font: normal normal medium 17px/23px 'Avenir-Medium';
   letter-spacing: 0px;
-  color: #1F6666;
+  color: $secondary;
 }
 padding-top: 0.7em;
-// margin-left: 6.4%;
 margin-top: 0em;
 }
 
@@ -885,7 +832,6 @@ margin-top: 0em;
 .body8{
   margin-bottom: 12%;
   margin-top: 10%;
-  // margin-left: 20.5%;
 }
 .sinistre8{
   text-align: center;
@@ -893,7 +839,7 @@ margin-top: 0em;
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -902,11 +848,10 @@ margin-top: 0em;
       span{
         font: normal normal 300 17px/21px 'Rawson-LightIt';
         letter-spacing: 0px;
-        color: #1F6666;
+        color: $secondary;
       }
       transform: translate(0%,-21.5%);
   }
-  // margin-left: 41%;
   padding-top: 0%;
   margin-bottom: 1.1em;
   padding-left: 0.78em;
@@ -915,20 +860,18 @@ margin-top: 0em;
   width: 342px;
   height: 45px;
   margin: auto;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   margin-top: 0.7em;
-  // margin-bottom: 0.5%;
-  // margin-left: 44.5%;
   .sn{
     width: 37px;
     height: 45px;
-    background: #1F6666 0% 0% no-repeat padding-box;
+    background: $secondary 0% 0% no-repeat padding-box;
     margin-left: 4.2%;
     .blanc{
       width: 10%;
       height: 10px;
-      background: #FFFFFF 0% 0% no-repeat padding-box;
+      background: $primary 0% 0% no-repeat padding-box;
       margin-top: 5%;
       margin-left: 36%;
       margin-bottom: 13%;
@@ -936,7 +879,7 @@ margin-top: 0em;
     .blanc1{
       width: 10%;
       height: 10px;
-      background: #FFFFFF 0% 0% no-repeat padding-box;
+      background: $primary 0% 0% no-repeat padding-box;
       margin-top: 5%;
       margin-left: 7%;
     }
@@ -959,7 +902,6 @@ margin-top: 0em;
     top: -0.2em;
     padding: 10px;
     padding-left: 0%;
-    // color: rgb(120,120,120);
     transition: ease .3s;
 
     text-align: left;
@@ -974,8 +916,6 @@ margin-top: 0em;
     padding-left: 0%;
     padding-bottom: 0%;
     padding-right: 8%;
-
-    // background: transparent;
     border: none;
     outline: none;
 
@@ -983,7 +923,7 @@ margin-top: 0em;
     font-family: 'Rawson-SemiBold';
     font-size: 25px;
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
   }
   ::placeholder{
     color: #1f666665;
@@ -997,11 +937,9 @@ margin-top: 0em;
   width: 342px;
   height: 45px;
   margin: auto;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   margin-top: 1.05em;
-  // margin-bottom: 0.5%;
-  // margin-left: 44.5%;
   .marque{
     padding-top: 2.9%;
     margin-left: 2.7%;
@@ -1011,7 +949,6 @@ margin-top: 0em;
       font: normal normal 600 12px/15px 'Rawson-SemiBold';
       letter-spacing: 0px;
       color: #1f6666d9;
-      // margin-bottom: 0%;
     }
   }
   label {
@@ -1030,14 +967,11 @@ margin-top: 0em;
     padding-left: 0.5%;
     padding-bottom: 0%;
     padding-right: 8%;
-
-    // background: transparent;
     border: none;
     outline: none;
 
     text-align: left;
     font: normal normal 12px/15px 'Rawson-SemiBold';
-    // font-size: 12px;
     letter-spacing: 0px;
     color: #1f6666d9;
   }
@@ -1052,7 +986,7 @@ h6{
   text-align: left;
   font: normal normal 600 25px/30px 'Rawson-SemiBold';
   letter-spacing: 0px;
-  color: #1F6666;
+  color: $secondary;
   margin-bottom: 0%;
   margin-top: 3.1%;
 }
@@ -1064,7 +998,6 @@ h6{
   margin-left: 0.3%;
 }
 .dk{
-    // margin-left: 2%;
     padding-bottom: 3%;
     margin-left: 0%;
     margin-right: 0%;
@@ -1075,7 +1008,7 @@ h6{
       text-align: left;
       font: normal normal 600 12px/15px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     .a{
       margin-left: 68%;
@@ -1085,7 +1018,7 @@ h6{
         text-align: left;
         font: normal normal 600 8px/10px 'Rawson-SemiBold';
         letter-spacing: 0px;
-        color: #1F6666;
+        color: $secondary;
       }
     }
 }
@@ -1101,7 +1034,6 @@ label {
   top: -1em;
   padding: 10px;
   padding-left: 0%;
-  // color: rgb(120,120,120);
   transition: ease .3s;
 
   text-align: left;
@@ -1124,7 +1056,7 @@ label {
 
   font: normal normal 14px/17px 'Rawson-Medium';
   letter-spacing: 0px;
-  color: #1F6666;
+  color: $secondary;
 }
 
 
@@ -1161,7 +1093,7 @@ label {
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
@@ -1189,12 +1121,11 @@ label {
   h1{
     font: normal normal 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 0%;
     opacity: 1;
   }
-  // margin-left: 41.7%;
   padding-top: 0%;
   padding-left: 1.1em;
   margin-bottom: 2.5%;
@@ -1221,7 +1152,7 @@ label {
     text-align: left;
     font: normal normal 24px/28px 'Rawson-bold';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     text-transform: uppercase;
     margin-bottom: 2.8%;
   }
@@ -1229,7 +1160,7 @@ label {
     text-align: center;
     font: normal normal 21px/25px 'Rawson-Medium';
     letter-spacing: 0px;
-    color: #1F6666;
+    color: $secondary;
     margin-bottom: 0%;
     margin-right: 2%;
   }
@@ -1250,7 +1181,7 @@ label {
     cursor: pointer;
     width: 238px;
     height: 30px;
-    background: #1F6666 0% 0% no-repeat padding-box;
+    background: $secondary 0% 0% no-repeat padding-box;
     span{
       font: normal normal 18px/22px 'Rawson-Medium';
       letter-spacing: 0px;
@@ -1325,8 +1256,6 @@ label {
     margin-left: 0%;
     margin-top: 30%;
     .left{
-      // display: none;
-      // transform: translate(7em,9.6em);
       width: 37px;
       height: auto;
       margin: auto;
@@ -1341,8 +1270,6 @@ label {
       }
     }
     .left2{
-      // display: none;
-      // transform: translate(7em,9.6em);
       width: 37px;
       height: auto;
       margin: auto;
@@ -1363,8 +1290,6 @@ label {
     width: auto;
     margin-top: 30%;
     .right{
-      // display: none;
-      // transform: translate(21em,1em);
       width: 37px;
       height: auto;
       padding-top: 0%;
@@ -1391,7 +1316,6 @@ label {
     }
   }
   .img{
-    // display: none;
   }
   .btnoui{
     margin-left: auto;
@@ -1404,7 +1328,6 @@ label {
     }
   }
   .btnnon{
-    // margin-left: auto;
     height: auto;
     padding-top: 0;
     width: 5.05em;
@@ -1470,7 +1393,6 @@ label {
     }
   }
   .btnoui{
-    // margin-left: auto;
     height: auto;
     padding-top: 1%;
     width: 5.05em;
@@ -1481,7 +1403,6 @@ label {
     }
   }
   .btnnon{
-    // margin-left: auto;
     height: auto;
     padding-top: 1%;
     width: 5.05em;
@@ -1585,7 +1506,6 @@ label {
     cursor: pointer;
     margin: 0;
     margin-right: auto;
-    // padding-top: 0.45em;
     img{
       width: 1.3em;
       height: 1.85em;
@@ -1603,7 +1523,6 @@ label {
     height: 67px;
     margin: 0;
     margin-right: auto;
-    // margin-right: ;
     padding-top: 0.3em;
     img{
       width: 1.5em;
@@ -1701,7 +1620,6 @@ label {
     max-width: 30%;
     height: 67px;
     cursor: pointer;
-    // background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     text-align: center;
     margin: 0;
@@ -1727,7 +1645,6 @@ label {
     cursor: pointer;
     margin: 0;
     margin-right: auto;
-    // padding-top: 0.45em;
     img{
       width: 1.3em;
       height: 1.85em;
@@ -1745,7 +1662,6 @@ label {
     height: 67px;
     margin: 0;
     margin-right: auto;
-    // margin-right: ;
     padding-top: 0.3em;
     img{
       width: 1.5em;
@@ -1784,7 +1700,6 @@ label {
     max-width: 30%;
     height: 67px;
     cursor: pointer;
-    // background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     text-align: center;
     margin-left: 0%;
@@ -1899,7 +1814,6 @@ label {
     }
     ::placeholder{
       text-align: center;
-      // font: normal normal 300 18px/29px Sukhumvit Set;
       font-size: 12px;
       letter-spacing: 0.17px;
       color: #D3EAE9;
@@ -1923,8 +1837,7 @@ label {
   .upload{
     cursor: pointer;
     width: 11em;
-    height: 4em ;
-    // margin: auto;
+    height: 4em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1951,7 +1864,7 @@ label {
     height: 40px;
     margin: auto;
     text-align: center;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $primary 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     margin-bottom: 0.5em;
     padding: 0.2em;
@@ -1966,7 +1879,7 @@ label {
       text-align: left;
       font: normal normal 9px/15px 'Rawson-Bold';
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
       margin-bottom: 0%;
       margin-top: 5%;
     }
@@ -1983,20 +1896,18 @@ label {
     width: 70%;
     height: 40px;
     margin: auto;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $primary 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     margin-top: 0.7em;
-    // margin-bottom: 0.5%;
-    // margin-left: 44.5%;
     .sn{
       width: 100%;
       height: 40px;
-      background: #1F6666 0% 0% no-repeat padding-box;
+      background: $secondary 0% 0% no-repeat padding-box;
       margin-left: 4.2%;
       .blanc{
         width: 7%;
         height: 10px;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
+        background: $primary 0% 0% no-repeat padding-box;
         margin-top: 5%;
         margin-left: auto;
         margin-bottom: 13%;
@@ -2004,7 +1915,7 @@ label {
       .blanc1{
         width: 7%;
         height: 10px;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
+        background: $primary 0% 0% no-repeat padding-box;
         margin-top: 5%;
         margin-left: 7%;
         margin-right: auto;
@@ -2027,7 +1938,6 @@ label {
       top: -0.2em;
       padding: 10px;
       padding-left: 0%;
-      // color: rgb(120,120,120);
       transition: ease .3s;
 
       text-align: left;
@@ -2042,8 +1952,6 @@ label {
       padding-left: 1%;
       padding-bottom: 0%;
       padding-right: 8%;
-
-      // background: transparent;
       border: none;
       outline: none;
 
@@ -2051,7 +1959,7 @@ label {
       font-family: 'Rawson-SemiBold';
       font-size: 18px;
       letter-spacing: 0px;
-      color: #1F6666;
+      color: $secondary;
     }
     ::placeholder{
       color: #1f666665;
@@ -2065,11 +1973,9 @@ label {
     width: 70%;
     height: 40px;
     margin: auto;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $primary 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     margin-top: 1.05em;
-    // margin-bottom: 0.5%;
-    // margin-left: 44.5%;
     .marque{
       padding-top: 2.9%;
       margin-left: 2.7%;
@@ -2079,7 +1985,6 @@ label {
         font: normal normal 600 12px/15px 'Rawson-SemiBold';
         letter-spacing: 0px;
         color: #1f6666d9;
-        // margin-bottom: 0%;
       }
     }
     label {
@@ -2098,14 +2003,11 @@ label {
       padding-left: 0.5%;
       padding-bottom: 0%;
       padding-right: 8%;
-
-      // background: transparent;
       border: none;
       outline: none;
 
       text-align: left;
       font: normal normal 10px/15px 'Rawson-SemiBold';
-      // font-size: 12px;
       letter-spacing: 0px;
       color: #1f6666d9;
     }
@@ -2116,7 +2018,6 @@ label {
   }
 
   .dk{
-    // margin-left: 2%;
     padding-bottom: 3%;
     p{
       text-align: right;
@@ -2224,10 +2125,6 @@ label {
   .map{
     width: 100%;
     height: 323px;
-    // agm-map{
-    //   width: 100%;
-    //   height: 100%;
-    // }
     img{
       width: 100%;
       height: 100%;

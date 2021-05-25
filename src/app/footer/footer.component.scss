@@ -1,7 +1,6 @@
+@import "../../assets/css/variable.scss";
+
 $width : 100%;
-$fontText : normal normal bold Rawson;
-$white : #FFFFFF;
-$green : #7A774C;
 $opacity : 1;
 
 #footer{
@@ -17,7 +16,7 @@ $opacity : 1;
   p{
     font: normal normal 18px/22px 'Rawson-Medium';
     letter-spacing: 0px;
-    color: #7a774c;
+    color: $tertiaire;
   }
   opacity: $opacity;
 }
@@ -48,7 +47,7 @@ $opacity : 1;
     padding-left: 11.2%;
     font: normal normal 18px/22px 'Rawson-Medium';
     letter-spacing: 0px;
-    color: #7A774C;
+    color: $tertiaire;
   }
 }
 .imgfooter{
@@ -186,7 +185,7 @@ span{
     p{
       font: normal normal 68%/22px 'Rawson-Medium';
       letter-spacing: 0px;
-      color: #7a774c;
+      color: $tertiaire;
     }
     opacity: $opacity;
     #foot{
@@ -236,7 +235,7 @@ span{
     p{
       font: normal normal 80%/22px 'Rawson-Medium';
       letter-spacing: 0px;
-      color: #7a774c;
+      color: $tertiaire;
       padding-left: 0%;
     }
     opacity: $opacity;

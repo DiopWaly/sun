@@ -1,19 +1,16 @@
+@import "../../assets/css/variable.scss";
+
 $width : 100%;
-$fontText : normal normal 'Rawson-Bold';
-$white : #FFFFFF;
-$green : #7A774C;
-$opacity : 1;
 
 p{
   text-align: left;
   font: normal normal 17px/21px 'Rawson-Medium';
   letter-spacing: 0px;
-  color: $green;
-  opacity: $opacity;
+  color: $tertiaire;
 }
 #navbarCollapse{
   z-index: 999;
-  background: $white;
+  background: $primary;
 }
 
 li{
@@ -25,7 +22,7 @@ li{
   h6{
     font-family:'Rawson-Medium';
     font-size: 25px;
-    color: $green;
+    color: $tertiaire;
   }
 }
 .menutext{
@@ -45,7 +42,6 @@ li{
 .imgmenu{
   width: 89px;
   height: 65px;
-  opacity: $opacity;
 }
 .menu{
   width: $width;
@@ -55,9 +51,8 @@ li{
   padding-right: 11.33;
   text-align: center;
   margin-bottom : 1.5%;
-  background: $white 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
-  opacity: $opacity;
 }
 .pmenu{
   padding-top: 1.91%;
@@ -68,7 +63,7 @@ li{
   margin-right: 1.5%;
 }
 .sinistre{
-  background: #1F6666 0% 0% no-repeat padding-box;
+  background: $secondary 0% 0% no-repeat padding-box;
   top: 32px;
   left: 803px;
   width: 193px;
@@ -79,9 +74,8 @@ li{
   text-align: center;
   font: normal normal 18px/22px 'Rawson-Light';
   letter-spacing: 0.12px;
-  color: $white;
+  color: $primary;
   text-transform: uppercase;
-  opacity: $opacity;
 }
 .sinistre:hover{
   cursor: pointer;
@@ -97,7 +91,7 @@ li{
   padding-right: 0.3%;
   margin-left: 6.9%;
   margin-right: 3%;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: $primary 0% 0% no-repeat padding-box;
   border: 1px solid #7A774C;
   color: #7a774ce0;
   text-transform: uppercase;
@@ -105,7 +99,7 @@ li{
 .dossier:hover{
   cursor: pointer;
   background-color: #7A774C;
-  color: #FFFFFF;
+  color: $primary;
 }
 
 @media(min-width: 1292px){
@@ -124,16 +118,16 @@ li{
     font-size: 100%;
     // font-size: 15px;
     text-transform: lowercase;
-    color: $green;
+    color: $tertiaire;
     margin-right: 1rem;
   }
   .nav-item.nav-link.sinist{
     height: 30px;
-    background: #1F6666 0% 0% no-repeat padding-box;
+    background: $secondary 0% 0% no-repeat padding-box;
     text-align: center;
     font: normal normal 15px/22px 'Rawson-Light';
     letter-spacing: 0.12px;
-    color: $white;
+    color: $primary;
     text-transform: uppercase;
     padding-top: 1%;
   }
@@ -142,7 +136,7 @@ li{
     height: 30px;
     font: normal normal 15px/22px 'Rawson-Medium';
     letter-spacing: 0px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $primary 0% 0% no-repeat padding-box;
     border: 1px solid #7A774C;
     color: #7a774ce0;
     margin-left: 0%;
@@ -154,9 +148,8 @@ li{
     height: 93px;
     text-align: center;
     margin-bottom : 1.5%;
-    background: $white 0% 0% no-repeat padding-box;
+    background: $primary 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    opacity: $opacity;
   }
   .navbar-nav{
     margin: auto;
