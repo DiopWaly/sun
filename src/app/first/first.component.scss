@@ -45,8 +45,8 @@ p{
   padding-bottom: 0%;
   padding-left: 3.5%;
   padding-right: 3%;
-  width: auto;
-  height: 28.3em;
+  // width: auto;
+  // height: 28.3em;
   margin-top: -0.2%;
   background: #F5F5F5 0% 0% no-repeat padding-box;
   opacity: $opacity;
@@ -60,8 +60,8 @@ p{
 
 .lorempropos{
   top: 650px;
-  left: 603px;
-  width: 539px;
+  // left: 603px;
+  // width: 539px;
   height: 163px;
   text-align: left;
   margin-left: 7%;
@@ -236,7 +236,7 @@ hr{
   margin-top: 6%;
 }
 #lienapp{
-  padding-left: 0%;
+  padding-left: 1%;
   padding-right: 14%;
   margin-top: 6%;
 }
@@ -258,14 +258,16 @@ hr{
 
 .lien{
   margin-top: 0.5%;
+  margin-left: 15px;
+  // margin-right: 15px;
 }
 #utiliser{
   margin-top: 7%;
 }
 
 .utiliser{
-  width: 570px;
-  height: 43px;
+  // width: 570px;
+  // height: 43px;
   text-align: center;
   h1{
     letter-spacing: 0px;
@@ -273,7 +275,7 @@ hr{
     margin-bottom: 0%;
     color: #1F6666;
     text-transform: uppercase;
-    font: normal normal bold 36px/43px 'Rawson-Bold';
+    font: normal normal 36px/43px 'Rawson-Bold';
   }
   hr{
     margin-left: 48.6%;
@@ -339,7 +341,6 @@ hr{
 .text-center{
   width: 108px;
   height: 108px;
-  // transform: translate(146%, -43%);
   transform: perspective(500px) translate3d(171%, -43%, 1em);
 }
 
@@ -360,45 +361,482 @@ hr{
   height: 102%;
 }
 
-@media (min-width: 800px) and (max-width: 1300px){
+@media(max-width: 767px){
+  #ilustsalama{
+    .ilustsalama{
+      height: 103%;
+    }
+
+  }
+  .apropos{
+    // padding-left: 2px;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    height: 28.3em;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    opacity: $opacity;
+  }
   .imgpropos{
     margin: auto;
+    opacity: $opacity;
+  }
+  .res{
+    margin-left: auto;
+    margin-right: auto;
   }
   #titrepropos{
-    // padding-left: 2%;
-    margin: auto;
-    padding: 0%;
-    text-align: left;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 0%;
+    .lorempropos{
+      margin-left: 0%;
+      // margin: auto;
+    }
+    .titrepropos{
+      margin-left: 0%;
+      // text-align: center;
+    }
+  hr{
+    margin-bottom: 1.7%;
+    margin-left: 0%;
+    border: 0;
+    border-top: 0.26em solid $green;
+  }
+  }
+
+  .blocAppGratuite{
+    padding-top: 0%;
+    margin-top: 4.5%;
+    padding-left: 0%;
+    text-align: center;
     hr{
-      margin-bottom: 1.7%;
-      margin-left: 7%;
+      margin-top: -0.5%;
       border: 0;
-      border-top: 0.16em solid $green;
+      border-top: 0.22em solid $green;
+      margin: auto;
+    }
+  }
+  .illustration-app-salama{
+    display: none;
+  }
+  .titreAppGratuite{
+    font: normal normal 25px/40px 'Rawson-Bold';
+    text-align: center;
+    margin: auto;
+  }
+  #profil{
+    padding-top: 0%;
+
+    img{
+      margin: auto;
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 10%;
+      margin-top: 4%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+      margin-bottom: 0;
+    }
+  }
+  #assurance{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 12%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #suivi{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 12%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+      padding-bottom: 5%;
+    }
+  }
+  #indemnisation{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 12%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #chat{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 12%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #notification{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 12%;
+      margin-top: 1%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
     }
 
+  }
+  #illustration-app-salama{
+    width: 12%;
+  }
+  .lien{
+    margin: auto;
+    padding-left: 12%;
+  }
+  #lienggle{
+    width: 40%;
+    margin-top: 1%;
+    text-align: right;
+    img{
+      width: 40%;
+    }
+  }
+  #lienapp{
+    width: 40%;
+    margin-top: 1%;
+    padding-right: 0%;
+    text-align: left;
+    padding-left: 1%;
+    img{
+      width: 45%;
+      margin: auto;
+    }
+  }
+  #utiliser{
+    margin-top: 4%;
+    .utiliser{
+      text-align: center;
+      h1{
+        text-align: center;
+        margin: auto;
+        margin-left: 2%;
+        margin-bottom: 0%;
+        color: #1F6666;
+        text-transform: uppercase;
+        font: normal normal 94%/43px 'Rawson-Bold';
+      }
+      hr{
+        margin: auto;
+        width: 10%;
+        border-top: 0.15em solid #7A774C;
+      }
+    }
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1150px){
+  .blocAppGratuite{
+    padding-top: 0%;
+    margin-top: 4.5%;
+    padding-left: 0%;
+    text-align: center;
+    hr{
+      margin-top: -0.5%;
+      border: 0;
+      border-top: 0.22em solid $green;
+      margin: auto;
+    }
+  }
+  .titreAppGratuite{
+    font: normal normal 25px/40px 'Rawson-Bold';
+    text-align: center;
+    margin: auto;
+  }
+  #profil{
+    padding-top: 0%;
+
+    img{
+      margin: auto;
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 20%;
+      margin-top: 4%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+      margin-bottom: 0;
+    }
+  }
+  #assurance{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 20%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #suivi{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 20%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+      padding-bottom: 5%;
+    }
+  }
+  #indemnisation{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 20%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #chat{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 20%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #notification{
+    padding-top: 0%;
+
+    img{
+      margin-bottom: 0%;
+      margin-right: 0%;
+      width: 20%;
+      margin-top: 1%;
+      margin-top: 3%;
+    }
+    p{
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+  #illustration-app-salama{
+    width: 12%;
+    height: auto;
+    transform: perspective(500px) translate3d(1%, 11.5%, 1em);
+  }
+  #utiliser{
+    margin-top: 4%;
+    .utiliser{
+      h1{
+        letter-spacing: 0px;
+        margin: auto;
+        margin-bottom: 0%;
+        color: #1F6666;
+        text-transform: uppercase;
+        font: normal normal 25px/43px 'Rawson-Bold';
+      }
+    }
+  }
+
+}
+
+@media(max-width: 575px){
+  .imgpropos{
+    width: 31%;
+  }
+}
+
+@media (max-width: 900px){
+  .row.apropos{
+    padding-top: 3%;
+  }
+  #titrepropos{
+    hr{
+      width: 76px;
+      border-top: 0.15em solid #7A774C;
+    }
+  }
+  .titrepropos{
+    font: normal normal 26px/43px "Rawson-Bold";
   }
   .lorempropos{
-    width: 539px;
-    height: 163px;
-    text-align: left;
-    margin: auto;
-    font-family: 'Rawson-Medium';
-    font-size: 18px;
-    color: $green;
+    font: normal normal 14px/22px "Rawson-Medium";
   }
 }
 
-@media (min-width: 50px) and (max-width: 360px){
-  #ilustsalama{
+//carousel
+@media (max-width: 767px){
+  .text-center{
+    width: 69px;
+    height: 40px;
+    transform: none;
+    margin: auto;
+    img{
+      margin-top: -40%;
+      z-index: 999;
+    }
+  }
+  #lorem{
+    width: 100%;
+    height: 90%;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 1%;
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: $opacity;
     text-align: center;
-    padding: 0px;
-    .ilustsalama{
+    hr{
+      // width: 25.5px;
+      border: 0;
+      margin-bottom: 0.2%;
+      // margin-left: 47%;
       margin: auto;
-      width: 100%;
+      border: 1px solid #7A774C;
+      opacity: 1;
+    }
+    span{
+      font: normal normal 11px/22px 'Rawson-Medium';
+      margin-bottom: 0%;
+      margin-left: -1%;
+      color: #377676;
+    }
+    div p{
+      text-align: center;
+      // margin-left: 0%;
+      // margin-bottom: 1%;
+      color: #1F6666;
+      font: normal normal 11px/22px 'Rawson-Bold';
+      // font-size: 0.7em;
+  }
+  }
+  .lorem{
+    text-align: justify;
+    font: normal normal 15px/22px 'Rawson-Medium';
+    // margin-left: 7%;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    letter-spacing: 0px;
+    color: #226868;
+    opacity: $opacity;
+    margin-top: 2px;
+  }
+  .right{
+    transform: none;
+    margin-left: auto;
+    width: 50px;
+  }
+  .left{
+    transform: none;
+    margin-right: auto;
+    width: 40px;
+  }
+  .carous{
+    margin: auto;
+    padding-top: 0%;
+    #carouselExampleSlidesOnly{
+      padding-top: 4%;
+      margin-left: auto;
+      padding-top: 0%;
+    }
+  }
+}
+
+@media (min-width: 767.1px) and (max-width: 1200px){
+  .carous{
+    margin: auto;
+    text-align: center;
+    #carouselExampleSlidesOnly{
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0%;
+      height: 349px;
+      width: 592px;
+    }
+  }
+  .right{
+    // transform: none;
+    // margin-left: auto;
+    // width: 50px;
+    display: none;
+  }
+  .left{
+    // transform: none;
+    // margin-right: auto;
+    // width: 40px;
+    display: none;
+  }
+  .utiliser{
+    text-align: center;
+    margin-top: 5%;
+    hr{
+      margin: auto;
+      border-top: 0.15em solid #7A774C;
     }
   }
 
 }
 
+@media (min-width: 767.1px) and (max-width: 1960px){
+  #ilustsalama{
+    .ilustsalama{
+      height: 103%;
+    }
+
+  }
+}
 
 

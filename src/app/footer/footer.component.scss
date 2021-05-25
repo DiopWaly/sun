@@ -5,7 +5,7 @@ $green : #7A774C;
 $opacity : 1;
 
 #footer{
-  width: $width;
+  // width: $width;
   height: 183px;
   margin-left: 0%;
   margin-right: 0%;
@@ -52,8 +52,8 @@ $opacity : 1;
   }
 }
 .imgfooter{
-  width: 155px;
-  height: 113px;
+  // width: 155px;
+  // height: 113px;
   opacity: $opacity;
 }
 
@@ -77,7 +77,7 @@ $opacity : 1;
   margin-left: 0%;
   background: #006767 0% 0% no-repeat padding-box;
   .copyright{
-    height: 53px;
+    // height: 53px;
     padding-top: 1.25%;
     padding-left: 9.4%;
   }
@@ -98,22 +98,14 @@ span{
   img{
     width: 100%;
     height: 100%;
-    // margin-bottom: 1%;
-    // transform: translate(39%, 0%);
     transform: perspective(50px) translate3d(198%, 4%, 0.6em);
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
   }
-  // width: 75px;
   padding-bottom: 0%;
   margin-left: 30%;
   padding-right: 0%;
-  // padding-left: 4%;
-  // margin-bottom: 0%;
-  // background: transparent url('../../assets/images/images/bouton-appel.svg') 0% 0% no-repeat padding-box;
-  // // box-shadow: 0px 3px 6px #00000029;
-  // opacity: $opacity;
 }
 .chat{
   height: 53px;
@@ -123,19 +115,163 @@ span{
   img{
     width: 100%;
     height: 100%;
-    // transform: translate(17%, 0%);
     transform: perspective(50px) translate3d(233%, 4%, 0.6em);
     padding-top: 0%;
-    // height: 100%;
-    // margin-bottom: 1%;
   }
-  // width: 5%;
-  // padding-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
   padding-left: 0%;
-  // margin-bottom: 0%;
-  // background: transparent url('../../assets/images/images/bouton-chat.svg') 0% 0% no-repeat padding-box;
-  // // box-shadow: 0px 3px 6px #00000029;
-  // opacity: $opacity;
 }
+
+
+
+@media(max-width: 767px){
+  .appel{
+    // height: 53px;
+    width: 8%;
+    padding-top: 0%;
+    padding-left: 0%;
+    img{
+      width: 100%;
+      height: 100%;
+      transform: none;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      margin-top: 0%;
+      display: none;
+    }
+    padding-bottom: 0%;
+    margin-left: 0%;
+    padding-right: 0%;
+  }
+  .chat{
+    height: 53px;
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-right: 4%;
+    img{
+      width: 100%;
+      height: 100%;
+      transform: none;
+      padding-top: 0%;
+      display: none;
+    }
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+  }
+  .faq , .download{
+    display: none;
+  }
+  .copyright{
+    span{
+      text-align: left;
+      font: normal normal 10px/22px 'Rawson-Medium';
+      padding-left: 14%;
+      letter-spacing: 0px;
+      color: #ffffffc4;
+      opacity: $opacity;
+    }
+  }
+  #footer{
+    // width: $width;
+    height: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 3.7%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-top: 1%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    p{
+      font: normal normal 68%/22px 'Rawson-Medium';
+      letter-spacing: 0px;
+      color: #7a774c;
+    }
+    opacity: $opacity;
+    #foot{
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0%;
+      text-align: center;
+      .imgfooter{
+        width: 100%;
+      }
+    }
+  }
+  .liendepos{
+    text-align: left;
+    padding-top: 0%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0%;
+    padding-left: 0%;
+    p{
+      padding-left: 0%;
+    }
+  }
+  #footerImgG{
+    margin: auto;
+    padding-left: 0%;
+    margin-bottom: 1%;
+  }
+  #footerImgA{
+    margin: auto;
+    margin-bottom: 1%;
+    padding-right: 0%;
+  }
+}
+
+@media(min-width: 767.1px) and (max-width: 1000px){
+  #footer{
+    // width: $width;
+    height: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 3.7%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-top: 1%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    p{
+      font: normal normal 80%/22px 'Rawson-Medium';
+      letter-spacing: 0px;
+      color: #7a774c;
+      padding-left: 0%;
+    }
+    opacity: $opacity;
+    #foot{
+      text-align: center;
+      .imgfooter{
+        width: 62%;
+      }
+    }
+  }
+  #footerImgG{
+    padding-left: 15px;
+  }
+  .copyright{
+    span{
+      padding-left: 5%;
+
+    }
+  }
+  .chat{
+    display: none;
+  }
+}
+
+@media(min-width:880.1px) and (max-width: 1280px){
+  #footerImgG{
+    padding-left: 0%;
+  }
+  .liendepos{
+    p{
+      padding-left: 0%;
+    }
+    #footerImgG{
+      padding-left: 3%;
+    }
+  }
+}
+

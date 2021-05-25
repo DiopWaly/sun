@@ -10,7 +10,7 @@ import {AgmMap,MapsAPILoader } from '@agm/core';
 export class SecondComponent implements OnInit {
 
   public pathImg: string = "../../assets/images/images/";
-  public tmp: number = 0;
+  public tmp: number = 3;
   public cmpte: boolean = false;
   public type : string = "password";
   public typeconfirm: string = "password";
@@ -113,6 +113,8 @@ export class SecondComponent implements OnInit {
 
   deleteFile(i : number){
     this.myFiles.splice(i,1);
+    if(this.myFiles.length == 0)
+      this.tmp--;
   }
 
 

@@ -34,7 +34,8 @@
 .container {
   width: 57%;
   margin-top: 2.3em;
-  margin-left: 20.6em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10.5em;
 }
 
@@ -116,6 +117,10 @@ border-color: #1F6666;
   z-index: -1; /* behind the circle to completely hide */
 }
 
+.incmplt{
+  display: none;
+}
+
 .content {
   margin-left: 18px;
   display: inline-block;
@@ -159,4 +164,40 @@ html *
    font-size: 15px !important;
    color: #000 !important;
    font-family: Arial !important;
+}
+
+@media(max-width: 1238px){
+  .cmplt{
+    display: none;
+  }
+  .incmplt{
+    display: block;
+  }
+  .container {
+    .step{
+      .content{
+        margin-left: 2px;
+        padding-left: 0%;
+        padding-right: 0%;
+        span{
+          font: normal normal 14px/32px "Rawson-SemiBold";
+        }
+      }
+      .date{
+        padding-right: 0%;
+        padding-left: 2%;
+        text-align: left;
+        padding-top: 0%;
+        margin-left: auto;
+        span{
+          font: normal normal 8px/16px "Rawson-Bold";
+        }
+      }
+    }
+  }
+  @media(max-width: 611.9px){
+    .line{
+      display: none;
+    }
+  }
 }

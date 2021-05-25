@@ -11,6 +11,10 @@ p{
   color: $green;
   opacity: $opacity;
 }
+#navbarCollapse{
+  z-index: 999;
+  background: $white;
+}
 
 li{
   cursor: pointer;
@@ -28,11 +32,7 @@ li{
     text-align: left;
     padding-left: 2.6%;
 }
-.contact{
-  margin-left: 3em;
-  margin-right: 3em;
-  padding-left: .25rem;
-}
+
 #imgmenu{
       cursor: pointer;
       width: 89px;
@@ -42,11 +42,11 @@ li{
       padding-left: 0%;
       text-align: left;
 }
-// .imgmenu{
-//   width: 89px;
-//   height: 65px;
-//   opacity: $opacity;
-// }
+.imgmenu{
+  width: 89px;
+  height: 65px;
+  opacity: $opacity;
+}
 .menu{
   width: $width;
   height: 93px;
@@ -108,57 +108,57 @@ li{
   color: #FFFFFF;
 }
 
-@media (min-width: 50px) and (max-width: 360px){
-  .menu{
-    height: 55px;
-    padding: 1px;
+@media(min-width: 1292px){
+  .navbar.navbar-expand-md.menu1{
+    display: none;
   }
-  .imgmenu{
-    text-align: left;
+}
+@media(max-width: 1292px){
+  .row.menu{
+    display: none;
   }
-  #imgmenu{
+  .nav-item.nav-link{
     cursor: pointer;
-    width: 20%;
-    height: 100%;
-    margin: auto;
-    text-align: left;
-  }
-  .pmenu nav ul li{
-    display: block;
-    margin: auto;
-  }
-}
-
-// @media (min-width: 790px) and (max-width: 1278px){
-//   .menu{
-//     padding: 3px;
-//     text-align: center;
-//   }
-//   .pmenu div ul li{
-//     margin: 0%;
-//   }
-
-// }
-@media (min-width: 1022px){
-  .navbar.navbar-expand-md{
-    display: none;
-  }
-    .menu{
-    padding: 3px;
-    text-align: center;
-  }
-  .pmenu div ul li{
-    margin: 0%;
-  }
-}
-@media (max-width: 1022px){
-  .nav1{
-    display: none;
-  }
-  .nav-item{
+    margin-top: 3.5%;
     font-family:'Rawson-Medium';
-    font-size: 14px;
+    font-size: 100%;
+    // font-size: 15px;
+    text-transform: lowercase;
     color: $green;
+    margin-right: 1rem;
+  }
+  .nav-item.nav-link.sinist{
+    height: 30px;
+    background: #1F6666 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal 15px/22px 'Rawson-Light';
+    letter-spacing: 0.12px;
+    color: $white;
+    text-transform: uppercase;
+    padding-top: 1%;
+  }
+  .doss{
+    text-align: center;
+    height: 30px;
+    font: normal normal 15px/22px 'Rawson-Medium';
+    letter-spacing: 0px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #7A774C;
+    color: #7a774ce0;
+    margin-left: 0%;
+    padding-top: 1%;
+    text-transform: uppercase;
+  }
+  .navbar.navbar-expand-md.navbar-light.menu1{
+    width: $width;
+    height: 93px;
+    text-align: center;
+    margin-bottom : 1.5%;
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: $opacity;
+  }
+  .navbar-nav{
+    margin: auto;
   }
 }
-
