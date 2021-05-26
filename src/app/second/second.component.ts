@@ -10,13 +10,13 @@ import {AgmMap,MapsAPILoader } from '@agm/core';
 export class SecondComponent implements OnInit {
 
   public pathImg: string = "../../assets/images/images/";
-  public tmp: number = 3;
+  public tmp: number = 0;
   public cmpte: boolean = false;
   public type : string = "password";
   public typeconfirm: string = "password";
   public progress = 0;
   public tabprogress = [5,10,15,20,30,45,50,65,75,80,90,95];
-  public ettiquettes = [18,27,36,44,61,87,95,120,137,146,163,171.5];
+  public ettiquettes = [10,14.5,18.5,23,32,45.3,49.5,63,71.7,76,85,89.6];
   public ettiquette : number;
   public form : FormGroup;
   public isncriptionForm : FormGroup;

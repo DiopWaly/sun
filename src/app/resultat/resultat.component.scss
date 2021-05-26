@@ -152,7 +152,7 @@ border-color: $secondary;
   span{
     font: normal normal 13px/16px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: $secondary;
+    color: #1F6666;
     text-transform: uppercase;
   }
   padding-right: 4em;
@@ -168,7 +168,7 @@ html *
    font-family: Arial !important;
 }
 
-@media(max-width: 1238px){
+@media(max-width: 1255px){
   .cmplt{
     display: none;
   }
@@ -176,6 +176,7 @@ html *
     display: block;
   }
   .container {
+    // width: 709px;
     .step{
       .content{
         margin-left: 2px;
@@ -192,7 +193,7 @@ html *
         padding-top: 0%;
         margin-left: auto;
         span{
-          font: normal normal 8px/16px "Rawson-Bold";
+          font: normal normal 12px "Rawson-Bold";
         }
       }
     }

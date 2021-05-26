@@ -374,7 +374,7 @@
     width: 100%;
     height: 100%;
   }
-  margin-left: -3.3em;
+  margin-left: -3.42em;
   margin-top: 0.2em;
   margin-bottom: 0%;
 }
@@ -1228,13 +1228,13 @@ label {
 // 0
 @media(min-width: 375px) and (max-width: 560px){
   .progress-value{
-    display: none;
+    // display: none;
   }
 }
 @media(max-width: 767px){
   .body0{
     margin-top: 30%;
-    margin-bottom: 17%;
+    margin-bottom: 30%;
     text-align: center;
   }
   .assurer{
@@ -1254,7 +1254,7 @@ label {
     padding-top: 0%;
     text-align: center;
     margin-left: 0%;
-    margin-top: 30%;
+    margin-top: 150px;
     .left{
       width: 37px;
       height: auto;
@@ -1288,7 +1288,7 @@ label {
     margin-left: 0%;
     padding-top: 0%;
     width: auto;
-    margin-top: 30%;
+    margin-top: 150px;
     .right{
       width: 37px;
       height: auto;
@@ -1316,6 +1316,7 @@ label {
     }
   }
   .img{
+    margin-right: 2%;
   }
   .btnoui{
     margin-left: auto;
@@ -1359,6 +1360,7 @@ label {
     }
     .img{
       padding-left: 0%;
+      margin-right: 2%;
     }
   }
   #suiv{
@@ -1452,7 +1454,7 @@ label {
   }
 
 }
-@media(min-width: 1009.1px) and (max-width: 1300px){
+@media(min-width: 1009.1px) and (max-width: 1340px){
   .btnoui{
     margin-left: auto;
   }
@@ -1523,7 +1525,7 @@ label {
     height: 67px;
     margin: 0;
     margin-right: auto;
-    padding-top: 0.3em;
+    padding-top: 0.2em;
     img{
       width: 1.5em;
       height: 1.77em;
@@ -1564,11 +1566,11 @@ label {
     box-shadow: 0px 3px 6px #00000029;
     text-align: center;
     margin-left: 0%;
-    padding-top: 0.2em;
+    padding-top: 0em;
     margin: 0;
     margin-right: auto;
     img{
-      width: 1.2em;
+      width: 1.1em;
     }
     p{
       font: normal normal 600 16px/20px 'Rawson-SemiBold';

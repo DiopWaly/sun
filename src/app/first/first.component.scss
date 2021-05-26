@@ -372,7 +372,8 @@ hr{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 20px;
+    padding-right: 6px;
     padding-top: 0%;
     .lorempropos{
       margin-left: 0%;
@@ -541,6 +542,77 @@ hr{
         width: 10%;
         border-top: 0.15em solid #7A774C;
       }
+    }
+  }
+  @media(max-width: 575px){
+    #profil{
+      .profil{
+        width: 36px;
+        margin-top: 3%;
+      }
+      p{
+        font: normal normal 13px/21px "Rawson-Medium";
+      }
+    }
+    #assurance{
+      .assurance{
+        width: 36px;
+        margin-top: 3%;
+      }
+      p{
+        font: normal normal 13px/21px "Rawson-Medium";
+      }
+    }
+    #suivi{
+      .profi{
+        width: 36px;
+        margin-top: 3%;
+      }
+      p{
+        padding-bottom: 0%;
+        font: normal normal 13px/21px "Rawson-Medium";
+        margin-top: 10px;
+      }
+    }
+    #indemnisation{
+      .assura{
+        width: 36px;
+        margin-top: 3%;
+      }
+      p{
+        font: normal normal 13px/21px "Rawson-Medium";
+        margin-top: 10px;
+      }
+    }
+    #chat{
+      .chat{
+        width: 36px;
+        margin-top: 3%;
+      }
+      p{
+        font: normal normal 13px/21px "Rawson-Medium";
+        margin-top: 10px;
+      }
+    }
+    #notification{
+      .assura{
+        width: 36px;
+        margin-top: 3%;
+      }
+      p{
+        font: normal normal 13px/21px "Rawson-Medium";
+        margin-top: 10px;
+      }
+    }
+  }
+  #lienggle{
+    img{
+      width: 140px;
+    }
+  }
+  #lienapp{
+    img{
+      width: 144px;
     }
   }
 }
@@ -713,7 +785,7 @@ hr{
     height: 90%;
     margin-top: 10%;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 17%;
     margin-left: 1%;
     background: $white 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
