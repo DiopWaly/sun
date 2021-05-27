@@ -42,17 +42,17 @@
                 <h1>êtes-vous assuré de Salama ?</h1>
               </div>
               <div class="row yn">
-                <div class="btnoui">
+                <div [ngClass] = "SalamaAssurer == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="assurer('oui')">
                   <span>OUI</span>
                 </div>
-                <div class="btnnon">
+                <div [ngClass] = "SalamaAssurer == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="assurer('non')">
                   <span>NON</span>
                 </div>
               </div>
             </div>
 
             <div *ngIf="tmp == 1"  class="body1">
-              <div class="sinistre">
+              <div class="sinistre1">
                 <h1>Déclaration de sinistre</h1>
                 <div class="passe">
                   <span>Que se passe t‘il ?</span>
@@ -92,7 +92,7 @@
             </div>
 
             <div *ngIf="tmp == 2"  class="body2">
-              <div class="sinistre">
+              <div class="sinistre2">
                 <h1>Déclaration de sinistre</h1>
                 <div class="quand passe">
                   <span>Quand est-ce que ça s’est déroulé ?</span>
@@ -130,7 +130,7 @@
             </div>
 
             <div *ngIf="tmp == 3"  class="body3">
-              <div class="sinistre">
+              <div class="sinistre3">
                 <h1>Déclaration de sinistre</h1>
                 <div class="ou passe">
                   <span>Ou est-ce que ça s’est passé ?</span>
@@ -152,7 +152,7 @@
             </div>
 
             <div *ngIf="tmp == 4"  class="body4">
-              <div class="sinistre">
+              <div class="sinistre4">
                 <h1>Déclaration de sinistre</h1>
                 <div class="passe">
                   <span>Ou est-ce que ça s’est passé ?</span>
@@ -165,7 +165,7 @@
             </div>
 
             <div *ngIf="tmp == 5"  class="body5">
-              <div class="sinistre">
+              <div class="sinistre5">
                 <h1>Déclaration de sinistre</h1>
                 <div class="passe">
                   <span>Décrivez en quelques lignes les circonstances ou s’est déroulé l’ accident</span>
@@ -206,7 +206,7 @@
             </div>
 
             <div *ngIf="tmp == 7"  class="body7">
-              <div class="sinistre">
+              <div class="sinistre7">
                 <h1>Déclaration de sinistre</h1>
                 <div class="passe">
                   <span>Télécharger photos de l’accident et documents</span>
@@ -230,7 +230,7 @@
             </div>
 
             <div *ngIf="tmp == 8"  class="body8">
-              <div class="sinistre">
+              <div class="sinistre8">
                 <h1>Informations sur le véhicule</h1>
                 <div class="quand passe">
                   <span>Immatriculation, model, marque & année</span>
@@ -253,9 +253,15 @@
                     </label>
                   </div>
                   <div class="col-1 dk">
-                    <p>DK</p>
+                    <!-- <p>DK</p> -->
+                    <label>
+                      <input type="text" class="input" placeholder="DK">
+                    </label>
                     <div class="a">
-                      <p>01</p>
+                      <!-- <p>01</p> -->
+                      <label>
+                        <input type="text" class="input" placeholder="01">
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -282,17 +288,23 @@
                 <h1>Avez-vous un compte chez Salama Assurance ?</h1>
               </div>
               <div class="row" style="margin-bottom: 11.7em; padding-left: 0.9em;">
-                <div [ngClass]="cmpte == true ? 'btnoui91' : 'btnoui92'" (click)="compteOui()">
+                <div [ngClass]="cmpte == true ? 'btnoui91' : 'btnoui92'" (click)="compte('oui')">
                   <span>OUI</span>
                 </div>
-                <div [ngClass]="cmpte == false ? 'btnnon91' : 'btnnon92'" (click)="compteNon()">
+                <div [ngClass]="cmpte == false ? 'btnnon91' : 'btnnon92'" (click)="compte('non')">
                   <span>NON</span>
                 </div>
+                <!-- <div [ngClass]="cmpte == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="compte('oui')">
+                  <span>OUI</span>
+                </div>
+                <div [ngClass]="cmpte == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="compte('non')">
+                  <span>NON</span>
+                </div> -->
               </div>
             </div>
 
             <div *ngIf="tmp == 10 && !cmpte"  class="body10">
-              <div class="sinistre">
+              <div class="sinistre10">
                 <h1>Créer un compte</h1>
               </div>
               <div class="inscrir">
@@ -329,7 +341,7 @@
             </div>
 
             <div *ngIf="(tmp == 10 && cmpte) || tmp == 11"  class="body11">
-              <div class="sinistre">
+              <div class="sinistre11">
                 <h1>Connexion à votre compte</h1>
               </div>
               <div class="connexion">

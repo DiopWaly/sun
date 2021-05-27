@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import {AgmMap,MapsAPILoader } from '@agm/core';
+import { NgxBootstrapConfirmService } from 'ngx-bootstrap-confirm';
 
 @Component({
   selector: 'app-second',
@@ -12,6 +13,7 @@ export class SecondComponent implements OnInit {
   public pathImg: string = "../../assets/images/images/";
   public tmp: number = 0;
   public cmpte: boolean = false;
+  public SalamaAssurer : boolean = false;
   public type : string = "password";
   public typeconfirm: string = "password";
   public progress = 0;
@@ -35,12 +37,11 @@ export class SecondComponent implements OnInit {
   private user = {user: "", pwd: ""};
   private typeSinistres: string[] = ["collision","vol","dommage","inondation","collisionAnimal","autre"];
   public typeSinistre: string;
-
-  @ViewChild('search')
-  public searchElementRef: ElementRef;
+  private delete: boolean = false;
   constructor(
       private mapsAPILoader: MapsAPILoader,
-      private ngZone: NgZone
+      private ngZone: NgZone,
+      private DeleteConfirmService: NgxBootstrapConfirmService
     ) { }
 
   ngOnInit(): void {
@@ -61,6 +62,18 @@ export class SecondComponent implements OnInit {
       this.geoCoder = new google.maps.Geocoder;
     });
 
+  }
+  assurer(rep : string){
+    if(rep == 'oui'){
+      this.SalamaAssurer = true;
+      console.log("oui",this.SalamaAssurer);
+
+    }
+    if(rep == 'non'){
+      this.SalamaAssurer = false;
+      console.log("non",this.SalamaAssurer);
+
+    }
   }
 
   formInstance(){
@@ -112,9 +125,12 @@ export class SecondComponent implements OnInit {
   }
 
   deleteFile(i : number){
-    this.myFiles.splice(i,1);
-    if(this.myFiles.length == 0)
-      this.tmp--;
+    console.log("deleteConfirm ",this.deleteConfirm());
+    if(this.deleteConfirm() == true){
+      this.myFiles.splice(i,1);
+      if(this.myFiles.length == 0)
+        this.tmp--;
+    }
   }
 
 
@@ -138,15 +154,14 @@ export class SecondComponent implements OnInit {
     console.log(this.tmp);
   }
 
-  compteOui(){
-    this.cmpte = true;
-    console.log(this.cmpte);
-
-
-  }
-  compteNon(){
+  compte(rep : string){
+    if(rep == "oui"){
+      this.cmpte = true;
+    }
+    if(rep == "non"){
       this.cmpte = false;
-      console.log(this.cmpte);
+    }
+    console.log(this.cmpte);
   }
 
   afficher(action: string){
@@ -217,6 +232,23 @@ export class SecondComponent implements OnInit {
     });
     console.log('latitude = ',latitude);
     console.log('longitude = ',longitude);
+  }
+
+  deleteConfirm() : boolean{
+    let options ={
+      title: 'Sure you want to delete this comment?',
+      confirmLabel: 'Okay',
+      declineLabel: 'Cancel',
+    }
+    this.DeleteConfirmService.confirm(options).then((res: boolean) => {
+      this.delete = res;
+      if (res) {
+        console.log('Okay',this.delete);
+      } else {
+        console.log('Cancel',this.delete);
+      }
+    });
+    return this.delete;
   }
 
 }

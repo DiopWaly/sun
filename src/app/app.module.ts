@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import {AgmCoreModule} from '@agm/core';
 import { ResultatComponent } from './resultat/resultat.component';
+import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { ResultatComponent } from './resultat/resultat.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAwMP4QNMrB3z7ozZAMKOb1sQpk5eKJLFg',
       libraries: ['places']
-    })
+    }),
+    NgxBootstrapConfirmModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
