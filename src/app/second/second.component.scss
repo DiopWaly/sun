@@ -103,8 +103,8 @@
 }
 .left2{
   text-align: center;
-  width: 2.6em;
-  height: 2.6em;
+  width: 2.7em;
+  height: 2.65em;
   background: $secondaryClair 0% 0% no-repeat padding-box;
   margin: auto;
   margin-left: 8em;
@@ -120,16 +120,16 @@
  }
  #prec{
   text-align: right;
-  padding-top: 14.4em;
+  padding-top: 230px; //14.4em
 }
  #suiv{
   text-align: right;
-  padding-top: 14.3em;
+  padding-top: 230px; //14.3em
 }
 
  //1
   .body0{
-    margin-bottom: 19%;
+    margin-bottom: 21.2%;
     margin-top: 18.3%;
   }
  .assurer{
@@ -312,7 +312,7 @@
     height: 4.25em ;
     background: #087777 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    margin-left: auto;
+    margin-left: 341px;
     margin-right: auto;
     text-align: center;
     padding-top: 1.5em;
@@ -346,6 +346,16 @@
   }
   margin: auto;
   text-align: center;
+}
+.modal-dialog.modal-notify.modal-danger .modal-header{
+  background-color: #087777;
+}
+.flex-center{
+  background-color: #087777;
+  .btn-outline-danger{
+    border: 2px solid #ffffff!important;
+    color: #fff !important;
+  }
 }
 
 //3
@@ -770,76 +780,76 @@ margin-top: 0em;
 padding-left: 1.1em;
 }
 
-.btnoui91{
-cursor: pointer;
-width: 14.2%;
-height: 3em;
-margin: auto;
-margin-right: 0em;
-background: $secondary 0% 0% no-repeat padding-box;
-border: 1px solid $secondary;
-text-align: center;
-span{
-  font: normal normal 17px/23px 'Avenir-Medium';
-  letter-spacing: 0px;
-  color: $primary;
-}
-padding-top: 0.7em;
-margin-top: 0em;
-}
-.btnoui92{
-cursor: pointer;
-width: 14.2%;
-height: 3em;
-margin: auto;
-margin-right: 0em;
-background: $primary 0% 0% no-repeat padding-box;
-border: 1px solid $secondary;
-text-align: center;
-span{
-  font: normal normal 17px/23px 'Avenir-Medium';
-  letter-spacing: 0px;
-  color: $secondary;
-}
-padding-top: 0.7em;
-margin-top: 0em;
-}
+// .btnoui91{
+// cursor: pointer;
+// width: 14.2%;
+// height: 3em;
+// margin: auto;
+// margin-right: 0em;
+// background: $secondary 0% 0% no-repeat padding-box;
+// border: 1px solid $secondary;
+// text-align: center;
+// span{
+//   font: normal normal 17px/23px 'Avenir-Medium';
+//   letter-spacing: 0px;
+//   color: $primary;
+// }
+// padding-top: 0.7em;
+// margin-top: 0em;
+// }
+// .btnoui92{
+// cursor: pointer;
+// width: 14.2%;
+// height: 3em;
+// margin: auto;
+// margin-right: 0em;
+// background: $primary 0% 0% no-repeat padding-box;
+// border: 1px solid $secondary;
+// text-align: center;
+// span{
+//   font: normal normal 17px/23px 'Avenir-Medium';
+//   letter-spacing: 0px;
+//   color: $secondary;
+// }
+// padding-top: 0.7em;
+// margin-top: 0em;
+// }
 
-.btnnon91{
-cursor: pointer;
-width: 14.2%;
-height: 3em;
-margin: auto;
-margin-left: 3.4em;
-background: $secondary 0% 0% no-repeat padding-box;
-text-align: center;
-span{
-  text-align: center;
-  font: normal normal medium 17px/23px 'Avenir-Medium';
-  letter-spacing: 0px;
-  color: $primary;
-}
-padding-top: 0.7em;
-margin-top: 0em;
-}
-.btnnon92{
-cursor: pointer;
-width: 14.2%;
-height: 3em;
-margin: auto;
-margin-left: 3.3em;
-background: $primary 0% 0% no-repeat padding-box;
-border: 1px solid $secondary;
-text-align: center;
-span{
-  text-align: center;
-  font: normal normal medium 17px/23px 'Avenir-Medium';
-  letter-spacing: 0px;
-  color: $secondary;
-}
-padding-top: 0.7em;
-margin-top: 0em;
-}
+// .btnnon91{
+// cursor: pointer;
+// width: 14.2%;
+// height: 3em;
+// margin: auto;
+// margin-left: 3.4em;
+// background: $secondary 0% 0% no-repeat padding-box;
+// text-align: center;
+// span{
+//   text-align: center;
+//   font: normal normal medium 17px/23px 'Avenir-Medium';
+//   letter-spacing: 0px;
+//   color: $primary;
+// }
+// padding-top: 0.7em;
+// margin-top: 0em;
+// }
+// .btnnon92{
+// cursor: pointer;
+// width: 14.2%;
+// height: 3em;
+// margin: auto;
+// margin-left: 3.3em;
+// background: $primary 0% 0% no-repeat padding-box;
+// border: 1px solid $secondary;
+// text-align: center;
+// span{
+//   text-align: center;
+//   font: normal normal medium 17px/23px 'Avenir-Medium';
+//   letter-spacing: 0px;
+//   color: $secondary;
+// }
+// padding-top: 0.7em;
+// margin-top: 0em;
+// }
 
 //8
 .body8{
@@ -1336,6 +1346,7 @@ label {
   }
   .img{
     margin-right: 2%;
+    margin-top: auto;
   }
   .btnoui{
     margin-left: auto;
@@ -1377,10 +1388,11 @@ label {
     span{
       font: normal normal 19px/26px "Rawson-Regular";
     }
-    .img{
-      padding-left: 0%;
-      margin-right: 2%;
-    }
+  }
+  .img{
+    padding-left: 0%;
+    margin-right: 1%;
+    margin-top: auto;
   }
   #suiv{
     padding-top: 10em;
@@ -1476,6 +1488,11 @@ label {
 @media(min-width: 1009.1px) and (max-width: 1340px){
   .btnoui{
     margin-left: auto;
+  }
+}
+@media(min-width: 1026.1px) and  (max-width: 1300px){
+  .img{
+    margin-top: auto;
   }
 }
 
@@ -1762,16 +1779,16 @@ label {
     margin-top: 3em;
     margin-bottom: 3em;
   }
-  .sinistre2{
-    h1{
-      font: normal normal 21px/35px "Rawson-Bold";
-    }
-    .quand{
-      span{
-        font: normal normal 12px/21px "Rawson-LightIt";
-      }
-    }
-  }
+  // .sinistre2{
+  //   h1{
+  //     font: normal normal 21px/35px "Rawson-Bold";
+  //   }
+  //   .quand{
+  //     span{
+  //       font: normal normal 12px/21px "Rawson-LightIt";
+  //     }
+  //   }
+  // }
   .saisiDate{
     span{
       font: normal normal  14px/25px "Rawson-SemiBold";
@@ -1827,6 +1844,17 @@ label {
 
 //5
 @media(max-width: 767px){
+  .sinistre5, .sinistre4, .sinistre3, .sinistre1,.sinistre2,
+  .sinistre, .sinistre7,.sinistre8,.sinistre10,.sinistre11{
+    h1{
+      font-size: 21px;
+    }
+    .passe{
+      span{
+        font: normal normal 12px/21px "Rawson-LightIt";
+      }
+    }
+  }
   .description{
     textarea{
       width: 100%;
@@ -1874,6 +1902,12 @@ label {
   }
 
 }
+@media(min-width: 767.1px) and (max-width: 1300px){
+  .upload{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 // 7
 @media(max-width: 767px){
@@ -1909,10 +1943,30 @@ label {
       height: 31px;
     }
   }
+  // .sinistre7{
+  //   h1{
+  //     font-size: 21px;
+  //   }
+  //   .passe{
+  //     span{
+  //       font: normal normal 12px/21px "Rawson-LightIt";
+  //     }
+  //   }
+  // }
 
 }
 
 @media(max-width: 767px){
+  // .sinistre8{
+  //   h1{
+  //     font-size: 21px;
+  //   }
+  //   .quand{
+  //     span{
+  //       font: normal normal 12px/21px "Rawson-LightIt";
+  //     }
+  //   }
+  // }
   .matriculeSN{
     width: 70%;
     height: 40px;
@@ -2057,34 +2111,37 @@ label {
 
 // 9
 @media(max-width: 767px){
-  .btnoui92{
-    padding-top: 0.3em;
-    height: 2.5em;
-    span{
-      font: normal normal 14px/23px "Avenir-Medium";
-    }
-  }
-  .btnoui91{
-    padding-top: 0.3em;
-    height: 2.6em;
-    span{
-      font: normal normal 14px/23px "Avenir-Medium";
-    }
-  }
-  .btnnon91{
-    padding-top: 0.3em;
-    height: 2.5em;
-    span{
-      font: normal normal 14px/23px "Avenir-Medium";
-    }
-  }
-  .btnnon92{
-    padding-top: 0.3em;
-    height: 2.5em;
-    span{
-      font: normal normal 14px/23px "Avenir-Medium";
-    }
-  }
+  // .btnoui92{
+  //   padding-top: 0.3em;
+  //   height: 2.5em;
+  //   span{
+  //     font: normal normal 14px/23px "Avenir-Medium";
+  //   }
+  // }
+  // .btnoui91{
+  //   padding-top: 0.3em;
+  //   height: 2.6em;
+  //   span{
+  //     font: normal normal 14px/23px "Avenir-Medium";
+  //   }
+  // }
+  // .btnnon91{
+  //   padding-top: 0.3em;
+  //   height: 2.5em;
+  //   span{
+  //     font: normal normal 14px/23px "Avenir-Medium";
+  //   }
+  // }
+  // .btnnon92{
+  //   padding-top: 0.3em;
+  //   height: 2.5em;
+  //   span{
+  //     font: normal normal 14px/23px "Avenir-Medium";
+  //   }
+  // }
+}
+@media(max-width: 575px){
+
 }
 
 // 10 et 11

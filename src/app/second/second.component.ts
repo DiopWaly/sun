@@ -10,6 +10,7 @@ import { NgxBootstrapConfirmService } from 'ngx-bootstrap-confirm';
 })
 export class SecondComponent implements OnInit {
 
+  @ViewChild('confirmDelete') private closeModal: ElementRef;
   public pathImg: string = "../../assets/images/images/";
   public tmp: number = 0;
   public cmpte: boolean = false;
@@ -63,7 +64,7 @@ export class SecondComponent implements OnInit {
     });
 
   }
-  assurer(rep : string){
+  Assurer(rep : string){
     if(rep == 'oui'){
       this.SalamaAssurer = true;
       console.log("oui",this.SalamaAssurer);
@@ -72,7 +73,6 @@ export class SecondComponent implements OnInit {
     if(rep == 'non'){
       this.SalamaAssurer = false;
       console.log("non",this.SalamaAssurer);
-
     }
   }
 
@@ -104,6 +104,7 @@ export class SecondComponent implements OnInit {
       this.annees.push(2015+i);
   }
   onFileChange(event){
+
     this.errorFile=false;
     let tabError=['image/png','image/jpg', 'image/jpeg', 'application/pdf'];
     for(let file of event.target.files){
@@ -124,37 +125,43 @@ export class SecondComponent implements OnInit {
                     };
   }
 
-  deleteFile(i : number){
-    console.log("deleteConfirm ",this.deleteConfirm());
-    if(this.deleteConfirm() == true){
-      this.myFiles.splice(i,1);
-      if(this.myFiles.length == 0)
-        this.tmp--;
+  DeleteFile(i : number){
+    // console.log("deleteConfirm ",this.DeleteConfirm(''));
+    this.myFiles.splice(i,1);
+    if(this.myFiles.length == 0){
+      this.form = new FormGroup({
+        "file" : new FormControl('',Validators.compose([]))
+      });
+      this.tmp--;
     }
   }
 
 
-  incremente(){
+  Incremente(){
     this.tmp = this.tmp + 1;
     if(this.tmp == 11){
-      this.inscrire() ? this.formInstance() : this.tmp--;
+      this.Inscrire() == true ? this.formInstance() : this.tmp--  ;//this.tmp--
     }
     if(this.tmp == 12){
-      this.connexion() ? console.log('Success connexion !!!') : this.tmp --;
-
+      this.Connexion() ? console.log('Success connexion !!!') : this.tmp --;
     }
     this.progress = this.tabprogress[this.tmp];
     this.ettiquette = this.ettiquettes[this.tmp];
     console.log(this.tmp);
   }
-  decremente(){
+  Decremente(){
+    if(this.tmp == 7){
+      this.form = new FormGroup({
+        "file" : new FormControl('',Validators.compose([]))
+      });
+    }
     this.tmp --;
     this.progress = this.tabprogress[this.tmp];
     this.ettiquette = this.ettiquettes[this.tmp];
     console.log(this.tmp);
   }
 
-  compte(rep : string){
+  Compte(rep : string){
     if(rep == "oui"){
       this.cmpte = true;
     }
@@ -164,7 +171,7 @@ export class SecondComponent implements OnInit {
     console.log(this.cmpte);
   }
 
-  afficher(action: string){
+  Afficher(action: string){
     if(action == 'pass'){
       this.type = "text";
     }
@@ -172,14 +179,14 @@ export class SecondComponent implements OnInit {
       this.typeconfirm = "text";
     }
   }
-  masquer(action: string){
+  Masquer(action: string){
     if(action == 'pass')
       this.type = "password";
     else if(action == 'confirm')
       this.typeconfirm = "password";
   }
 
-  inscrire(){
+  Inscrire(){
     let cmpte = this.isncriptionForm.value;
     if(cmpte.pwd === cmpte.pwdconfirm){
       this.user.user = cmpte.user;
@@ -188,7 +195,7 @@ export class SecondComponent implements OnInit {
     }
     return false;
   }
-  connexion(){
+  Connexion(){
     let cmpte = this.isncriptionForm.value;
     if(this.user.user === cmpte.user && this.user.pwd === cmpte.pwd){
         console.log('connexion success !!!');
@@ -197,7 +204,7 @@ export class SecondComponent implements OnInit {
     return false;
   }
 
-  sinitre(i : number){
+  Sinitre(i : number){
     this.typeSinistre = this.typeSinistres[i];
     console.log(this.typeSinistre);
 
@@ -210,12 +217,12 @@ export class SecondComponent implements OnInit {
         this.latitude = position.coords.latitude;
         this.longitude = position.coords.longitude;
         this.zoom = 8;
-        this.getAddress(this.latitude, this.longitude);
+        this.GetAddress(this.latitude, this.longitude);
       });
     }
   }
 
-  getAddress(latitude, longitude) {
+  GetAddress(latitude, longitude) {
     this.geoCoder.geocode({ 'location': { lat: latitude, lng: longitude } }, (results, status) => {
       if (status === 'OK') {
         if (results[0]) {
@@ -234,7 +241,7 @@ export class SecondComponent implements OnInit {
     console.log('longitude = ',longitude);
   }
 
-  deleteConfirm() : boolean{
+  DeleteConfirm(i : number) : boolean{
     let options ={
       title: 'Sure you want to delete this comment?',
       confirmLabel: 'Okay',
@@ -243,12 +250,20 @@ export class SecondComponent implements OnInit {
     this.DeleteConfirmService.confirm(options).then((res: boolean) => {
       this.delete = res;
       if (res) {
-        console.log('Okay',this.delete);
+        this.DeleteFile(i);
       } else {
-        console.log('Cancel',this.delete);
       }
     });
+    // console.log('ici : ',options.confirmLabel);
     return this.delete;
+  //     if(des == 'yes'){
+  //       this.delete = true;
+  //     }
+  //     if(des == 'non'){
+  //       this.delete = false;
+  //     }
+  //     this.closeModal.nativeElement.click();
+  //     return this.delete;
   }
 
 }

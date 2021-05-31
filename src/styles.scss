@@ -35,6 +35,9 @@
   font-family: 'Avenir-Medium';
   src: url("assets/fonts/Avenir-Font/avenir_ff/AvenirMedium.ttf");
 }
+.buttons .btn.btn-success{
+  background-color: $secondary !important;
+}
 
 // confirm
 .modal-body{

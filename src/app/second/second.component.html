@@ -30,7 +30,7 @@
                 <img src="../../assets/images/images/2/arrow_back_white_24dp.svg" alt="">
               </div>
 
-              <div *ngIf="tmp > 0"  class="left2" (click)="decremente()">
+              <div *ngIf="tmp > 0"  class="left2" (click)="Decremente()">
                 <img src="../../assets/images/images/arrow_back_white_24dp.svg" alt="">
               </div>
           </div>
@@ -42,10 +42,10 @@
                 <h1>êtes-vous assuré de Salama ?</h1>
               </div>
               <div class="row yn">
-                <div [ngClass] = "SalamaAssurer == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="assurer('oui')">
+                <div [ngClass] = "SalamaAssurer == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="Assurer('oui')">
                   <span>OUI</span>
                 </div>
-                <div [ngClass] = "SalamaAssurer == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="assurer('non')">
+                <div [ngClass] = "SalamaAssurer == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="Assurer('non')">
                   <span>NON</span>
                 </div>
               </div>
@@ -60,30 +60,30 @@
               </div>
 
               <div class="row" id="declaration">
-                <div [ngClass]="typeSinistre == 'collision' ? 'col-4 collision selected' : 'col-4 collision' " (click)="sinitre(0)">
+                <div [ngClass]="typeSinistre == 'collision' ? 'col-4 collision selected' : 'col-4 collision' " (click)="Sinitre(0)">
                   <img src="../../assets/images/images/3/collision-web.svg" alt="">
                   <p>Collision</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'vol' ? 'col-4 vol selected' : 'col-4 vol' " (click)="sinitre(1)">
+                <div [ngClass]="typeSinistre == 'vol' ? 'col-4 vol selected' : 'col-4 vol' " (click)="Sinitre(1)">
                   <img src="../../assets/images/images/3/vol-web.svg" alt="">
                   <p>Vol</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'dommage' ? 'col-4 dommage selected' : 'col-4 dommage' " (click)="sinitre(2)">
+                <div [ngClass]="typeSinistre == 'dommage' ? 'col-4 dommage selected' : 'col-4 dommage' " (click)="Sinitre(2)">
                   <img src="../../assets/images/images/3/domage-mineurs-web.svg" alt="">
                   <p>Dommage mineure</p>
                 </div>
               </div>
 
               <div class="row">
-                <div [ngClass]="typeSinistre == 'inondation' ? 'col-4 inondation selected' : 'col-4 inondation' " (click)="sinitre(3)">
+                <div [ngClass]="typeSinistre == 'inondation' ? 'col-4 inondation selected' : 'col-4 inondation' " (click)="Sinitre(3)">
                   <img src="../../assets/images/images/3/inondation-web.svg" alt="">
                   <p>Inondation</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'collisionAnimal' ? 'col-4 collisionAnimal selected' : 'col-4 collisionAnimal' " (click)="sinitre(4)">
+                <div [ngClass]="typeSinistre == 'collisionAnimal' ? 'col-4 collisionAnimal selected' : 'col-4 collisionAnimal' " (click)="Sinitre(4)">
                   <img src="../../assets/images/images/3/animal-collision-web.svg" alt="">
                   <p>Collision avec un. Animal</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'autre' ? 'col-4 autre selected' : 'col-4 autre' " (click)="sinitre(5)">
+                <div [ngClass]="typeSinistre == 'autre' ? 'col-4 autre selected' : 'col-4 autre' " (click)="Sinitre(5)">
                   <img src="../../assets/images/images/3/autres-web.svg" alt="">
                   <p>Autres</p>
                 </div>
@@ -222,7 +222,7 @@
                       <p>{{file['name']}}</p>
                     </div>
                     <div class="col-2 sup">
-                      <img src="../../assets/images/images/8/supprimer-btn.svg" alt="" (click) = "deleteFile(i)">
+                      <img src="../../assets/images/images/8/supprimer-btn.svg" alt="" (click) = "DeleteConfirm(i)">
                     </div>
                   </div>
                 </div>
@@ -288,18 +288,18 @@
                 <h1>Avez-vous un compte chez Salama Assurance ?</h1>
               </div>
               <div class="row" style="margin-bottom: 11.7em; padding-left: 0.9em;">
-                <div [ngClass]="cmpte == true ? 'btnoui91' : 'btnoui92'" (click)="compte('oui')">
+                <!-- <div [ngClass]="cmpte == true ? 'btnoui91' : 'btnoui92'" (click)="Compte('oui')">
                   <span>OUI</span>
                 </div>
-                <div [ngClass]="cmpte == false ? 'btnnon91' : 'btnnon92'" (click)="compte('non')">
-                  <span>NON</span>
-                </div>
-                <!-- <div [ngClass]="cmpte == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="compte('oui')">
-                  <span>OUI</span>
-                </div>
-                <div [ngClass]="cmpte == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="compte('non')">
+                <div [ngClass]="cmpte == false ? 'btnnon91' : 'btnnon92'" (click)="Compte('non')">
                   <span>NON</span>
                 </div> -->
+                <div [ngClass]="cmpte == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="Compte('oui')">
+                  <span>OUI</span>
+                </div>
+                <div [ngClass]="cmpte == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="Compte('non')">
+                  <span>NON</span>
+                </div>
               </div>
             </div>
 
@@ -320,8 +320,8 @@
                       <label>
                         <p class="label-txt">Mot de passe</p>
                         <input [type]="type" formControlName="pwd" class="input">
-                        <img  class="pass"*ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="afficher('pass')">
-                        <img class="pass" *ngIf="type == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="masquer('pass')">
+                        <img  class="pass"*ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="Afficher('pass')">
+                        <img class="pass" *ngIf="type == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="Masquer('pass')">
 
                         <div class="line-box">
                           <div class="line"></div>
@@ -330,8 +330,8 @@
                       <label>
                         <p class="label-txt">Confirmer mot de passe</p>
                         <input [type]="typeconfirm" formControlName="pwdconfirm" class="input">
-                        <img class="pass" *ngIf="typeconfirm == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="afficher('confirm')">
-                        <img class="pass" *ngIf="typeconfirm == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="masquer('confirm')">
+                        <img class="pass" *ngIf="typeconfirm == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="Afficher('confirm')">
+                        <img class="pass" *ngIf="typeconfirm == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="Masquer('confirm')">
                         <div class="line-box">
                           <div class="line"></div>
                         </div>
@@ -357,8 +357,8 @@
                   <label>
                     <p class="label-txt">Mot de passe</p>
                     <input [type]="type" formControlName="pwd" class="input">
-                    <img class="pass" *ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="afficher('pass')">
-                    <img class="pass" *ngIf="type == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="masquer('pass')">
+                    <img class="pass" *ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="Afficher('pass')">
+                    <img class="pass" *ngIf="type == 'text'" [src]="pathImg+'10/iconmonstr-eye.svg'" (click)="Masquer('pass')">
 
                     <div class="line-box">
                       <div class="line"></div>
@@ -370,7 +370,7 @@
 
           </div>
           <div class="col-2" id="suiv">
-            <div class="right mt-0" (click)="incremente()">
+            <div class="right mt-0" (click)="Incremente()">
               <img src="../../assets/images/images/2/arrow_forward_white_24dp.svg" alt="">
             </div>
           </div>
@@ -390,5 +390,39 @@
           </div>
       </div>
     </div>
+
+<!-- Button trigger modal-->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConfirmDelete">Launch
+  modal</button> -->
+
+<!--Modal: modalConfirmDelete-->
+<div class="modal fade" #confirmDelete id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+    <!--Content-->
+    <div class="modal-content text-center">
+      <!--Header-->
+      <div class="modal-header d-flex justify-content-center">
+        <p class="heading">Are you sure?</p>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+
+        <i class="fas fa-times fa-4x animated rotateIn"></i>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer flex-center">
+        <!-- <a class="btn  btn-outline-danger" (click)="DeleteConfirm('yes')">Yes</a>
+        <a type="button" class="btn  btn-danger waves-effect" (click)="DeleteConfirm('non')">No</a> -->
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: modalConfirmDelete-->
+
   <app-footer></app-footer>
 </div>

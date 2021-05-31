@@ -155,3 +155,18 @@ li{
     margin: auto;
   }
 }
+
+@media (max-width: 767px){
+  .navbar-collapse{
+    border: 1px solid #154949;
+  }
+  .navbar-nav .nav-item.nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .nav-item.nav-link.diff{
+    border: 1px solid #154949;
+    border-radius: 15px;
+  }
+}

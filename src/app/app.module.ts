@@ -13,6 +13,7 @@ import { NgxCaptchaModule } from 'ngx-captcha';
 import {AgmCoreModule} from '@agm/core';
 import { ResultatComponent } from './resultat/resultat.component';
 import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
+import { TestComponent } from './test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
     MenuComponent,
     FooterComponent,
     DossierComponent,
-    ResultatComponent
+    ResultatComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
