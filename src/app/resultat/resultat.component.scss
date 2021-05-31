@@ -168,7 +168,7 @@ html *
    font-family: Arial !important;
 }
 
-@media(max-width: 1255px){
+// @media(max-width: 1255px){
   // .cmplt{
   //   display: none;
   // }
@@ -203,7 +203,7 @@ html *
   //     display: none;
   //   }
   // }
-}
+// }
 
 @media(max-width: 767px){
     .sinistre{
@@ -219,6 +219,7 @@ html *
     }
     .container {
     width: 484px;
+    margin-top: 1.3em;
     .step{
       width: 450px;
       .content{
@@ -248,7 +249,7 @@ html *
         padding-top: 0%;
         margin-left: auto;
         span{
-          font: normal normal 12px "Rawson-Bold";
+          font-size: 11px;
         }
       }
     }

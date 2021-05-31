@@ -225,17 +225,12 @@
   }
   .titre{
     margin-left: auto;
-    h1{
-      font: normal normal 20px/35px "Rawson-Bold";
-    }
-  }
-  .sous-titre2{
-    span{
-      font: normal normal 13px/21px "Rawson-LightIt";
-    }
+    // h1{
+    //   font: normal normal 20px/35px "Rawson-Bold";
+    // }
   }
   .formulaire{
-    width: 45%;
+    // width: 342px;
     height: 40px;
     margin-left: auto;
     .icon{
@@ -257,6 +252,21 @@
   @media(max-width: 675px){
     .formulaire{
       width: 300px;
+    }
+    .titre{
+      margin-left: auto;
+      h1{
+        font: normal normal 20px/35px "Rawson-Bold";
+      }
+    }
+    .sous-titre,.sous-titre2{
+      span{
+        font-size: 13px;
+      }
+    }
+    .spinner-border{
+      width: 3rem;
+      height: 3rem;
     }
   }
 }

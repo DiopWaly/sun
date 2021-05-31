@@ -139,7 +139,7 @@ export class SecondComponent implements OnInit {
 
   Incremente(){
     this.tmp = this.tmp + 1;
-    if(this.tmp == 11){
+    if(this.tmp == 9){
       this.Inscrire() == true ? this.formInstance() : this.tmp--  ;//this.tmp--
     }
     if(this.tmp == 12){

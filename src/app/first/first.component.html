@@ -76,7 +76,7 @@
       </div>
   </div>
   <div class="row carous">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <a class="carousel-control-next" role="button" aria-hidden="true" data-slide="next" href="#carouselExampleSlidesOnly" #next></a>
         <a class="carousel-control-prev" role="button" aria-hidden="true" data-slide="prev" href="#carouselExampleSlidesOnly" #prec></a>
@@ -84,7 +84,33 @@
         <div *ngFor="let carousel of carousels; let i = index" [ngClass]=" i == 0 ? 'carousel-item active' : 'carousel-item'">
           <div class="" id="lorem">
             <div class="text-center">
+              <img [src]="carousel.img" class="rounded mask" alt="...">
+            </div>
+              <p class="lorem">
+                  {{carousel.comment}}
+              </p>
+              <div class="col-md mb-0">
+                <hr align="center" class="mt-0">
+                <span>{{carousel.nom}}</span>
+                <p class="mb-0">{{carousel.status}}</p>
+              </div>
+            </div>
+          <div class="" id="lorem">
+            <div class="text-center">
               <img [src]="carousel.img" class="rounded" alt="...">
+            </div>
+              <p class="lorem">
+                  {{carousel.comment}}
+              </p>
+              <div class="col-md mb-0">
+                <hr align="center" class="mt-0">
+                <span>{{carousel.nom}}</span>
+                <p class="mb-0">{{carousel.status}}</p>
+              </div>
+            </div>
+          <div class="" id="lorem">
+            <div class="text-center">
+              <img [src]="carousel.img" class="rounded mask" alt="...">
             </div>
               <p class="lorem">
                   {{carousel.comment}}

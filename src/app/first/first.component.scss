@@ -281,10 +281,11 @@ hr{
 #lorem{
   width: 623px;
   height: 296px;
-  margin-top: 8%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: 1%;
+  // margin-top: 8%;
+  margin-top: 3%;
+  padding-left: 3.1%; //10
+  padding-right: 3.1%;
+  margin-left: 76px;
   background: $white 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 
@@ -310,36 +311,49 @@ hr{
   }
 }
 .carousel{
-  margin-left: 12.1%;
-  margin-bottom: 2%;
+  margin-left: -28.6%;
+  // width: 100%;
+  // margin-left: 12.1%;
+  margin-bottom: 0.7%;
 }
 .carous{
-  margin-left: 21%;
-  margin-right: 29%;
+  // min-width: 154%;
+  width: 100%;
+  // margin-left: 21%;
+  // margin-right: 29%;
   margin-bottom: -5%;
   margin-top: 1.5%;
+}
+#lorem{
+  display: inline-block;
 }
 
 .text-center{
   width: 108px;
   height: 108px;
-  transform: perspective(500px) translate3d(171%, -43%, 1em);
+  transform: perspective(500px) translate3d(174%, -43%, 1em);
+}
+.mask{
+  display: none;
 }
 
 .right{
   cursor: pointer;
-  transform: perspective(500px) translate3d(3.2em, -11.8em, 1em);
+  transform: perspective(500px) translate3d(21.3em, -11.8em, 1em);
   margin: 0%;
   padding: 0%;
+  z-index: 99;
 }
 .left{
   cursor: pointer;
-  transform: perspective(500px) translate3d(36.9em, -11.8em, 1em);
+  transform: perspective(500px) translate3d(55.2em, -11.8em, 1em);
   margin: 0%;
   padding: 0%;
+  z-index: 99;
 }
 .carousel-inner{
   width: 108%;
+  width: 2100px;
   height: 102%;
 }
 
@@ -907,6 +921,20 @@ hr{
       width: 592px;
     }
   }
+  .carousel{
+    margin-left: -28.6%;
+    // width: 100%;
+    // margin-left: 12.1%;
+    margin-bottom: 2%;
+  }
+  .carous{
+    // min-width: 154%;
+    width: 100%;
+    // margin-left: 21%;
+    // margin-right: 29%;
+    margin-bottom: -5%;
+    margin-top: 1.5%;
+  }
   .right{
     display: none;
   }
@@ -924,7 +952,7 @@ hr{
 
 }
 
-@media (min-width: 767.1px) and (max-width: 1960px){
+@media (min-width: 767.1px) and (max-width: 1360px){
   #ilustsalama{
     .ilustsalama{
       height: 103%;
