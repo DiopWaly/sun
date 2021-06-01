@@ -1,4 +1,6 @@
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-test',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.scss']
 })
 export class TestComponent implements OnInit {
-
-  constructor() { }
+  public form : FormGroup;
+  public erreur : boolean = true;
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      login : new FormControl('',Validators.compose([Validators.required])),
+      pwd :  new FormControl('', Validators.compose([]))
+    })
   }
-
+  IsAuthenticated(){
+    if(this.form.value['login'] == 'a'){
+      console.log(this.form.value['login']);
+      localStorage.setItem('isConnected','true');
+      this.router.navigate(['first']);
+    }else{
+      this.erreur = false;
+    }
+  }
 }

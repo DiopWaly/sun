@@ -1,3 +1,4 @@
+import { AutGuardService } from './service/aut-guard.service';
 import { TestComponent } from './test/test.component';
 import { ResultatComponent } from './resultat/resultat.component';
 import { NgModule } from '@angular/core';
@@ -20,7 +21,7 @@ const routes: Routes = [
     path:"resultat", component: ResultatComponent
   },
   {
-    path:"first", component: FirstComponent
+    path:"first", component: FirstComponent, canActivate: [AutGuardService]
   },
   {
     path:"menu", component: MenuComponent

@@ -82,7 +82,7 @@
         <a class="carousel-control-prev" role="button" aria-hidden="true" data-slide="prev" href="#carouselExampleSlidesOnly" #prec></a>
 
         <div *ngFor="let carousel of carousels; let i = index" [ngClass]=" i == 0 ? 'carousel-item active' : 'carousel-item'">
-          <div class="" id="lorem">
+          <div class="msk" id="lorem">
             <div class="text-center">
               <img [src]="carousel.img" class="rounded mask" alt="...">
             </div>
@@ -95,7 +95,7 @@
                 <p class="mb-0">{{carousel.status}}</p>
               </div>
             </div>
-          <div class="" id="lorem">
+          <div class="center" id="lorem">
             <div class="text-center">
               <img [src]="carousel.img" class="rounded" alt="...">
             </div>
@@ -108,7 +108,7 @@
                 <p class="mb-0">{{carousel.status}}</p>
               </div>
             </div>
-          <div class="" id="lorem">
+          <div class="msk" id="lorem">
             <div class="text-center">
               <img [src]="carousel.img" class="rounded mask" alt="...">
             </div>

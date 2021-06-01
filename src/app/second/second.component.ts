@@ -142,6 +142,9 @@ export class SecondComponent implements OnInit {
     if(this.tmp == 9){
       this.Inscrire() == true ? this.formInstance() : this.tmp--  ;//this.tmp--
     }
+    if(this.tmp == 10 && this.cmpte == true){
+      this.tmp += 1;
+    }
     if(this.tmp == 12){
       this.Connexion() ? console.log('Success connexion !!!') : this.tmp --;
     }
@@ -241,7 +244,7 @@ export class SecondComponent implements OnInit {
     console.log('longitude = ',longitude);
   }
 
-  DeleteConfirm(i : number) : boolean{
+  DeleteConfirm(i : number) {
     let options ={
       title: 'Sure you want to delete this comment?',
       confirmLabel: 'Okay',
@@ -252,18 +255,8 @@ export class SecondComponent implements OnInit {
       if (res) {
         this.DeleteFile(i);
       } else {
+        console.log('Suppression annuler');
       }
     });
-    // console.log('ici : ',options.confirmLabel);
-    return this.delete;
-  //     if(des == 'yes'){
-  //       this.delete = true;
-  //     }
-  //     if(des == 'non'){
-  //       this.delete = false;
-  //     }
-  //     this.closeModal.nativeElement.click();
-  //     return this.delete;
   }
-
 }

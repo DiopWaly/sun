@@ -1,12 +1,15 @@
+@import "../../assets/css/variable.scss";
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 .body{
+ background-color: $gris; //#006d96bd
  background-image: url("../../assets/images/images/illustration-salama-web.svg");
  background-size: cover;
- background-repeat: no-repeat;
+//  background-repeat: no-repeat;
+ background-repeat: round;
 }
 
 section{
@@ -89,12 +92,19 @@ input{
  transition: 1s;
 }
 
-.social_icons .fab-facebook-square:hover{
+.social_icons .fa-facebook-square:hover{
  color: royalblue;
 }
-.social_icons .fab-google-plus-square:hover{
+.social_icons .fa-google-plus-square:hover{
  color: tomato;
 }
-.social_icons .fab-twitter-square:hover{
+.social_icons .fa-twitter-square:hover{
  color: rgb(58, 197, 207);
+}
+.erreur{
+  span{
+    font-family: "Rawson-LightIt";
+    color: #ff0000e0;
+    font-size: 15px;
+  }
 }
