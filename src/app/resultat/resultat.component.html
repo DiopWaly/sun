@@ -7,69 +7,18 @@
     </div>
   </div>
   <div class="container">
-      <div class="step">
+      <div *ngFor="let stepbar of StepBars" [class]="stepbar.level">
         <div class="v-stepper">
           <div class="circle">
-            <img src="../../assets/images/images/resultat/username-valide-web.svg" alt="">
+            <img [src]="ValidImg" alt="">
           </div>
           <div class="line"></div>
         </div>
         <div class="col-8 content">
-          <span>Remboursement</span>
+          <span>{{stepbar.step}}</span>
         </div>
         <div class="col date">
-          <span>JJ/MM/aA</span>
-        </div>
-    </div>
-
-    <!-- active -->
-    <div class="step">
-      <div class="v-stepper">
-        <div class="circle">
-          <img src="../../assets/images/images/resultat/username-valide-web.svg" alt="">
-        </div>
-        <div class="line"></div>
-      </div>
-
-      <div class="col-8 content">
-        <span>Decision</span>
-      </div>
-      <div class="col date">
-        <span>JJ/MM/aA</span>
-      </div>
-    </div>
-
-      <!-- empty -->
-    <div class="step completed">
-        <div class="v-stepper">
-          <div class="circle">
-            <img src="../../assets/images/images/resultat/username-valide-web.svg" alt="">
-          </div>
-          <div class="line"></div>
-        </div>
-
-        <div class="col-8 content">
-          <span>votre demande est en cours d’examen</span>
-        </div>
-        <div class="col date">
-          <span>05 Mars 2021</span>
-        </div>
-    </div>
-
-    <!-- regular -->
-    <div class="step completed">
-        <div class="v-stepper">
-          <div class="circle">
-            <img src="../../assets/images/images/resultat/username-valide-web.svg" alt="">
-          </div>
-          <div class="line"></div>
-        </div>
-
-        <div class="col-8 content">
-          <span>votre demande a été soumise</span>
-        </div>
-        <div class="col date">
-          <span>01 Mars 2021</span>
+          <span>{{stepbar.date}}</span>
         </div>
     </div>
   </div>

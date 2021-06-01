@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import {AgmMap,MapsAPILoader } from '@agm/core';
 import { NgxBootstrapConfirmService } from 'ngx-bootstrap-confirm';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-second',
@@ -23,6 +24,7 @@ export class SecondComponent implements OnInit {
   public ettiquette : number;
   public form : FormGroup;
   public isncriptionForm : FormGroup;
+  public formInfoVehicule : FormGroup;
   public myFiles:string[] = [];
   public fileType = {};
   public jours: number[] = [];
@@ -42,8 +44,10 @@ export class SecondComponent implements OnInit {
   constructor(
       private mapsAPILoader: MapsAPILoader,
       private ngZone: NgZone,
-      private DeleteConfirmService: NgxBootstrapConfirmService
-    ) { }
+      private DeleteConfirmService: NgxBootstrapConfirmService,
+      private fb : FormBuilder,
+      private http : HttpClient
+     ) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -61,6 +65,15 @@ export class SecondComponent implements OnInit {
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
       this.geoCoder = new google.maps.Geocoder;
+    });
+
+    this.formInfoVehicule = this.fb.group({
+      immatriculation : ['', [Validators.required]],
+      dk : ['', [Validators.required]],
+      serie : ['', [Validators.required]],
+      model : ['', [Validators.required]],
+      marque : ['', [Validators.required]],
+      annee : ['', [Validators.required, Validators.pattern('^0[1-9]{1}$')]]
     });
 
   }
@@ -246,7 +259,7 @@ export class SecondComponent implements OnInit {
 
   DeleteConfirm(i : number) {
     let options ={
-      title: 'Sure you want to delete this comment?',
+      title: 'Sure you want to delete this file ?',
       confirmLabel: 'Okay',
       declineLabel: 'Cancel',
     }

@@ -1,5 +1,5 @@
+import { AuthenticationComponent } from './authentication/authentication.component';
 import { AutGuardService } from './service/aut-guard.service';
-import { TestComponent } from './test/test.component';
 import { ResultatComponent } from './resultat/resultat.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -12,7 +12,7 @@ import { SecondComponent } from './second/second.component';
 
 const routes: Routes = [
   {
-    path:"test", component: TestComponent
+    path:"sign-in", component: AuthenticationComponent
   },
   {
     path:"dossier", component: DossierComponent

@@ -14,6 +14,8 @@ import {AgmCoreModule} from '@agm/core';
 import { ResultatComponent } from './resultat/resultat.component';
 import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
 import { TestComponent } from './test/test.component';
+import { AuthenticationComponent } from './authentication/authentication.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { TestComponent } from './test/test.component';
     FooterComponent,
     DossierComponent,
     ResultatComponent,
-    TestComponent
+    TestComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { TestComponent } from './test/test.component';
       libraries: ['places']
     }),
     NgxBootstrapConfirmModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

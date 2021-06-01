@@ -18,13 +18,4 @@ export class TestComponent implements OnInit {
       pwd :  new FormControl('', Validators.compose([]))
     })
   }
-  IsAuthenticated(){
-    if(this.form.value['login'] == 'a'){
-      console.log(this.form.value['login']);
-      localStorage.setItem('isConnected','true');
-      this.router.navigate(['first']);
-    }else{
-      this.erreur = false;
-    }
-  }
 }

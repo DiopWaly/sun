@@ -236,51 +236,58 @@
                   <span>Immatriculation, model, marque & année</span>
                 </div>
               </div>
-              <div class="matriculeSN">
-                <div class="row">
-                  <div class="col-2 pr-0">
-                    <div class="sn ml-0">
-                        <div class="row">
-                          <div class="blanc"></div>
-                          <div class="blanc1"></div>
+
+              <form [formGroup] = "formInfoVehicule">
+
+                  <div class="matriculeSN">
+                    <div class="row">
+                      <div class="col-2 pr-0">
+                        <div class="sn ml-0">
+                            <div class="row">
+                              <div class="blanc"></div>
+                              <div class="blanc1"></div>
+                            </div>
+                            <div class=""><P>SN</P></div>
                         </div>
-                        <div class=""><P>SN</P></div>
+                      </div>
+                      <div class="col-8 pl-0 pr-0">
+                        <label>
+                          <input type="text" formControlName = "immatriculation" class="input" placeholder="Immatriculation">
+                        </label>
+                      </div>
+                      <div class="col-1 dk">
+                        <!-- <p>DK</p> -->
+                        <label>
+                          <input type="text" formControlName = "dk" class="input" placeholder="DK">
+                        </label>
+                        <div class="a">
+                          <!-- <p>01</p> -->
+                          <label>
+                            <input type="text" formControlName = "serie" class="input" placeholder="01">
+                          </label>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-8 pl-0 pr-0">
+
+                  <div class="matricule">
                     <label>
-                      <input type="text" class="input" placeholder="Immatricultion">
+                      <input type="text" formControlName = "marque" class="input" placeholder="Marque">
                     </label>
                   </div>
-                  <div class="col-1 dk">
-                    <!-- <p>DK</p> -->
+
+                  <div class="matricule">
                     <label>
-                      <input type="text" class="input" placeholder="DK">
+                      <input type="text" formControlName = "model" class="input" placeholder="Model">
                     </label>
-                    <div class="a">
-                      <!-- <p>01</p> -->
-                      <label>
-                        <input type="text" class="input" placeholder="01">
-                      </label>
-                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="matricule">
-                <label>
-                  <input type="text" class="input" placeholder="Marque">
-                </label>
-              </div>
-              <div class="matricule">
-                <label>
-                  <input type="text" class="input" placeholder="Model">
-                </label>
-              </div>
-              <div class="matricule">
-                <label>
-                  <input type="text" class="input" placeholder="Année">
-                </label>
-              </div>
+
+                  <div class="matricule">
+                    <label>
+                      <input type="text" formControlName = "annee" class="input" placeholder="Année">
+                    </label>
+                  </div>
+              </form>
             </div>
 
             <div *ngIf="tmp == 9" class="body9">
