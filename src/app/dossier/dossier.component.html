@@ -8,7 +8,7 @@
           <div class="sous-titre">
             <span>Renseignez le formulaire et valider</span>
           </div>
-          <div class="row formulaire">
+          <div class="row formulaire animated flash">
             <div class="icon">
               <img src="../../assets/images/images/13/folder.svg" alt="">
             </div>
@@ -31,7 +31,7 @@
               </ngx-recaptcha2>
             </form>
           </div>
-          <div *ngIf="aFormGroup.valid" (click)="soumettre()" class="soumettre">
+          <div *ngIf="aFormGroup.valid" (click)="soumettre()" class="soumettre animated zoomIn">
             <span>Soumettre</span>
           </div>
           <div *ngIf="!aFormGroup.valid" class="soumettre2">

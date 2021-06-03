@@ -6,7 +6,8 @@
   overflow-y: hidden;
 }
 .yn{
-  margin-bottom: 11.7em;
+  // margin-bottom: 11.7em;
+  margin-bottom: 0;
 }
 .declaration{
   h1{
@@ -143,7 +144,7 @@
     color: $secondary;
   }
   margin-bottom: 5%;
-  margin-top: 17.5%;
+  margin-top: 0;
 }
 
 .buttonSelected{
@@ -1264,8 +1265,8 @@ label {
 }
 @media(max-width: 767px){
   .body0{
-    margin-top: 30%;
-    margin-bottom: 30%;
+    margin-top: 9em;
+    margin-bottom: 6em;
     text-align: center;
   }
   .assurer{
@@ -1285,7 +1286,7 @@ label {
     padding-top: 0%;
     text-align: center;
     margin-left: 0%;
-    margin-top: 150px;
+    margin-top: 0;
     .left{
       width: 37px;
       height: auto;
@@ -1319,7 +1320,7 @@ label {
     margin-left: 0%;
     padding-top: 0%;
     width: auto;
-    margin-top: 150px;
+    margin-top: 0px;
     .right{
       width: 37px;
       height: auto;
@@ -1373,6 +1374,28 @@ label {
   .progress{
     height: 15px;
     border: 1px solid #087777;
+  }
+  .body4{
+    margin-bottom: 45%;
+    margin-top: 25%;
+  }
+  .sinistre4{
+    padding-left: 0;
+  }
+  .lieu4{
+    padding-left: 0;
+    img{
+      margin-left: 0;
+    }
+  }
+  .sinistre7{
+    padding-left: 0;
+  }
+  .sinistre3{
+    padding-left: 0;
+  }
+  .sinistre{
+    padding-left: 0;
   }
 }
 
@@ -1490,6 +1513,10 @@ label {
 @media(min-width: 1009.1px) and (max-width: 1340px){
   .btnoui{
     margin-left: auto;
+    margin-right: 1.725em;
+  }
+  .btnnon{
+    margin-left: 1.725em;
   }
 }
 @media(min-width: 1026.1px) and  (max-width: 1300px){
@@ -1636,25 +1663,14 @@ label {
   }
 }
 
-@media(min-width: 767.1px) and (max-width: 1212px){
+
+@media(min-width: 767.1px) and (max-width: 1169px){
   .body1{
     margin-bottom: 2.15em;
     margin-top: 2.15em;
   }
   #declaration{
     margin-bottom: 1.5em;
-  }
-  #suiv{
-    padding-top: 10.3em;
-    .right{
-      margin-left: 0%;
-    }
-  }
-  #prec{
-    padding-top: 10.3em;
-    .left2{
-      margin-left: 62%;
-    }
   }
   .collision{
     max-width: 30%;
@@ -1674,7 +1690,7 @@ label {
     p{
       font: normal normal 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      font-size: 60%;
+      font-size: 76%;
       color: #CCCBCE;
       margin-top: 0.5em;
     }
@@ -1692,7 +1708,7 @@ label {
     }
     p{
       font: normal normal 16px/20px 'Rawson-SemiBold';
-      font-size: 56%;
+      font-size: 76%;
       color: #CCCBCE;
       margin-top: 0.4em;
     }
@@ -1711,7 +1727,7 @@ label {
     p{
       font: normal normal 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      font-size: 56%;
+      font-size: 76%;
       color: #CCCBCE;
       margin-top: 2%;
       opacity: 1;
@@ -1733,7 +1749,7 @@ label {
         letter-spacing: 0px;
         color: #CCCBCE;
         margin-top: 0.55em;
-        font-size: 56%;
+        font-size: 76%;
     }
   }
   .collisionAnimal{
@@ -1754,7 +1770,7 @@ label {
       letter-spacing: 0px;
       color: #CCCBCE;
       margin-top: 0.2em;
-      font-size: 56%;
+      font-size: 76%;
     }
   }
   .autre{
@@ -1770,7 +1786,7 @@ label {
       font: normal normal 600 16px/20px 'Rawson-SemiBold';
       color: #CCCBCE;
       margin-top: 0.65em;
-      font-size: 56%;
+      font-size: 76%;
     }
   }
 }
@@ -1778,8 +1794,8 @@ label {
 //2
 @media(max-width: 767px){
   .body2{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 9em;
+    margin-bottom: 4em;
   }
   // .sinistre2{
   //   h1{
@@ -1812,8 +1828,8 @@ label {
 }
 @media(min-width: 767.1px) and (max-width: 1000px){
   .body2{
-    margin-top: 2.15em;
-    margin-bottom: 2.15em;
+    margin-top: 9em;
+    margin-bottom: 4em;
   }
   .sinistre2{
     h1{
@@ -2225,5 +2241,36 @@ label {
   .left{
     margin-right: 0;
     margin-left: auto;
+  }
+}
+@media(max-width: 1360px){
+  #suiv{
+    padding-top: 230px;//10.3em;
+    .right{
+      margin-left: 0%;
+    }
+  }
+  #prec{
+    padding-top: 230px;//10.3em;
+    // .left2{
+    //   margin-left: 62%;
+    // }
+    .left, .left2{
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+  .collision, .inondation{
+    margin-left: 1em;
+  }
+  .sinistre2{
+    margin-left: 0;
+  }
+  .saisiDate{
+    padding-left: 0;
+    text-align: center;
+  }
+  .date{
+    padding-left: 0;
   }
 }

@@ -52,7 +52,7 @@
             </div>
 
             <div *ngIf="tmp == 1"  class="body1">
-              <div class="sinistre1">
+              <div class="sinistre1 animated slideInDown">
                 <h1>Déclaration de sinistre</h1>
                 <div class="passe">
                   <span>Que se passe t‘il ?</span>
@@ -60,30 +60,30 @@
               </div>
 
               <div class="row" id="declaration">
-                <div [ngClass]="typeSinistre == 'collision' ? 'col-4 collision selected' : 'col-4 collision' " (click)="Sinitre(0)">
+                <div [ngClass]="typeSinistre == 'collision' ? 'col-4 collision selected animated slideInDown' : 'col-4 collision animated slideInDown' " (click)="Sinitre(0)">
                   <img src="../../assets/images/images/3/collision-web.svg" alt="">
                   <p>Collision</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'vol' ? 'col-4 vol selected' : 'col-4 vol' " (click)="Sinitre(1)">
+                <div [ngClass]="typeSinistre == 'vol' ? 'col-4 vol selected animated slideInDown' : 'col-4 vol animated slideInDown' " (click)="Sinitre(1)">
                   <img src="../../assets/images/images/3/vol-web.svg" alt="">
                   <p>Vol</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'dommage' ? 'col-4 dommage selected' : 'col-4 dommage' " (click)="Sinitre(2)">
+                <div [ngClass]="typeSinistre == 'dommage' ? 'col-4 dommage selected animated slideInDown' : 'col-4 dommage animated slideInDown' " (click)="Sinitre(2)">
                   <img src="../../assets/images/images/3/domage-mineurs-web.svg" alt="">
                   <p>Dommage mineure</p>
                 </div>
               </div>
 
               <div class="row">
-                <div [ngClass]="typeSinistre == 'inondation' ? 'col-4 inondation selected' : 'col-4 inondation' " (click)="Sinitre(3)">
+                <div [ngClass]="typeSinistre == 'inondation' ? 'col-4 inondation selected animated slideInUp' : 'col-4 inondation animated slideInUp' " (click)="Sinitre(3)">
                   <img src="../../assets/images/images/3/inondation-web.svg" alt="">
                   <p>Inondation</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'collisionAnimal' ? 'col-4 collisionAnimal selected' : 'col-4 collisionAnimal' " (click)="Sinitre(4)">
+                <div [ngClass]="typeSinistre == 'collisionAnimal' ? 'col-4 collisionAnimal selected animated slideInUp' : 'col-4 collisionAnimal animated slideInUp' " (click)="Sinitre(4)">
                   <img src="../../assets/images/images/3/animal-collision-web.svg" alt="">
                   <p>Collision avec un. Animal</p>
                 </div>
-                <div [ngClass]="typeSinistre == 'autre' ? 'col-4 autre selected' : 'col-4 autre' " (click)="Sinitre(5)">
+                <div [ngClass]="typeSinistre == 'autre' ? 'col-4 autre selected animated slideInUp' : 'col-4 autre animated slideInUp' " (click)="Sinitre(5)">
                   <img src="../../assets/images/images/3/autres-web.svg" alt="">
                   <p>Autres</p>
                 </div>
@@ -104,7 +104,7 @@
               <div class="date">
                 <label>
                   <!-- <input type="text" class="input jj"> -->
-                  <select class="input jj">
+                  <select class="input jj animated slideInLeft">
                     <option>JJ</option>
                     <option [value]="i" *ngFor="let i of jours">{{i}}</option>
                   </select>
@@ -118,7 +118,7 @@
                 </label>
                 <label>
                   <!-- <input type="text" class="input yy"> -->
-                  <select class="input yy">
+                  <select class="input yy animated slideInRight">
                     <option value="volvo">AA</option>
                     <option [value]="i" *ngFor="let i of annees">{{i}}</option>
                   </select>
@@ -136,7 +136,7 @@
                   <span>Ou est-ce que ça s’est passé ?</span>
                 </div>
               </div>
-              <div class="map">
+              <div class="map animated rotateIn">
                 <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" alt="chargement du maps">
                   <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true">
                   </agm-marker>
@@ -158,7 +158,7 @@
                   <span>Ou est-ce que ça s’est passé ?</span>
                 </div>
               </div>
-              <div class="lieu4">
+              <div class="lieu4 animated pulse">
                 <img src="../../assets/images/images/6/google-map-web.svg" alt="">
                 <span>{{address}} Dakar Senegal</span>
               </div>
@@ -171,7 +171,7 @@
                   <span>Décrivez en quelques lignes les circonstances ou s’est déroulé l’ accident</span>
                 </div>
               </div>
-              <div class="form-group description">
+              <div class="form-group description  animated zoomIn">
                 <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Petite description…."></textarea>
               </div>
             </div>
@@ -183,7 +183,7 @@
                   <span>Télécharger photos de l’accident et documents</span>
                 </div>
               </div>
-              <div class="upload" (click) = "upload.click()">
+              <div class="upload animated rotateIn" (click) = "upload.click()">
                 <div class="row">
                   <div class="col-5">
                     <img src="../../assets/images/images/7/upload-icon-web.svg" alt="">
@@ -213,7 +213,7 @@
                 </div>
               </div>
               <div class="files">
-                <div class="pdf" *ngFor="let file of myFiles;let i=index">
+                <div class="pdf animated slideInUp" *ngFor="let file of myFiles;let i=index">
                   <div class="row">
                     <div class="col-2">
                       <img [src]="fileType[file['type']]" alt="">
@@ -237,9 +237,9 @@
                 </div>
               </div>
 
-              <form [formGroup] = "formInfoVehicule">
+              <form [formGroup] = "formInfoVehicule" class="">
 
-                  <div class="matriculeSN">
+                  <div class="matriculeSN animated slideInRight">
                     <div class="row">
                       <div class="col-2 pr-0">
                         <div class="sn ml-0">
@@ -250,7 +250,7 @@
                             <div class=""><P>SN</P></div>
                         </div>
                       </div>
-                      <div class="col-8 pl-0 pr-0">
+                      <div class="col-8 pl-0 pr-0 animated slideInRight">
                         <label>
                           <input type="text" formControlName = "immatriculation" class="input" placeholder="Immatriculation">
                         </label>
@@ -270,19 +270,19 @@
                     </div>
                   </div>
 
-                  <div class="matricule">
+                  <div class="matricule animated slideInLeft">
                     <label>
                       <input type="text" formControlName = "marque" class="input" placeholder="Marque">
                     </label>
                   </div>
 
-                  <div class="matricule">
+                  <div class="matricule animated slideInRight">
                     <label>
                       <input type="text" formControlName = "model" class="input" placeholder="Model">
                     </label>
                   </div>
 
-                  <div class="matricule">
+                  <div class="matricule animated slideInLeft">
                     <label>
                       <input type="text" formControlName = "annee" class="input" placeholder="Année">
                     </label>
@@ -301,10 +301,10 @@
                 <div [ngClass]="cmpte == false ? 'btnnon91' : 'btnnon92'" (click)="Compte('non')">
                   <span>NON</span>
                 </div> -->
-                <div [ngClass]="cmpte == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="Compte('oui')">
+                <div [ngClass]="cmpte == true ? 'btnoui buttonSelected animated slideInLeft' : 'btnoui buttonNonSelected animated slideInLeft'" (click)="Compte('oui')">
                   <span>OUI</span>
                 </div>
-                <div [ngClass]="cmpte == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="Compte('non')">
+                <div [ngClass]="cmpte == false ? 'btnnon buttonSelected animated slideInRight' : 'btnnon buttonNonSelected animated slideInRight'" (click)="Compte('non')">
                   <span>NON</span>
                 </div>
               </div>
@@ -316,7 +316,7 @@
               </div>
               <div class="inscrir">
                   <form [formGroup] = "isncriptionForm">
-                      <label>
+                      <label class="animated slideInRight">
                         <p class="label-txt">Nom d’utilisateur</p>
                         <input type="text" formControlName="user" class="input">
                         <img *ngIf="isncriptionForm.valid" [src]="pathImg+'10/username-valide-web.svg'" class="userIcon">
@@ -324,7 +324,7 @@
                           <div class="line"></div>
                         </div>
                       </label>
-                      <label>
+                      <label class="animated slideInLeft">
                         <p class="label-txt">Mot de passe</p>
                         <input [type]="type" formControlName="pwd" class="input">
                         <img  class="pass"*ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="Afficher('pass')">
@@ -334,7 +334,7 @@
                           <div class="line"></div>
                         </div>
                       </label>
-                      <label>
+                      <label class="animated slideInRight">
                         <p class="label-txt">Confirmer mot de passe</p>
                         <input [type]="typeconfirm" formControlName="pwdconfirm" class="input">
                         <img class="pass" *ngIf="typeconfirm == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="Afficher('confirm')">
@@ -353,7 +353,7 @@
               </div>
               <div class="connexion">
                 <form [formGroup] = "isncriptionForm">
-                  <label>
+                  <label class="animated slideInLeft">
                     <p class="label-txt">Nom d’utilisateur</p>
                     <input type="text" formControlName="user" class="input">
                     <img [src]="pathImg+'10/username-valide-web.svg'" class="userIcon">
@@ -361,7 +361,7 @@
                       <div class="line"></div>
                     </div>
                   </label>
-                  <label>
+                  <label class="animated slideInLeft">
                     <p class="label-txt">Mot de passe</p>
                     <input [type]="type" formControlName="pwd" class="input">
                     <img class="pass" *ngIf="type == 'password'" [src]="pathImg+'10/mot-de-passe-visible-web.svg'" (click)="Afficher('pass')">
