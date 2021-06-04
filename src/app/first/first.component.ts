@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { AutGuardService } from './../service/aut-guard.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,10 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
 
   public carousels : any[];
+  public slideIn: string = "slideInRight";
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+    // localStorage.removeItem('isConnected');
+    this.redirectTo();
     this.carousels = [
       {
         img: "../../assets/images/images/temoignage-1.png",
@@ -34,8 +39,18 @@ export class FirstComponent implements OnInit {
     ];
   }
 
-  left(){
-    console.log('waly');
-
+  slide(side : string){
+    if(side == "left"){
+      this.slideIn = "slideInLeft";
+    }
+    if(side == "right"){
+      this.slideIn = "slideInRight";
+    }
   }
+  redirectTo(){
+    if(!localStorage.getItem('isConnected')){
+      this.route.navigate(['sign-in']);
+    }
+  }
+
 }

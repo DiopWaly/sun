@@ -39,6 +39,10 @@ input{
  outline: none;
 }
 
+::placeholder{
+  color: #1f666665;
+}
+
 .card h3{
  padding: 20px;
  font-size: 40px;
@@ -55,6 +59,9 @@ input{
  width: 100%;
  padding: 5px 0;
  border-bottom: 1px solid #0a1931;
+ font-family: 'Rawson-SemiBold';
+ font-size: 17px;
+ color: $secondary;
 }
 
 .btn{
@@ -67,6 +74,8 @@ input{
  padding: 10px;
  background-image: linear-gradient(45deg, #005a8d, #00ead3);
  color: #fff;
+ font-family: 'Rawson-LightIt';
+ font-size: 15px;
  cursor: pointer;
 }
 
@@ -77,6 +86,9 @@ input{
 .card .text{
  padding-top: 20px;
  font-size: small;
+ a{
+   text-decoration: underline;
+ }
 }
 
 .social_icons{

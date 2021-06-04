@@ -13,14 +13,14 @@ export class SecondComponent implements OnInit {
 
   @ViewChild('confirmDelete') private closeModal: ElementRef;
   public pathImg: string = "../../assets/images/images/";
-  public tmp: number = 0;
+  public tmp: number = 2;
   public cmpte: boolean = false;
   public SalamaAssurer : boolean = false;
   public type : string = "password";
   public typeconfirm: string = "password";
   public progress = 0;
-  public tabprogress = [5,10,15,20,30,45,50,65,75,80,90,95];
-  public ettiquettes = [10,14.5,18.5,23,32,45.3,49.5,63,71.7,76,85,89.6];
+  public tabprogress = [5,10,15,20,30,45,50,65,75,80,90,95]; //le progressemet de la progressbar
+  public ettiquettes = [10,14.5,18.5,23,32,45.3,49.5,63,71.7,76,85,89.6];//pour le progressement de l'ettiquettes
   public ettiquette : number;
   public form : FormGroup;
   public isncriptionForm : FormGroup;
@@ -30,11 +30,11 @@ export class SecondComponent implements OnInit {
   public jours: number[] = [];
   public mois: number[] = [];
   public annees: number[] = [];
-  errorFile:boolean=false;
-  latitude: number;
-  longitude: number;
-  zoom: number;
-  address: string;
+  public errorFile:boolean=false;
+  public latitude: number;
+  public longitude: number;
+  public zoom: number;
+  public address: string;
   private geoCoder;
 
   private user = {user: "", pwd: ""};
@@ -48,6 +48,10 @@ export class SecondComponent implements OnInit {
       private fb : FormBuilder,
       private http : HttpClient
      ) { }
+
+    //  onScroll() {
+    //   console.log('scrolled!!');
+    // }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -259,9 +263,9 @@ export class SecondComponent implements OnInit {
 
   DeleteConfirm(i : number) {
     let options ={
-      title: 'Sure you want to delete this file ?',
-      confirmLabel: 'Okay',
-      declineLabel: 'Cancel',
+      title: 'Voullez-vous supprimer ce fichier ?',
+      confirmLabel: 'Oui',
+      declineLabel: 'Non',
     }
     this.DeleteConfirmService.confirm(options).then((res: boolean) => {
       this.delete = res;

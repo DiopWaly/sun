@@ -130,7 +130,7 @@
 
  //1
   .body0{
-    margin-bottom: 21.2%;
+    margin-bottom: 21.2%; //161px valeur px
     margin-top: 18.3%;
   }
  .assurer{
@@ -172,17 +172,9 @@
   cursor: pointer;
   width: 8.05em;
   height: 3em;
-  // background: $primary 0% 0% no-repeat padding-box;
-  // border: 1px solid $secondary;
   text-align: center;
   margin: auto;
   margin-right: 1.15em;
-  // span{
-  //   font-family: 'Avenir-Medium';
-  //   font-size: 16.7px;
-  //   letter-spacing: 0.1px;
-  //   color: $secondary;
-  // }
   margin-left: 19.45em;
   padding-top: 0.6em;
   margin-top: 0%;
@@ -251,13 +243,17 @@
     margin-left: 0.5em;
     margin-right: 0%;
     .input{
-      width: 100%;
+      width: 39px; //38px
       font-family: 'Rawson-SemiBold';
       font-size: 27px;
       padding: 0%;
       padding-bottom: 0.29em;
       text-align: right;
       border: none;
+      -webkit-appearance: none;
+      option{
+        font-size: 15px;
+      }
     }
     .jj{
       color: #D3EAE9;
@@ -273,7 +269,6 @@
     }
   }
 }
-
 
  //6
  .body6{
@@ -1812,18 +1807,18 @@ label {
       font: normal normal  14px/25px "Rawson-SemiBold";
     }
   }
-  .date label .jj{
-    font-size: 19px;
+  .date label .jj, .mm, .yy{
+    font-size: 10px;
     padding-bottom: 0.1em;
   }
-  .date label .mm{
-    font-size: 19px;
-    padding-bottom: 0.1em;
-  }
-  .date label .yy{
-    font-size: 19px;
-    padding-bottom: 0.1em;
-  }
+  // .date label .mm{
+  //   font-size: 19px;
+  //   padding-bottom: 0.1em;
+  // }
+  // .date label .yy{
+  //   font-size: 19px;
+  //   padding-bottom: 0.1em;
+  // }
 
 }
 @media(min-width: 767.1px) and (max-width: 1000px){
@@ -1846,18 +1841,18 @@ label {
       font: normal normal  17px/25px "Rawson-SemiBold";
     }
   }
-  .date label .jj{
+  .date label .jj, .mm, .yy{
     font-size: 19px;
     padding-bottom: 0.1em;
   }
-  .date label .mm{
-    font-size: 19px;
-    padding-bottom: 0.1em;
-  }
-  .date label .yy{
-    font-size: 19px;
-    padding-bottom: 0.1em;
-  }
+  // .date label .mm{
+  //   font-size: 19px;
+  //   padding-bottom: 0.1em;
+  // }
+  // .date label .yy{
+  //   font-size: 19px;
+  //   padding-bottom: 0.1em;
+  // }
 }
 
 //5

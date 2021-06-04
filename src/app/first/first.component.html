@@ -78,8 +78,8 @@
   <div class="row carous">
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <a class="carousel-control-next" role="button" aria-hidden="true" data-slide="next" href="#carouselExampleSlidesOnly" #next></a>
-        <a class="carousel-control-prev" role="button" aria-hidden="true" data-slide="prev" href="#carouselExampleSlidesOnly" #prec></a>
+        <a class="carousel-control-next" role="button" aria-hidden="true" data-slide="next" href="#carouselExampleSlidesOnly" #next (click)="slide('left')"></a>
+        <a class="carousel-control-prev" role="button" aria-hidden="true" data-slide="prev" href="#carouselExampleSlidesOnly" #prec (click)="slide('right')"></a>
 
         <div *ngFor="let carousel of carousels; let i = index" [ngClass]=" i == 0 ? 'carousel-item active' : 'carousel-item'">
           <div class="msk" id="lorem">
@@ -95,7 +95,7 @@
                 <p class="mb-0">{{carousel.status}}</p>
               </div>
             </div>
-          <div class="center animated slideInRight" id="lorem">
+          <div [class]="'center animated '+ slideIn" id="lorem">
             <div class="text-center">
               <img [src]="carousel.img" class="rounded" alt="...">
             </div>

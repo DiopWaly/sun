@@ -23,7 +23,7 @@ export class AuthenticationComponent implements OnInit {
     if(this.form.value['login'] == 'a'){
       console.log(this.form.value['login']);
       localStorage.setItem('isConnected','true');
-      this.router.navigate(['first']);
+      this.router.navigate(['accueil']);
     }else{
       this.erreur = false;
     }

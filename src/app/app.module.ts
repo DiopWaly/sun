@@ -1,3 +1,4 @@
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,7 @@ import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
 import { TestComponent } from './test/test.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,11 @@ import { HttpClientModule } from '@angular/common/http';
       libraries: ['places']
     }),
     NgxBootstrapConfirmModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxUiLoaderModule, // import NgxUiLoaderModule
+    NgxUiLoaderRouterModule,
+    NgxUiLoaderHttpModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

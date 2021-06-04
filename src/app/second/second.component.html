@@ -2,7 +2,7 @@
 
   <app-menu></app-menu>
     <div *ngIf="tmp < 12" >
-      <div class="row">
+      <div class="row animated  fadeInLeft">
         <div class="col-4"></div>
         <div class="declaration">
           <h1 class="">Je fais ma déclaration</h1>
@@ -15,7 +15,7 @@
       </div>
       <div class="row">
        <!-- <div class="col-md-1"></div> -->
-       <div class="col-md-10 prog">
+       <div class="col-md-10 prog animated  fadeInRight">
           <div class="progress" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [style.width]="progress+'%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-value" [style]="'left:'+ettiquette+'%;'">{{progress}}%</div>
@@ -42,10 +42,10 @@
                 <h1>êtes-vous assuré de Salama ?</h1>
               </div>
               <div class="row yn">
-                <div [ngClass] = "SalamaAssurer == true ? 'btnoui buttonSelected' : 'btnoui buttonNonSelected'" (click)="Assurer('oui')">
+                <div [ngClass] = "SalamaAssurer == true ? 'btnoui buttonSelected animated slideInLeft' : 'btnoui buttonNonSelected animated slideInLeft'" (click)="Assurer('oui')">
                   <span>OUI</span>
                 </div>
-                <div [ngClass] = "SalamaAssurer == false ? 'btnnon buttonSelected' : 'btnnon buttonNonSelected'" (click)="Assurer('non')">
+                <div [ngClass] = "SalamaAssurer == false ? 'btnnon buttonSelected animated slideInRight' : 'btnnon buttonNonSelected animated slideInRight'" (click)="Assurer('non')">
                   <span>NON</span>
                 </div>
               </div>
@@ -103,7 +103,8 @@
               </div>
               <div class="date">
                 <label>
-                  <!-- <input type="text" class="input jj"> -->
+                  <!-- <input type="text" class="input jj" (click)="f.click()"> -->
+
                   <select class="input jj animated slideInLeft">
                     <option>JJ</option>
                     <option [value]="i" *ngFor="let i of jours">{{i}}</option>
@@ -158,7 +159,7 @@
                   <span>Ou est-ce que ça s’est passé ?</span>
                 </div>
               </div>
-              <div class="lieu4 animated pulse">
+              <div class="lieu4 animated zoomIn">
                 <img src="../../assets/images/images/6/google-map-web.svg" alt="">
                 <span>{{address}} Dakar Senegal</span>
               </div>
@@ -199,8 +200,8 @@
                 </form>
               </div>
               <div *ngIf="errorFile" class="row">
-                <div class="col error-file">
-                  <span>Veuillez choisir des fichiers au format PDF ou des images</span>
+                <div class="col error-file animated zoomIn">
+                  <span>Veuillez choisir des fichiers au format PDF ou images</span>
                 </div>
               </div>
             </div>
@@ -213,7 +214,7 @@
                 </div>
               </div>
               <div class="files">
-                <div class="pdf animated slideInUp" *ngFor="let file of myFiles;let i=index">
+                <div class="pdf animated slideInLeft" *ngFor="let file of myFiles;let i=index">
                   <div class="row">
                     <div class="col-2">
                       <img [src]="fileType[file['type']]" alt="">
@@ -227,6 +228,8 @@
                   </div>
                 </div>
               </div>
+              <!-- <ng-template #avertir>ici</ng-template> -->
+
             </div>
 
             <div *ngIf="tmp == 8"  class="body8">
@@ -384,7 +387,7 @@
       </div>
     </div>
     <div *ngIf="tmp == 12" class="body12">
-      <div class="suc">
+      <div class="suc  animated zoomIn">
         <img src="../../assets/images/images/12/succès-web.svg" alt="">
       </div>
       <div class="sinistre12">
@@ -392,7 +395,7 @@
           <p class="p">Vous pouvez suivre l’état d’avancement de</p>
           <p>Votre demande dans la sections MES DEMANDES</p>
           <p class="numero">Numéro de demande <span>#2021A001</span></p>
-          <div class="accueil" routerLink="/first">
+          <div class="accueil  animated zoomIn" routerLink="/first">
             <span>Retour à la page d’accueil</span>
           </div>
       </div>

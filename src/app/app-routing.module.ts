@@ -15,26 +15,26 @@ const routes: Routes = [
     path:"sign-in", component: AuthenticationComponent
   },
   {
-    path:"dossier", component: DossierComponent
+    path:"dossier", component: DossierComponent, canActivate: [AutGuardService]
   },
   {
-    path:"resultat", component: ResultatComponent
+    path:"resultat", component: ResultatComponent, canActivate: [AutGuardService]
   },
   {
-    path:"first", component: FirstComponent, canActivate: [AutGuardService]
+    path:"accueil", component: FirstComponent
   },
   {
     path:"menu", component: MenuComponent
   },
   {
-    path:"second", component: SecondComponent
+    path:"declaration", component: SecondComponent, canActivate: [AutGuardService]
   },
   {
     path:"footer", component: FooterComponent
   },
   {
     path: "",
-    redirectTo: "/first",
+    redirectTo: "/accueil",
     pathMatch: "full"
   }
 ];

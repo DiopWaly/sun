@@ -13,7 +13,7 @@ export class AutGuardService implements CanActivate {
     if(localStorage.getItem('isConnected')){
       return true;
     }else{
-      this.router.navigate['test'];
+      this.router.navigate['sign-in'];
       return false;
     }
   }
