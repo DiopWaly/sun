@@ -357,12 +357,11 @@ hr{
   height: 102%;
 }
 
-@media(max-width: 767px){
+@media(max-width: 767px) {
   #ilustsalama{
     .ilustsalama{
       height: 103%;
     }
-
   }
   .apropos{
     padding-left: 2px;
@@ -1186,4 +1185,80 @@ hr{
   }
 }
 
+@media(min-width: 300px) and (max-width: 474px){
+  #ilustsalama{
+    margin-right: 10px;
+  }
+  .apropos{
+    height: auto;
+    .lorempropos{
+      font-size: 12px;
+    }
+    .res{
+      height: 145px;
+    }
+    #titrepropos{
+      .titrepropos{
+        font-size: 20px;
+      }
+      hr{
+        width: 43px;
+      }
+    }
+  }
+  @media only screen and (max-width:358px) {
+    .apropos{
+      height: 410px;
+      #titrepropos{
+        height: auto;
+      }
+    }
+    .blocAppGratuite{
+      margin-top: 5.5%;
+      .titreAppGratuite{
+        font-size: 21px;
+      }
+    }
+    #profil{
+      width: 100%;
+      max-width: 100%;
+      // padding-right: 0;
+      .profil{
+        // width: 30px;
+      }
+      p{
+        // font-size: 11px;
+      }
+    }
+    #assurance{
+      width: 100%;
+      max-width: 100%;
+      .assurance{
+        margin-top: 15px;
+      }
+      p{
+        // font-size: 11px;
+      }
+    }
+    #suivi{
+      width: 100%;
+      max-width: 100%;
+    }
+    #indemnisation{
+      width: 100%;
+      max-width: 100%;
+    }
+    #chat{
+      width: 100%;
+      max-width: 100%;
+    }
+    #notification{
+      width: 100%;
+      max-width: 100%;
+    }
+    #carouselExampleSlidesOnly{
+      margin-top: 15px;
+    }
+  }
+}
 

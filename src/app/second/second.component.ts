@@ -13,7 +13,7 @@ export class SecondComponent implements OnInit {
 
   @ViewChild('confirmDelete') private closeModal: ElementRef;
   public pathImg: string = "../../assets/images/images/";
-  public tmp: number = 2;
+  public tmp: number = 0;
   public cmpte: boolean = false;
   public SalamaAssurer : boolean = false;
   public type : string = "password";

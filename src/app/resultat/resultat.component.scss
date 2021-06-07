@@ -263,6 +263,34 @@ html *
       }
     }
   }
+  @media(max-width: 418px){
+    .container{
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      .step{
+        .content{
+          max-width: 213px;
+          span{
+            font-size: 11px;
+          }
+        }
+        .date{
+          span{
+            font-size: 10px;
+          }
+        }
+        .circle{
+          width: 30px;
+          height: 30px;
+        }
+        .line{
+          top: -28px;
+          left: 16px;
+        }
+      }
+    }
+  }
 }
 
 @media(max-width: 1000px){

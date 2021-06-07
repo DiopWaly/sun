@@ -269,4 +269,12 @@
       height: 3rem;
     }
   }
+  @media (max-width: 488px){
+    .body .consulte-dossier{
+      margin-bottom: 85px;
+      .spinn{
+        margin-bottom: 230px;
+      }
+    }
+  }
 }

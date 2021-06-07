@@ -17,7 +17,6 @@ import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
 import { TestComponent } from './test/test.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { HttpClientModule } from '@angular/common/http';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +43,6 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     NgxUiLoaderModule, // import NgxUiLoaderModule
     NgxUiLoaderRouterModule,
     NgxUiLoaderHttpModule,
-    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

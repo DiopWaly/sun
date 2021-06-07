@@ -28,7 +28,6 @@
     "ngx-bootstrap": "^6.2.0",
     "ngx-bootstrap-confirm": "^4.0.3",
     "ngx-captcha": "^9.0.1",
-    "ngx-infinite-scroll": "^10.0.1",
     "ngx-ui-loader": "^10.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^2.0.0",
