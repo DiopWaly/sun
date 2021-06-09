@@ -1,7 +1,7 @@
 @import "../../assets/css/variable.scss";
 .body{
   width: 100%;
-  background: $primary 0% 0% no-repeat padding-box;
+  background: $primary;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -12,7 +12,7 @@
 .declaration{
   h1{
     text-align: center;
-    font: normal normal 35px/42px 'Rawson-Bold';
+    font: 35px/42px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     margin-bottom: 0%;
@@ -25,14 +25,14 @@
   hr{
     width: 121px;
     height: 5px;
-    background: $tertiaire 0% 0% no-repeat padding-box;
+    background: $tertiaire;
     margin-top: 0%;
     margin-left: 0%;
     transform: translate(0.2%, 49%);
   }
   span{
     text-align: center;
-    font: normal normal 22px/26px 'Rawson-Regular';
+    font: 22px/26px 'Rawson-Regular';
     letter-spacing: 0px;
     color: $secondary;
     margin-bottom: 2%;
@@ -52,7 +52,7 @@
 }
 .progress-bar{
   height: 20px;
-  background-color: #087777;
+  background-color: $secondaryClair;
   border-radius: 17px;
   border-bottom-right-radius: 31px;
   opacity: 1;
@@ -64,7 +64,7 @@
   height: 20px;
   border-radius: 17px;
   background-color:$primary;
-  border: 2px solid #087777;
+  border: 2px solid $secondaryClair;
 }
 .prog{
   margin-left: auto;
@@ -73,7 +73,7 @@
  .left{
     width: 2.7em;
     height: 2.65em;
-    background: #e3e3e3 0% 0% no-repeat padding-box;
+    background: $precLeftColor;
     margin: auto;
     margin-left: 8em;
     text-align: center;
@@ -86,13 +86,13 @@
  }
  .right:hover{
   cursor: pointer;
-  background: #185050 0% 0% no-repeat padding-box;
+  background: $hoverColor;
  }
 
 .right{
   width: 2.8em;
   height: 2.65em;
-  background: $secondaryClair 0% 0% no-repeat padding-box;
+  background: $secondaryClair;
   margin-left: 2.84em;
   text-align: center;
   padding-top: 0.2em;
@@ -106,7 +106,7 @@
   text-align: center;
   width: 2.7em;
   height: 2.65em;
-  background: $secondaryClair 0% 0% no-repeat padding-box;
+  background: $secondaryClair;
   margin: auto;
   margin-left: 8em;
   img{
@@ -117,7 +117,7 @@
 }
 .left2:hover{
   cursor: pointer;
-  background: #185050 0% 0% no-repeat padding-box;
+  background: $hoverColor;
  }
  #prec{
   text-align: right;
@@ -137,7 +137,7 @@
    margin: auto;
   h1{
     text-align: center;
-    font:  normal normal 31px/42px 'AvenirLTStd-Book';
+    font:  31px/42px 'AvenirLTStd-Book';
     font-size: 31px;
     letter-spacing: 0px;
     padding-left: 0.55em;
@@ -148,7 +148,7 @@
 }
 
 .buttonSelected{
-  background: $secondary 0% 0% no-repeat padding-box;
+  background: $secondary;
   span{
     text-align: center;
     font-family: 'Avenir-Medium';
@@ -158,7 +158,7 @@
   }
 }
 .buttonNonSelected{
-  background: $primary 0% 0% no-repeat padding-box;
+  background: $primary;
   border: 1px solid $secondary;
   span{
     font-family: 'Avenir-Medium';
@@ -201,7 +201,7 @@
   margin: auto;
   margin-left: 0.9em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -210,7 +210,7 @@
   }
   .quand{
       span{
-        font: normal normal 300 17px/21px 'Rawson-LightIt';
+        font: 300 17px/21px 'Rawson-LightIt';
         letter-spacing: 0px;
         color: $secondary;
       }
@@ -223,7 +223,7 @@
    text-align: center;
    margin: auto;
    span{
-    font: normal normal 600 21px/25px 'Rawson-SemiBold';
+    font: 600 21px/25px 'Rawson-SemiBold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -256,12 +256,12 @@
       }
     }
     .jj{
-      color: #D3EAE9;
-      border-bottom: 1px solid #d3eae9;
+      color: $dateInputColor;
+      border-bottom: 1px solid $dateInputColor;
     }
     .mm{
-      border-bottom: 1px solid #d3eae9  ;
-      color: #D3EAE9;
+      border-bottom: 1px solid $dateInputColor  ;
+      color: $dateInputColor;
     }
     .yy{
       border-bottom: 1px solid teal;
@@ -280,7 +280,7 @@
   text-align: center;
   margin-bottom: 1.65em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -290,7 +290,7 @@
   .passe{
     width: 122%;
     span{
-      font: normal normal 300 17px/21px 'Rawson-LightIt';
+      font: 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
       color: $secondary;
     }
@@ -300,14 +300,14 @@
   padding-left: 0.75em;
 }
 .upload:hover{
-  background: #0a5c5c 0% 0% no-repeat padding-box;
+  background: #0a5c5c;
 }
 .upload{
     cursor: pointer;
     width: 13.65em;
     height: 4.25em ;
-    background: #087777 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: $secondaryClair;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     margin-left: 341px;
     margin-right: auto;
     text-align: center;
@@ -321,7 +321,7 @@
     }
     p{
       text-align: left;
-      font: normal normal 25px/30px 'Rawson-SemiBold';
+      font: 25px/30px 'Rawson-SemiBold';
       letter-spacing: 0px;
       color: $primary;
       text-transform: uppercase;
@@ -344,13 +344,13 @@
   text-align: center;
 }
 .modal-dialog.modal-notify.modal-danger .modal-header{
-  background-color: #087777;
+  background-color: $secondaryClair;
 }
 .flex-center{
-  background-color: #087777;
+  background-color: $secondaryClair;
   .btn-outline-danger{
-    border: 2px solid #ffffff!important;
-    color: #fff !important;
+    border: 2px solid $primary!important;
+    color: $primary !important;
   }
 }
 
@@ -364,7 +364,7 @@
   margin: auto;
   padding-left: 1em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -373,7 +373,7 @@
   }
   .ou{
       span{
-        font: normal normal 300 17px/21px 'Rawson-LightIt';
+        font: 300 17px/21px 'Rawson-LightIt';
         letter-spacing: 0px;
         color: $secondary;
       }
@@ -401,8 +401,8 @@
 .lieu{
   width: 268px;
   height: 50px;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   padding-top: 0.6em;
   margin-left: auto;
@@ -414,7 +414,7 @@
     transform: perspective(500px) translate3d(-0.3em, -0.2em, 1.6em);
   }
   span{
-    font: normal normal 13px/16px 'Rawson-SemiBold';
+    font: 13px/16px 'Rawson-SemiBold';
     letter-spacing: 0px;
     color: $secondary;
   }
@@ -422,8 +422,8 @@
 .addresse{
   width: 340px;
   height: 50px;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
 }
 
 //4
@@ -438,7 +438,7 @@
   padding-left: 1em;
   h1{
     text-align: center;
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -447,7 +447,7 @@
   }
   .passe{
     span{
-      font: normal normal 300 17px/21px 'Rawson-LightIt';
+      font: 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
       color: $secondary;
     }
@@ -466,7 +466,7 @@
     margin-left: 2.2em;
   }
   span{
-    font: normal normal 13px/16px 'Rawson-SemiBold';
+    font: 13px/16px 'Rawson-SemiBold';
     letter-spacing: 0px;
     color: $secondary;
   }
@@ -483,7 +483,7 @@
   margin-bottom: 0.65em;
   padding-left: 0.7em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -493,7 +493,7 @@
   .passe{
     width: 122%;
     span{
-      font: normal normal 300 17px/21px 'Rawson-LightIt';
+      font: 300 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
       color: $secondary;
     }
@@ -516,7 +516,7 @@
     ::placeholder{
       text-align: center;
       letter-spacing: 0.17px;
-      color: #D3EAE9;
+      color: $dateInputColor;
     }
 }
 
@@ -531,7 +531,7 @@
   padding-left: 0.8em;
   margin-bottom: 1em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -541,7 +541,7 @@
   .passe{
     width: 122%;
     span{
-      font: normal normal 17px/21px 'Rawson-LightIt';
+      font: 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
       color: $secondary;
     }
@@ -560,8 +560,8 @@
   height: 45px;
   margin: auto;
   text-align: center;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   margin-bottom: 1em;
   padding: 0.4em;
   .sup{
@@ -573,7 +573,7 @@
   }
   p{
     text-align: left;
-    font: normal normal 12px/15px 'Rawson';
+    font: 12px/15px 'Rawson';
     letter-spacing: 0px;
     color: $secondary;
     margin-bottom: 0%;
@@ -605,7 +605,7 @@
   margin: auto;
   padding-left: 0.91em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -614,7 +614,7 @@
   }
 .passe{
     span{
-      font: normal normal 17px/21px 'Rawson-LightIt';
+      font: 17px/21px 'Rawson-LightIt';
       letter-spacing: 0px;
       color: $secondary;
     }
@@ -631,8 +631,8 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   margin: auto;
   margin-left: 2.15em;
@@ -644,9 +644,9 @@
     margin-left: -0.1em;
   }
   p{
-    font: normal normal 16px/20px 'Rawson-SemiBold';
+    font: 16px/20px 'Rawson-SemiBold';
     letter-spacing: 0px;
-    color: #CCCBCE;
+    color: $paragrapheColor;
     margin-top: 0.5em;
   }
 }
@@ -654,8 +654,8 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   margin: auto;
   margin-right: 3.5em;
@@ -667,7 +667,7 @@
   }
   p{
     font: 16px/20px 'Rawson-SemiBold';
-    color: #CCCBCE;
+    color: $paragrapheColor;
     margin-top: 0.4em;
   }
 }
@@ -676,8 +676,8 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   margin: auto;
   margin-right: 1em;
@@ -688,10 +688,10 @@
     margin-left: 0.1em;
   }
   p{
-    font: normal normal 16px/20px 'Rawson-SemiBold';
+    font: 16px/20px 'Rawson-SemiBold';
     letter-spacing: 0px;
     font-size: 16px;
-    color: #CCCBCE;
+    color: $paragrapheColor;
     margin-top: 0.4em;
     opacity: 1;
   }
@@ -700,8 +700,8 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   margin: auto;
   margin-left: 2.15em;
@@ -710,9 +710,9 @@
   // img{
   // }
   p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.55em;
   }
 }
@@ -720,8 +720,8 @@
   max-width: 219px;
   height: 67px;
   cursor: pointer;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   margin: auto;
   margin-right: 3.5em;
@@ -729,9 +729,9 @@
   // img{
   // }
   p{
-    font: normal normal 16px/20px 'Rawson-SemiBold';
+    font: 16px/20px 'Rawson-SemiBold';
     letter-spacing: 0px;
-    color: #CCCBCE;
+    color: $paragrapheColor;
     margin-top: 0.2em;
   }
 }
@@ -739,8 +739,8 @@
   max-width: 217px;
   height: 67px;
   cursor: pointer;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   text-align: center;
   margin: auto;
   margin-right: 1em;
@@ -748,13 +748,13 @@
   // img{
   // }
   p{
-    font: normal normal 16px/20px 'Rawson-SemiBold';
-    color: #CCCBCE;
+    font: 16px/20px 'Rawson-SemiBold';
+    color: $paragrapheColor;
     margin-top: 0.65em;
   }
 }
 .selected{
-  background: #087777 0% 0% no-repeat padding-box;
+  background: $secondaryClair;
 }
 
 //8
@@ -769,7 +769,7 @@
   text-align: center;
 h1{
   text-align: center;
-  font: normal normal 31px/42px 'AvenirLTStd-Book';
+  font: 31px/42px 'AvenirLTStd-Book';
   letter-spacing: 0px;
   color: $secondary;
 }
@@ -784,11 +784,11 @@ padding-left: 1.1em;
 // height: 3em;
 // margin: auto;
 // margin-right: 0em;
-// background: $secondary 0% 0% no-repeat padding-box;
+// background: $secondary;
 // border: 1px solid $secondary;
 // text-align: center;
 // span{
-//   font: normal normal 17px/23px 'Avenir-Medium';
+//   font: 17px/23px 'Avenir-Medium';
 //   letter-spacing: 0px;
 //   color: $primary;
 // }
@@ -801,11 +801,11 @@ padding-left: 1.1em;
 // height: 3em;
 // margin: auto;
 // margin-right: 0em;
-// background: $primary 0% 0% no-repeat padding-box;
+// background: $primary;
 // border: 1px solid $secondary;
 // text-align: center;
 // span{
-//   font: normal normal 17px/23px 'Avenir-Medium';
+//   font: 17px/23px 'Avenir-Medium';
 //   letter-spacing: 0px;
 //   color: $secondary;
 // }
@@ -819,11 +819,11 @@ padding-left: 1.1em;
 // height: 3em;
 // margin: auto;
 // margin-left: 3.4em;
-// background: $secondary 0% 0% no-repeat padding-box;
+// background: $secondary;
 // text-align: center;
 // span{
 //   text-align: center;
-//   font: normal normal medium 17px/23px 'Avenir-Medium';
+//   font: medium 17px/23px 'Avenir-Medium';
 //   letter-spacing: 0px;
 //   color: $primary;
 // }
@@ -836,12 +836,12 @@ padding-left: 1.1em;
 // height: 3em;
 // margin: auto;
 // margin-left: 3.3em;
-// background: $primary 0% 0% no-repeat padding-box;
+// background: $primary;
 // border: 1px solid $secondary;
 // text-align: center;
 // span{
 //   text-align: center;
-//   font: normal normal medium 17px/23px 'Avenir-Medium';
+//   font: medium 17px/23px 'Avenir-Medium';
 //   letter-spacing: 0px;
 //   color: $secondary;
 // }
@@ -858,7 +858,7 @@ padding-left: 1.1em;
   text-align: center;
   margin: auto;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -867,7 +867,7 @@ padding-left: 1.1em;
   }
   .quand{
       span{
-        font: normal normal 300 17px/21px 'Rawson-LightIt';
+        font: 300 17px/21px 'Rawson-LightIt';
         letter-spacing: 0px;
         color: $secondary;
       }
@@ -881,18 +881,18 @@ padding-left: 1.1em;
   width: 342px;
   height: 45px;
   margin: auto;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   margin-top: 0.7em;
   .sn{
     width: 37px;
     height: 45px;
-    background: $secondary 0% 0% no-repeat padding-box;
+    background: $secondary;
     margin-left: 4.2%;
     .blanc{
       width: 10%;
       height: 10px;
-      background: $primary 0% 0% no-repeat padding-box;
+      background: $primary;
       margin-top: 5%;
       margin-left: 36%;
       margin-bottom: 13%;
@@ -900,13 +900,13 @@ padding-left: 1.1em;
     .blanc1{
       width: 10%;
       height: 10px;
-      background: $primary 0% 0% no-repeat padding-box;
+      background: $primary;
       margin-top: 5%;
       margin-left: 7%;
     }
     p{
       text-align: left;
-      font: normal normal 600 17px/21px Rawson;
+      font: 600 17px/21px Rawson;
       letter-spacing: 0px;
       color: #fffff9db;
       margin-left: 22%;
@@ -926,9 +926,9 @@ padding-left: 1.1em;
     transition: ease .3s;
 
     text-align: left;
-    font: normal normal 13px/16px 'Rawson-Bold';
+    font: 13px/16px 'Rawson-Bold';
     letter-spacing: 0px;
-    color: #B5CECD;
+    color: $labelTextColor;
   }
 
   .input {
@@ -947,7 +947,7 @@ padding-left: 1.1em;
     color: $secondary;
   }
   ::placeholder{
-    color: #1f666665;
+    color: $placeHolderColor;
     font-size: 12px;
   }
 
@@ -958,8 +958,8 @@ padding-left: 1.1em;
   width: 342px;
   height: 45px;
   margin: auto;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
   margin-top: 1.05em;
   .marque{
     padding-top: 2.9%;
@@ -967,9 +967,9 @@ padding-left: 1.1em;
     padding-right: 0%;
     span{
       text-align: left;
-      font: normal normal 600 12px/15px 'Rawson-SemiBold';
+      font: 600 12px/15px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #1f6666d9;
+      color: $inputColor;
     }
   }
   label {
@@ -992,12 +992,12 @@ padding-left: 1.1em;
     outline: none;
 
     text-align: left;
-    font: normal normal 12px/15px 'Rawson-SemiBold';
+    font: 12px/15px 'Rawson-SemiBold';
     letter-spacing: 0px;
-    color: #1f6666d9;
+    color: $inputColor;
   }
   ::placeholder{
-    color: #1f666665;
+    color: $placeHolderColor;
   }
   transform: translate(2.5%,1%);
 }
@@ -1005,7 +1005,7 @@ h6{
   width: 29px;
   height: 30px;
   text-align: left;
-  font: normal normal 600 25px/30px 'Rawson-SemiBold';
+  font: 600 25px/30px 'Rawson-SemiBold';
   letter-spacing: 0px;
   color: $secondary;
   margin-bottom: 0%;
@@ -1027,7 +1027,7 @@ h6{
     label input{
       margin-top: 3%;
       text-align: right;
-      font: normal normal 12px/15px 'Rawson-SemiBold';
+      font: 12px/15px 'Rawson-SemiBold';
       letter-spacing: 0px;
       color: $secondary;
       padding-right: 4px;
@@ -1041,7 +1041,7 @@ h6{
         .input{
           padding-left: 0%;
           text-align: right;
-          font: normal normal  10px/10px 'Rawson-SemiBold';
+          font:  10px/10px 'Rawson-SemiBold';
           letter-spacing: 0px;
           color: $secondary;
           padding-right: 4px;
@@ -1064,9 +1064,9 @@ label {
   transition: ease .3s;
 
   text-align: left;
-  font: normal normal 13px/16px 'Rawson-Bold';
+  font: 13px/16px 'Rawson-Bold';
   letter-spacing: 0px;
-  color: #B5CECD;
+  color: $labelTextColor;
 }
 
 .input {
@@ -1081,7 +1081,7 @@ label {
   border-bottom: 1px solid #36989836;
   outline: none;
 
-  font: normal normal 14px/17px 'Rawson-Medium';
+  font: 14px/17px 'Rawson-Medium';
   letter-spacing: 0px;
   color: $secondary;
 }
@@ -1098,12 +1098,12 @@ label {
   cursor: pointer;
   width: 6%;
   margin-left: -6%;
-  color: #0F4947;
+  color: $userIconColor;
 }
 .userIcon{
   width: 6%;
   margin-left: -6%;
-  color: #0F4947;
+  color: $userIconColor;
 }
 //input
 
@@ -1118,7 +1118,7 @@ label {
   margin: auto;
   padding-left: 1.1em;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -1146,7 +1146,7 @@ label {
   text-align: center;
   margin: auto;
   h1{
-    font: normal normal 29px/35px 'Rawson-Bold';
+    font: 29px/35px 'Rawson-Bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -1177,7 +1177,7 @@ label {
   width: 42%;
   h1{
     text-align: left;
-    font: normal normal 24px/28px 'Rawson-bold';
+    font: 24px/28px 'Rawson-bold';
     letter-spacing: 0px;
     color: $secondary;
     text-transform: uppercase;
@@ -1185,7 +1185,7 @@ label {
   }
   p{
     text-align: center;
-    font: normal normal 21px/25px 'Rawson-Medium';
+    font: 21px/25px 'Rawson-Medium';
     letter-spacing: 0px;
     color: $secondary;
     margin-bottom: 0%;
@@ -1198,19 +1198,19 @@ label {
     margin-top: 7.6%;
     margin-left: 2%;
     span{
-      font: normal normal 21px/25px 'Rawson-Bold';
+      font: 21px/25px 'Rawson-Bold';
     }
   }
   .accueil:hover{
-    background: #1a5555 0% 0% no-repeat padding-box;
+    background: #1a5555;
   }
   .accueil{
     cursor: pointer;
     width: 238px;
     height: 30px;
-    background: $secondary 0% 0% no-repeat padding-box;
+    background: $secondary;
     span{
-      font: normal normal 18px/22px 'Rawson-Medium';
+      font: 18px/22px 'Rawson-Medium';
       letter-spacing: 0px;
       color: #ffffffdb;
       text-transform: uppercase;
@@ -1231,7 +1231,7 @@ label {
   height: 17px;
   line-height: 17px;
   border-radius: 3px;
-  background: #087777 0% 0% no-repeat padding-box;
+  background: $secondaryClair;
   font-size: 6px;
   font-weight: 700;
   color: #ffffffc2;
@@ -1243,7 +1243,7 @@ label {
 
 .progress-value:after{
   content: "";
-  border-top: 7px solid #087777;
+  border-top: 7px solid $secondaryClair;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   position: absolute;
@@ -1332,14 +1332,14 @@ label {
   .declaration{
     margin-left: auto;
     h1{
-      font: normal normal 25px/42px "Rawson-Bold";
+      font: 25px/42px "Rawson-Bold";
     }
     hr{
       height: 2px;
       width: 36%;
     }
     span{
-      font: normal normal 16px/26px "Rawson-Regular";
+      font: 16px/26px "Rawson-Regular";
     }
   }
   .img{
@@ -1368,7 +1368,7 @@ label {
   }
   .progress{
     height: 15px;
-    border: 1px solid #087777;
+    border: 1px solid $secondaryClair;
   }
   .body4{
     margin-bottom: 45%;
@@ -1419,14 +1419,14 @@ label {
     margin-left: 20%;
     margin-bottom: 2%;
     h1{
-      font: normal normal 30px/42px "Rawson-Bold";
+      font: 30px/42px "Rawson-Bold";
     }
     hr{
       width: 99px;
       height: 3px;
     }
     span{
-      font: normal normal 19px/26px "Rawson-Regular";
+      font: 19px/26px "Rawson-Regular";
     }
   }
   .img{
@@ -1521,7 +1521,7 @@ label {
   }
   .progress{
     height: 18px;
-    border: 1px solid #087777;
+    border: 1px solid $secondaryClair;
   }
 
 }
@@ -1552,7 +1552,7 @@ label {
     }
     .passe{
       span{
-        font: normal normal 12px/21px "Rawson-LightIt";
+        font: 12px/21px "Rawson-LightIt";
       }
     }
   }
@@ -1563,7 +1563,7 @@ label {
     max-width: 30%;
     height: 67px;
     cursor: pointer;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     text-align: center;
     margin: 0;
     margin-left: auto;
@@ -1575,10 +1575,10 @@ label {
       margin-left: -0.1em;
     }
     p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
       font-size: 60%;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.5em;
     }
   }
@@ -1594,9 +1594,9 @@ label {
       margin-left: 0.1em;
     }
     p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       font-size: 56%;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.4em;
     }
   }
@@ -1612,10 +1612,10 @@ label {
       margin-left: 0.1em;
     }
     p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
       font-size: 56%;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 2%;
       opacity: 1;
     }
@@ -1631,10 +1631,10 @@ label {
       width: 2em;
     }
     p{
-        font: normal normal 16px/20px 'Rawson-SemiBold';
+        font: 16px/20px 'Rawson-SemiBold';
         font-size: 56%;
         letter-spacing: 0px;
-        color: #CCCBCE;
+        color: $paragrapheColor;
         margin-top: 0.55em;
         font-size: 56%;
     }
@@ -1643,7 +1643,7 @@ label {
     max-width: 30%;
     height: 67px;
     cursor: pointer;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     text-align: center;
     margin-left: 0%;
     padding-top: 0em;
@@ -1653,9 +1653,9 @@ label {
       width: 1.1em;
     }
     p{
-      font: normal normal 600 16px/20px 'Rawson-SemiBold';
+      font: 600 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.2em;
       font-size: 56%;
     }
@@ -1670,8 +1670,8 @@ label {
       width: 1.5em;
     }
     p{
-      font: normal normal 600 16px/20px 'Rawson-SemiBold';
-      color: #CCCBCE;
+      font: 600 16px/20px 'Rawson-SemiBold';
+      color: $paragrapheColor;
       margin-top: 0.65em;
       font-size: 56%;
     }
@@ -1691,7 +1691,7 @@ label {
     max-width: 30%;
     height: 67px;
     cursor: pointer;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     text-align: center;
     margin: 0;
     margin-left: auto;
@@ -1703,10 +1703,10 @@ label {
       margin-left: -0.1em;
     }
     p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
       font-size: 76%;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.5em;
     }
   }
@@ -1722,9 +1722,9 @@ label {
       margin-left: 0.1em;
     }
     p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       font-size: 76%;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.4em;
     }
   }
@@ -1740,10 +1740,10 @@ label {
       margin-left: 0.1em;
     }
     p{
-      font: normal normal 16px/20px 'Rawson-SemiBold';
+      font: 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
       font-size: 76%;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 2%;
       opacity: 1;
     }
@@ -1759,10 +1759,10 @@ label {
       width: 2em;
     }
     p{
-        font: normal normal 16px/20px 'Rawson-SemiBold';
+        font: 16px/20px 'Rawson-SemiBold';
         font-size: 56%;
         letter-spacing: 0px;
-        color: #CCCBCE;
+        color: $paragrapheColor;
         margin-top: 0.55em;
         font-size: 76%;
     }
@@ -1771,7 +1771,7 @@ label {
     max-width: 30%;
     height: 67px;
     cursor: pointer;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     text-align: center;
     margin-left: 0%;
     padding-top: 0.2em;
@@ -1781,9 +1781,9 @@ label {
       width: 1.2em;
     }
     p{
-      font: normal normal 600 16px/20px 'Rawson-SemiBold';
+      font: 600 16px/20px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #CCCBCE;
+      color: $paragrapheColor;
       margin-top: 0.2em;
       font-size: 76%;
     }
@@ -1798,8 +1798,8 @@ label {
       width: 1.5em;
     }
     p{
-      font: normal normal 600 16px/20px 'Rawson-SemiBold';
-      color: #CCCBCE;
+      font: 600 16px/20px 'Rawson-SemiBold';
+      color: $paragrapheColor;
       margin-top: 0.65em;
       font-size: 76%;
     }
@@ -1814,7 +1814,7 @@ label {
   }
   .saisiDate{
     span{
-      font: normal normal  14px/25px "Rawson-SemiBold";
+      font:  14px/25px "Rawson-SemiBold";
     }
   }
 
@@ -1826,17 +1826,17 @@ label {
   }
   .sinistre2{
     h1{
-      font: normal normal 23px/35px "Rawson-Bold";
+      font: 23px/35px "Rawson-Bold";
     }
     .quand{
       span{
-        font: normal normal 12px/21px "Rawson-LightIt";
+        font: 12px/21px "Rawson-LightIt";
       }
     }
   }
   .saisiDate{
     span{
-      font: normal normal  17px/25px "Rawson-SemiBold";
+      font:  17px/25px "Rawson-SemiBold";
     }
   }
   .date label .jj, .mm, .yy{
@@ -1855,7 +1855,7 @@ label {
     }
     .passe{
       span{
-        font: normal normal 12px/21px "Rawson-LightIt";
+        font: 12px/21px "Rawson-LightIt";
       }
     }
   }
@@ -1869,7 +1869,7 @@ label {
       text-align: center;
       font-size: 12px;
       letter-spacing: 0.17px;
-      color: #D3EAE9;
+      color: $dateInputColor;
     }
   }
 }
@@ -1896,7 +1896,7 @@ label {
     text-align: center;
     padding-top: 1.3em;
     p{
-      font: normal normal 20px/30px 'Rawson-SemiBold';
+      font: 20px/30px 'Rawson-SemiBold';
     }
   }
   .error-file{
@@ -1923,8 +1923,8 @@ label {
     height: 40px;
     margin: auto;
     text-align: center;
-    background: $primary 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: $primary;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     margin-bottom: 0.5em;
     padding: 0.2em;
     .sup{
@@ -1936,7 +1936,7 @@ label {
     }
     p{
       text-align: left;
-      font: normal normal 9px/15px 'Rawson-Bold';
+      font: 9px/15px 'Rawson-Bold';
       letter-spacing: 0px;
       color: $secondary;
       margin-bottom: 0%;
@@ -1947,46 +1947,26 @@ label {
       height: 31px;
     }
   }
-  // .sinistre7{
-  //   h1{
-  //     font-size: 21px;
-  //   }
-  //   .passe{
-  //     span{
-  //       font: normal normal 12px/21px "Rawson-LightIt";
-  //     }
-  //   }
-  // }
 
 }
 
 @media(max-width: 767px){
-  // .sinistre8{
-  //   h1{
-  //     font-size: 21px;
-  //   }
-  //   .quand{
-  //     span{
-  //       font: normal normal 12px/21px "Rawson-LightIt";
-  //     }
-  //   }
-  // }
   .matriculeSN{
     width: 70%;
     height: 40px;
     margin: auto;
-    background: $primary 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: $primary;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     margin-top: 0.7em;
     .sn{
       width: 100%;
       height: 40px;
-      background: $secondary 0% 0% no-repeat padding-box;
+      background: $secondary;
       margin-left: 4.2%;
       .blanc{
         width: 7%;
         height: 10px;
-        background: $primary 0% 0% no-repeat padding-box;
+        background: $primary;
         margin-top: 5%;
         margin-left: auto;
         margin-bottom: 13%;
@@ -1994,14 +1974,14 @@ label {
       .blanc1{
         width: 7%;
         height: 10px;
-        background: $primary 0% 0% no-repeat padding-box;
+        background: $primary;
         margin-top: 5%;
         margin-left: 7%;
         margin-right: auto;
       }
       p{
         text-align: center;
-        font: normal normal 12px/21px 'Rawson-Bold';
+        font: 12px/21px 'Rawson-Bold';
         letter-spacing: 0px;
         color: #fffff9db;
         margin-left: auto;
@@ -2020,9 +2000,9 @@ label {
       transition: ease .3s;
 
       text-align: left;
-      font: normal normal 13px/16px 'Rawson-Bold';
+      font: 13px/16px 'Rawson-Bold';
       letter-spacing: 0px;
-      color: #B5CECD;
+      color: $labelTextColor;
     }
 
     .input {
@@ -2041,7 +2021,7 @@ label {
       color: $secondary;
     }
     ::placeholder{
-      color: #1f666665;
+      color: $placeHolderColor;
       font-size: 12px;
     }
 
@@ -2052,8 +2032,8 @@ label {
     width: 70%;
     height: 40px;
     margin: auto;
-    background: $primary 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: $primary;
+    box-shadow: 0px 3px 6px $boxShadowColor;
     margin-top: 1.05em;
     .marque{
       padding-top: 2.9%;
@@ -2061,9 +2041,9 @@ label {
       padding-right: 0%;
       span{
         text-align: left;
-        font: normal normal 600 12px/15px 'Rawson-SemiBold';
+        font: 600 12px/15px 'Rawson-SemiBold';
         letter-spacing: 0px;
-        color: #1f6666d9;
+        color: $inputColor;
       }
     }
     label {
@@ -2086,12 +2066,12 @@ label {
       outline: none;
 
       text-align: left;
-      font: normal normal 10px/15px 'Rawson-SemiBold';
+      font: 10px/15px 'Rawson-SemiBold';
       letter-spacing: 0px;
-      color: #1f6666d9;
+      color: $inputColor;
     }
     ::placeholder{
-      color: #1f666665;
+      color: $placeHolderColor;
     }
     transform: translate(2.5%,1%);
   }
@@ -2100,16 +2080,21 @@ label {
     padding-bottom: 3%;
     p{
       text-align: right;
-      font: normal normal 7px/15px 'Rawson-SemiBold';
+      font: 7px/15px 'Rawson-SemiBold';
     }
     .a{
       margin-left: auto;
       p{
         text-align: left;
-        font: normal normal 7px/10px 'Rawson-SemiBold';
+        font: 7px/10px 'Rawson-SemiBold';
       }
     }
 }
+  // @media(max-width: 675px){
+  //   .matriculeSN,.matricule{
+  //     width: 200px;
+  //   }
+  // }
 
 }
 
@@ -2119,28 +2104,28 @@ label {
   //   padding-top: 0.3em;
   //   height: 2.5em;
   //   span{
-  //     font: normal normal 14px/23px "Avenir-Medium";
+  //     font: 14px/23px "Avenir-Medium";
   //   }
   // }
   // .btnoui91{
   //   padding-top: 0.3em;
   //   height: 2.6em;
   //   span{
-  //     font: normal normal 14px/23px "Avenir-Medium";
+  //     font: 14px/23px "Avenir-Medium";
   //   }
   // }
   // .btnnon91{
   //   padding-top: 0.3em;
   //   height: 2.5em;
   //   span{
-  //     font: normal normal 14px/23px "Avenir-Medium";
+  //     font: 14px/23px "Avenir-Medium";
   //   }
   // }
   // .btnnon92{
   //   padding-top: 0.3em;
   //   height: 2.5em;
   //   span{
-  //     font: normal normal 14px/23px "Avenir-Medium";
+  //     font: 14px/23px "Avenir-Medium";
   //   }
   // }
 }
@@ -2155,14 +2140,14 @@ label {
     padding-left: 0;
   }
   .label-txt{
-    font: normal normal 10px/16px "Rawson-Bold";
+    font: 10px/16px "Rawson-Bold";
   }
   .connexion{
     width: 65%;
     padding-left: 0;
   }
   .label-txt{
-    font: normal normal 10px/16px "Rawson-Bold";
+    font: 10px/16px "Rawson-Bold";
   }
 }
 
@@ -2184,11 +2169,11 @@ label {
     margin-right: auto;
     margin-left: auto;
     h1{
-      font: normal normal 18px/28px "Rawson-bold";
+      font: 18px/28px "Rawson-bold";
       text-align: center;
     }
     p{
-      font: normal normal 16px/25px "Rawson-Medium";
+      font: 16px/25px "Rawson-Medium";
     }
     .accueil{
       margin-left: auto;
@@ -2196,7 +2181,7 @@ label {
       width: 170px;
       text-align: center;
       span{
-        font: normal normal 13px/22px "Rawson-Medium";
+        font: 13px/22px "Rawson-Medium";
       }
     }
   }

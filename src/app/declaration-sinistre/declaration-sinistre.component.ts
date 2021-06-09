@@ -5,11 +5,11 @@ import { NgxBootstrapConfirmService } from 'ngx-bootstrap-confirm';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-second',
-  templateUrl: './second.component.html',
-  styleUrls: ['./second.component.scss']
+  selector: 'app-declaration-sinistre',
+  templateUrl: './declaration-sinistre.component.html',
+  styleUrls: ['./declaration-sinistre.component.scss']
 })
-export class SecondComponent implements OnInit {
+export class DeclarationSinistreComponent implements OnInit {
 
   @ViewChild('confirmDelete') private closeModal: ElementRef;
   public pathImg: string = "../../assets/images/images/";

@@ -12,9 +12,9 @@ $opacity : 1;
   padding-left: 13.7%;
   padding-bottom: 0%;
   padding-top: 1%;
-  background: #F5F5F5 0% 0% no-repeat padding-box;
+  background: $gris;
   p{
-    font: normal normal 18px/22px 'Rawson-Medium';
+    font: 18px/22px 'Rawson-Medium';
     letter-spacing: 0px;
     color: $tertiaire;
   }
@@ -45,7 +45,7 @@ $opacity : 1;
   p{
     margin-bottom: 0%;
     padding-left: 11.2%;
-    font: normal normal 18px/22px 'Rawson-Medium';
+    font: 18px/22px 'Rawson-Medium';
     letter-spacing: 0px;
     color: $tertiaire;
   }
@@ -74,7 +74,7 @@ $opacity : 1;
   width: $width;
   height: 53px;
   margin-left: 0%;
-  background: #006767 0% 0% no-repeat padding-box;
+  background: $secondary2;
   .copyright{
     // height: 53px;
     padding-top: 1.25%;
@@ -84,10 +84,10 @@ $opacity : 1;
 }
 span{
   text-align: left;
-  font: normal normal 18px/22px 'Rawson-Medium';
+  font: 18px/22px 'Rawson-Medium';
   padding-left: 14%;
   letter-spacing: 0px;
-  color: #ffffffc4;
+  color: $gris2;
   opacity: $opacity;
 }
 .appel{
@@ -171,10 +171,10 @@ span{
       padding-right: 0;
       text-align: center;
       span{
-        font: normal normal 10px/22px 'Rawson-Medium';
+        font: 10px/22px 'Rawson-Medium';
         padding-left: 0;//14%;
         letter-spacing: 0px;
-        color: #ffffffc4;
+        color: $gris2;
         opacity: $opacity;
       }
     }
@@ -188,9 +188,9 @@ span{
     padding-left: 0%;
     padding-bottom: 0%;
     padding-top: 1%;
-    background: #F5F5F5 0% 0% no-repeat padding-box;
+    background: $gris;
     p{
-      font: normal normal 68%/22px 'Rawson-Medium';
+      font: 68%/22px 'Rawson-Medium';
       letter-spacing: 0px;
       color: $tertiaire;
     }
@@ -237,11 +237,16 @@ span{
       }
     }
   }
+  @media (min-height: 1000px){
+    #footer{
+      margin-top: 70%;
+    }
+  }
+
 }
 
 @media(min-width: 767.1px) and (max-width: 1000px){
   #footer{
-    // width: $width;
     height: auto;
     margin-left: 0%;
     margin-right: 0%;
@@ -249,9 +254,9 @@ span{
     padding-left: 0%;
     padding-bottom: 0%;
     padding-top: 1%;
-    background: #F5F5F5 0% 0% no-repeat padding-box;
+    background: $gris;
     p{
-      font: normal normal 80%/22px 'Rawson-Medium';
+      font: 80%/22px 'Rawson-Medium';
       letter-spacing: 0px;
       color: $tertiaire;
       padding-left: 0%;
@@ -273,7 +278,11 @@ span{
 
     }
   }
-
+  @media (min-height: 1000px){
+    #footer{
+      margin-top: 70%;
+    }
+  }
 }
 
 @media(min-width:880.1px) and (max-width: 1280px){
@@ -288,11 +297,11 @@ span{
       padding-left: 3%;
     }
   }
+  @media (min-height: 1000px){
+    #footer{
+      margin-top: 70%;
+    }
+  }
 }
 
-// @media only screen  and (min-height: 661px) {
-//   #footer{
-//     margin-top: 58%;
-//   }
-// }
 

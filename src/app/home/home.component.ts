@@ -1,13 +1,13 @@
 import { Router } from '@angular/router';
-import { AutGuardService } from './../service/aut-guard.service';
+import { AutGuardService } from '../service/aut-guard.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-first',
-  templateUrl: './first.component.html',
-  styleUrls: ['./first.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class FirstComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   public carousels : any[];
   public slideIn: string = "slideInRight";
@@ -15,6 +15,8 @@ export class FirstComponent implements OnInit {
   constructor(private route: Router) { }
 
   ngOnInit(): void {
+    // console.log("environment : ",environment.test);
+
     // localStorage.removeItem('isConnected');
     this.redirectTo();
     this.carousels = [

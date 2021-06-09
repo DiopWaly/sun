@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
+import { HomeComponent } from './home/home.component';
+import { DeclarationSinistreComponent } from './declaration-sinistre/declaration-sinistre.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { DossierComponent } from './dossier/dossier.component';
@@ -14,19 +14,18 @@ import { NgxCaptchaModule } from 'ngx-captcha';
 import {AgmCoreModule} from '@agm/core';
 import { ResultatComponent } from './resultat/resultat.component';
 import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
-import { TestComponent } from './test/test.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
-    SecondComponent,
+    HomeComponent,
+    DeclarationSinistreComponent,
     MenuComponent,
     FooterComponent,
     DossierComponent,
     ResultatComponent,
-    TestComponent,
     AuthenticationComponent
   ],
   imports: [
@@ -43,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgxUiLoaderModule, // import NgxUiLoaderModule
     NgxUiLoaderRouterModule,
     NgxUiLoaderHttpModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

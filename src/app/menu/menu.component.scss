@@ -4,7 +4,7 @@ $width : 100%;
 
 p{
   text-align: left;
-  font: normal normal 17px/21px 'Rawson-Medium';
+  font: 17px/21px 'Rawson-Medium';
   letter-spacing: 0px;
   color: $tertiaire;
 }
@@ -51,8 +51,8 @@ li{
   padding-right: 11.33;
   text-align: center;
   margin-bottom : 1.5%;
-  background: $primary 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+  background: $primary;
+  box-shadow: 0px 3px 6px $boxShadowColor;
 }
 .pmenu{
   padding-top: 1.91%;
@@ -63,7 +63,7 @@ li{
   margin-right: 1.5%;
 }
 .sinistre{
-  background: $secondary 0% 0% no-repeat padding-box;
+  background: $secondary;
   top: 32px;
   left: 803px;
   width: 193px;
@@ -72,33 +72,33 @@ li{
   margin-top: 8%;
   padding-top: 1.8%;
   text-align: center;
-  font: normal normal 18px/22px 'Rawson-Light';
+  font: 18px/22px 'Rawson-Light';
   letter-spacing: 0.12px;
   color: $primary;
   text-transform: uppercase;
 }
 .sinistre:hover{
   cursor: pointer;
-  background: #154949;
+  background: $sinistreHoverColor;
 }
 .dossier{
   width: 124px;
   height: 30px;
   text-align: center;
-  font: normal normal 18px/22px 'Rawson-Medium';
+  font: 18px/22px 'Rawson-Medium';
   letter-spacing: 0px;
   padding-top: 5.5px;
   padding-right: 0.3%;
   margin-left: 6.9%;
   margin-right: 3%;
-  background: $primary 0% 0% no-repeat padding-box;
-  border: 1px solid #7A774C;
-  color: #7a774ce0;
+  background: $primary;
+  border: 1px solid $tertiaire;
+  color: $tertiaire2;
   text-transform: uppercase;
 }
 .dossier:hover{
   cursor: pointer;
-  background-color: #7A774C;
+  background-color: $tertiaire;
   color: $primary;
 }
 
@@ -122,9 +122,9 @@ li{
   }
   .nav-item.nav-link.sinist{
     height: 30px;
-    background: $secondary 0% 0% no-repeat padding-box;
+    background: $secondary;
     text-align: center;
-    font: normal normal 15px/22px 'Rawson-Light';
+    font: 15px/22px 'Rawson-Light';
     letter-spacing: 0.12px;
     color: $primary;
     text-transform: uppercase;
@@ -133,11 +133,11 @@ li{
   .doss{
     text-align: center;
     height: 30px;
-    font: normal normal 15px/22px 'Rawson-Medium';
+    font: 15px/22px 'Rawson-Medium';
     letter-spacing: 0px;
-    background: $primary 0% 0% no-repeat padding-box;
-    border: 1px solid #7A774C;
-    color: #7a774ce0;
+    background: $primary;
+    border: 1px solid $tertiaire;
+    color: $tertiaire2;
     margin-left: 0%;
     padding-top: 1%;
     text-transform: uppercase;
@@ -147,8 +147,8 @@ li{
     height: 93px;
     text-align: center;
     margin-bottom : 1.5%;
-    background: $primary 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: $primary;
+    box-shadow: 0px 3px 6px $boxShadowColor;
   }
   .navbar-nav{
     margin: auto;
@@ -157,7 +157,7 @@ li{
 
 @media (max-width: 767px){
   .navbar-collapse{
-    border: 1px solid #154949;
+    border: 1px solid $sinistreHoverColor;
   }
   .navbar-nav .nav-item.nav-link{
     margin-left: 10px;
@@ -165,7 +165,7 @@ li{
     margin-bottom: 5px;
   }
   .nav-item.nav-link.diff{
-    border: 1px solid #154949;
+    border: 1px solid $sinistreHoverColor;
     border-radius: 15px;
   }
 }

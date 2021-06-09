@@ -30,7 +30,7 @@ section{
  border-radius: 20px;
  padding: 20px;
  border: 2px solid $gris;
- color: #005a8d;
+ color: $authInputButton;
 }
 
 input{
@@ -40,7 +40,7 @@ input{
 }
 
 ::placeholder{
-  color: #1f666665;
+  color: $placeHolderColor;
 }
 
 .card h3{
@@ -72,15 +72,15 @@ input{
 .btn input{
  width: 100%;
  padding: 10px;
- background-image: linear-gradient(45deg, #005a8d, #00ead3);
- color: #fff;
+ background-image: linear-gradient(45deg, $authInputButton, $hoverButtonAuth);
+ color: $primary;
  font-family: 'Rawson-LightIt';
  font-size: 15px;
  cursor: pointer;
 }
 
 .btn input:hover{
- background-image: linear-gradient(45deg, #00ead3, #005a8d);
+ background-image: linear-gradient(45deg, $hoverButtonAuth, $authInputButton);
 }
 
 .card .text{

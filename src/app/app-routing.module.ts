@@ -4,10 +4,10 @@ import { ResultatComponent } from './resultat/resultat.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DossierComponent } from './dossier/dossier.component';
-import { FirstComponent } from './first/first.component';
+import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
-import { SecondComponent } from './second/second.component';
+import { DeclarationSinistreComponent } from './declaration-sinistre/declaration-sinistre.component';
 
 
 const routes: Routes = [
@@ -21,20 +21,20 @@ const routes: Routes = [
     path:"resultat", component: ResultatComponent, canActivate: [AutGuardService]
   },
   {
-    path:"accueil", component: FirstComponent
+    path:"home", component: HomeComponent
   },
   {
     path:"menu", component: MenuComponent
   },
   {
-    path:"declaration", component: SecondComponent, canActivate: [AutGuardService]
+    path:"declaration", component: DeclarationSinistreComponent, canActivate: [AutGuardService]
   },
   {
     path:"footer", component: FooterComponent
   },
   {
     path: "",
-    redirectTo: "/accueil",
+    redirectTo: "/home",
     pathMatch: "full"
   }
 ];
